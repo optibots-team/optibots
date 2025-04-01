@@ -1,0 +1,17 @@
+@use './breakpoints.scss';
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--color-black);
+  background-color: var(--color-primary-bg);
+  font-size: var(--font-size-m);
+  line-height: var(--font-line-m);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

@@ -1,0 +1,10 @@
+.container {
+	width: calc(100% - (var(--container-gap) * 2));
+	max-width: var(--container-width);
+	margin-right: auto;
+	margin-left: auto;
+
+	&--fluid {
+		max-width: 100%;
+	}
+}

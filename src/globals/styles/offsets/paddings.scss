@@ -1,0 +1,7 @@
+@each $abbr, $name in ("t": "top", "r": "right", "b": "bottom", "l": "left") {
+  @for $i from 1 through 100 {
+    .p#{$abbr}-#{$i} {
+      padding-#{$name}: 1px * $i;
+    }
+  }
+}

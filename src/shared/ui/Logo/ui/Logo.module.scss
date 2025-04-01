@@ -1,0 +1,27 @@
+@use '@globals/styles/breakpoints';
+
+.logo {
+	display: block;
+	width: 100%;
+
+	&--header {
+		position: relative;
+		z-index: 101;
+		max-width: 120px;
+		color: var(--color-black);
+
+		@media (width < breakpoints.$md) {
+			max-width: 90px;
+		}
+	}
+	&--footer {
+		max-width: 180px;
+		color: var(--color-white);
+	}
+
+	svg, path {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
