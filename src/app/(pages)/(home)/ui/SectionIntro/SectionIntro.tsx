@@ -11,6 +11,7 @@ const SectionIntro = ({ className }: SectionIntroProps) => (
 		<Container>
 			<h1>Intro</h1>
 			<h2>Testing dev</h2>
+			<h3>Testing dev2</h3>
 		</Container>
 	</section>
 );
