@@ -1,0 +1,12 @@
+{
+  "header": {
+    "caption": "Хедер"
+  },
+  "footer": {
+    "caption": "Підвал"
+  },
+  "homePage": {
+    "title": "Привіт!",
+    "desc": "Це укр мова"
+  }
+}
