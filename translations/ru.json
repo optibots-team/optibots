@@ -1,0 +1,12 @@
+{
+  "header": {
+    "caption": "Хэдэр"
+  },
+  "footer": {
+    "caption": "Подвал"
+  },
+  "homePage": {
+    "title": "Привет",
+    "desc": "Это русский язык"
+  }
+}
