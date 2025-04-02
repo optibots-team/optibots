@@ -1,0 +1,12 @@
+{
+  "header": {
+    "caption": "Header"
+  },
+  "footer": {
+    "caption": "Footer"
+  },
+  "homePage": {
+    "title": "Hello!",
+    "desc": "It`s en language"
+  }
+}

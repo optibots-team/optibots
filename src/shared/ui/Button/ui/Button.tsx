@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { ButtonHTMLAttributes, ReactNode } from 'react';
 import { classNames, type Additional, type Mods } from '@shared/lib/classNames';
 import { ButtonSize, ButtonTheme, ButtonType } from '../model/types/Button.types';
-import { Routes } from '@shared/config/routes';
+import { Routes } from '@shared/config/navigation/routes';
 import styles from './Button.module.scss';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement | HTMLAnchorElement> {

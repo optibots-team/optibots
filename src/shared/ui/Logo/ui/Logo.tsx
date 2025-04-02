@@ -1,6 +1,6 @@
 import { classNames } from '@shared/lib/classNames';
 import { Button, ButtonSize, ButtonTheme, ButtonType } from '@shared/ui/Button';
-import { Routes } from '@shared/config/routes';
+import { Routes } from '@shared/config/navigation/routes';
 import { LogoTheme } from '@shared/ui/Logo';
 import styles from './Logo.module.scss';
 
