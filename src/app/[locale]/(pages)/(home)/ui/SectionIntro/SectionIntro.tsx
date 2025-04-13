@@ -1,6 +1,7 @@
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
+import { RobotScene } from '@features/RobotScene';
 import styles from './SectionIntro.module.scss';
 
 type SectionIntroProps = {
@@ -16,17 +17,7 @@ const SectionIntro = ({ className }: SectionIntroProps) => {
 				<h1>{t('title')}</h1>
 				<p>{t('desc')}</p>
 				<div className={styles.intro__anim}>
-					<iframe
-						src={'https://my.spline.design/nexbotrobotcharacterconcept-2fgubm0MLigJaDyOIrxu1kg4/'}
-						width={'100%'}
-						height={'100%'}
-						frameBorder={'0'}
-						style={{ background: 'transparent' }}
-						allowFullScreen
-					/>
-					<div className={styles.intro__plashka}>
-						PLASHKA
-					</div>
+					<RobotScene />
 				</div>
 			</Container>
 		</section>
