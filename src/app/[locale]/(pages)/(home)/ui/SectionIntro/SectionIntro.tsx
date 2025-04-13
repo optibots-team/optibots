@@ -1,6 +1,4 @@
-import { useTranslations } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
-import { Container } from '@shared/ui/Container';
 import { RobotScene } from '@features/RobotScene';
 import styles from './SectionIntro.module.scss';
 
