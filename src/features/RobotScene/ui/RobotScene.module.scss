@@ -1,0 +1,14 @@
+.scene {
+	position: relative;
+	background-color: #E1EBFF;
+
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		width: 140px;
+		height: 50px;
+		background-color: #E1EBFF;
+	}
+}
