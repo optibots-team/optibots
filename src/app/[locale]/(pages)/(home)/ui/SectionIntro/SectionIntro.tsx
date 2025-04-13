@@ -9,17 +9,11 @@ type SectionIntroProps = {
 };
 
 const SectionIntro = ({ className }: SectionIntroProps) => {
-	const t = useTranslations('homePage');
-
 	return (
 		<section className={classNames(styles.intro, {}, [className])}>
-			<Container>
-				<h1>{t('title')}</h1>
-				<p>{t('desc')}</p>
-				<div className={styles.intro__anim}>
-					<RobotScene />
-				</div>
-			</Container>
+			<div className={styles.intro__anim}>
+				<RobotScene />
+			</div>
 		</section>
 	);
 };
