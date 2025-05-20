@@ -1,7 +1,6 @@
-'use client'
-
-import Spline from '@splinetool/react-spline';
+import Spline from '@splinetool/react-spline/next';
 import { classNames } from '@shared/lib/classNames';
+import { externalLinks } from '@shared/const/externalLinks';
 import styles from './RobotScene.module.scss';
 
 type RobotSceneProps = {
@@ -10,7 +9,7 @@ type RobotSceneProps = {
 
 const RobotScene = ({ className }: RobotSceneProps) => (
 	<div className={classNames(styles.scene, {}, [className])}>
-		<Spline scene={'https://prod.spline.design/sxUU8Pda7SsKdoDG/scene.splinecode'} />
+		<Spline scene={externalLinks.robotsScene} />
 	</div>
 );
 

@@ -1,12 +1,21 @@
 {
-  "header": {
-    "caption": "Header"
+  "navigation": {
+    "about": "About us",
+    "tariffs": "Tariffs",
+    "cases": "Cases",
+    "contacts": "Contacts"
+  },
+  "buttons": {
+    "order bot": "Order chat bot",
+    "learn more": "Learn more"
+  },
+  "homePage": {
+    "sectionIntro": {
+      "title": "Chatbots that make your business faster and smarter",
+      "desc": "Our AI-powered chatbots help businesses streamline customer interactions and automate lead generation — saving time, cutting costs, and boosting productivity."
+    }
   },
   "footer": {
     "caption": "Footer"
-  },
-  "homePage": {
-    "title": "Hello!",
-    "desc": "It`s en language"
   }
 }

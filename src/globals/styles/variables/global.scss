@@ -4,9 +4,13 @@
 
   // colors
 
-  --color-white: #ffffff;
-  --color-black: #000000;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-dark: #141414;
   --color-overlay: rgba(0, 0, 0, .6);
+
+  --bg-primary: #F4F4F6;
+  --bg-secondary: #141414;
 
   // shadows
 
@@ -23,14 +27,17 @@
 
   // fonts
 
-  --font-size-xs: 12px;
+  --font-size-xs: 10px;
   --font-line-xs: 16px;
 
-  --font-size-s: 14px;
+  --font-size-s: 12px;
   --font-line-s: 18px;
 
-  --font-size-m: 16px;
+  --font-size-m: 14px;
   --font-line-m: 20px;
+
+  --font-size-ml: 16px;
+  --font-line-ml: 22px;
 
   --font-size-l: 24px;
   --font-line-l: 30px;
@@ -43,7 +50,7 @@
 
   // container
 
-  --container-width: 1280px;
+  --container-width: 1140px;
   --container-gap: 20px;
 
   // header
