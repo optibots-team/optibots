@@ -1,8 +1,13 @@
 import { SectionIntro } from '../SectionIntro/SectionIntro';
+import { Header } from '@widgets/Header';
+import { RobotLayer } from '@widgets/RobotLayer';
 
 const HomePage = () => (
 	<>
-		<SectionIntro />
+		<RobotLayer>
+			<Header />
+			<SectionIntro />
+		</RobotLayer>
 	</>
 );
 

@@ -1,23 +1,23 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { Poppins, Roboto } from 'next/font/google';
+import { Unbounded, Montserrat } from 'next/font/google';
 import type { ReactNode } from 'react';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { ToastContainer } from 'react-toastify';
 import { ErrorBoundary } from '@globals/providers/ErrorBoundary';
-import { Header } from '@widgets/Header';
+import { FlexV } from '@shared/ui/Stack';
 import { Footer } from '@widgets/Footer';
 import { routing } from '@shared/config/i18n/routing';
 import '@globals/styles/index.scss';
 
-const poppins = Poppins({
-	variable: '--font-poppins',
+const unbounded = Unbounded({
+	variable: '--font-unbounded',
 	subsets: ['latin'],
 	weight: ['400', '500', '700'],
 });
 
-const roboto = Roboto({
-	variable: '--font-roboto',
+const montserrat = Montserrat({
+	variable: '--font-montserrat',
 	subsets: ['latin'],
 	weight: ['400', '500', '700'],
 });
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 interface IRootLayout {
 	children: ReactNode;
-	params: Promise<{locale: string}>;
+	params: Promise<{ locale: string }>;
 }
 
 const RootLayout = async ({ children, params }: IRootLayout) => {
@@ -45,11 +45,12 @@ const RootLayout = async ({ children, params }: IRootLayout) => {
 
 	return (
 		<html lang={locale}>
-		<body className={`${poppins.variable} ${roboto.variable}`}>
+		<body className={`${montserrat.variable} ${unbounded.variable}`}>
 		<NextIntlClientProvider>
 			<ErrorBoundary>
-				<Header />
-				<main className={'main'}>{children}</main>
+				<FlexV as={'main'} align={'stretch'} justify={'stretch'} grow>
+					{children}
+				</FlexV>
 				<Footer />
 			</ErrorBoundary>
 			<ToastContainer theme={'light'} />

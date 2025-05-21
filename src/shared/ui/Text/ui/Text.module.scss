@@ -1,0 +1,66 @@
+// font family
+
+.montserrat {
+	font-family: var(--font-montserrat), sans-serif;
+}
+.unbounded {
+	font-family: var(--font-unbounded), sans-serif;
+}
+
+// sizes
+
+.size-xs {
+	font-size: var(--font-size-xs);
+	line-height: var(--font-line-xs);
+}
+.size-s {
+	font-size: var(--font-size-s);
+	line-height: var(--font-line-s);
+}
+.size-m {
+	font-size: var(--font-size-m);
+	line-height: var(--font-line-m);
+}
+.size-ml {
+	font-size: var(--font-size-ml);
+	line-height: var(--font-line-ml);
+}
+.size-l {
+	font-size: var(--font-size-l);
+	line-height: var(--font-line-l);
+}
+.size-xl {
+	font-size: var(--font-size-xl);
+	line-height: var(--font-line-xl);
+}
+.size-xxl {
+	font-size: var(--font-size-xxl);
+	line-height: var(--font-line-xxl);
+}
+
+// colors
+
+.color-white {
+	color: var(--color-white);
+}
+.color-black {
+	color: var(--color-black);
+}
+.color-dark {
+	color: var(--color-dark);
+}
+.color-dark-secondary {
+	color: var(--color-dark-secondary);
+}
+
+// align
+
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}

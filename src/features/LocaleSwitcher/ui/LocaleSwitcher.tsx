@@ -2,11 +2,9 @@
 
 import { useCallback, type ChangeEvent } from 'react';
 import { useLocale } from 'use-intl';
-import { classNames } from '@shared/lib/classNames';
 import { Select } from '@shared/ui/Select';
 import { usePathname, useRouter } from '@shared/config/i18n/navigation';
 import { switcherOptions } from '../model/data/localeSwitcher.data';
-import styles from './LocaleSwitcher.module.scss';
 
 type LocaleSwitcherProps = {
 	className?: string;
@@ -27,9 +25,12 @@ const LocaleSwitcher = ({ className }: LocaleSwitcherProps) => {
 	);
 
 	return (
-		<div className={classNames(styles.switcher, {}, [className])}>
-			<Select options={switcherOptions} defaultValue={currentLocale} onChange={handleChangeLocale}/>
-		</div>
+		<Select
+			className={className}
+			options={switcherOptions}
+			defaultValue={currentLocale}
+			onChange={handleChangeLocale}
+		/>
 	);
 };
 
