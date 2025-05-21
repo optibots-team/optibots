@@ -6,7 +6,6 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { ToastContainer } from 'react-toastify';
 import { ErrorBoundary } from '@globals/providers/ErrorBoundary';
 import { FlexV } from '@shared/ui/Stack';
-import { Footer } from '@widgets/Footer';
 import { routing } from '@shared/config/i18n/routing';
 import '@globals/styles/index.scss';
 
@@ -51,7 +50,6 @@ const RootLayout = async ({ children, params }: IRootLayout) => {
 				<FlexV as={'main'} align={'stretch'} justify={'stretch'} grow>
 					{children}
 				</FlexV>
-				<Footer />
 			</ErrorBoundary>
 			<ToastContainer theme={'light'} />
 		</NextIntlClientProvider>

@@ -1,5 +1,6 @@
 {
   "navigation": {
+    "home": "Головна сторінка",
     "about": "Про нас",
     "tariffs": "Тарифи",
     "cases": "Кейси",
@@ -7,7 +8,12 @@
   },
   "buttons": {
     "order bot": "Замовити чат-бот",
-    "learn more": "Дізнатись більше"
+    "learn more": "Дізнатись більше",
+    "refresh": "Оновити сторінку"
+  },
+  "errors": {
+    "something's wrong": "Ой, щось не так!",
+    "page not found": "Сторінку не знайдено"
   },
   "homePage": {
     "sectionIntro": {

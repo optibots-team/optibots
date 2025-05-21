@@ -1,11 +1,19 @@
 .nav {
 
+	&.dark {
+		color: var(--color-dark);
+	}
+	&.light {
+		color: var(--color-white);
+	}
+
 	&__list {
 		gap: 50px;
 	}
 
 	&__item {
 		position: relative;
+		color: currentColor;
 
 		&:not(:last-child) {
 			&:after {

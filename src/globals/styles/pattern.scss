@@ -47,34 +47,6 @@
   font-style: italic;
 }
 
-// loading page
-
-.loading-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-// not-found-page && error-page
-
-.not-found-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-grow: 1;
-  gap: 20px;
-
-  h1 {
-    font-size: var(--font-size-xxl);
-    line-height: var(--font-line-xxl);
-    text-align: center;
-  }
-}
-
 // border radius
 
 .section-radius {

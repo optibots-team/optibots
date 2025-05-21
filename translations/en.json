@@ -1,5 +1,6 @@
 {
   "navigation": {
+    "home": "Home page",
     "about": "About us",
     "tariffs": "Tariffs",
     "cases": "Cases",
@@ -7,7 +8,12 @@
   },
   "buttons": {
     "order bot": "Order chat bot",
-    "learn more": "Learn more"
+    "learn more": "Learn more",
+    "refresh": "Refresh the page"
+  },
+  "errors": {
+    "something's wrong": "Oops, something's wrong!",
+    "page not found": "Page not found"
   },
   "homePage": {
     "sectionIntro": {

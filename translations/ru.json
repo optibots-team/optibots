@@ -1,5 +1,6 @@
 {
   "navigation": {
+    "home": "Домашняя страница",
     "about": "О нас",
     "tariffs": "Тарифы",
     "cases": "Кейсы",
@@ -7,7 +8,12 @@
   },
   "buttons": {
     "order bot": "Заказать чат-бот",
-    "learn more": "Узнать больше"
+    "learn more": "Узнать больше",
+    "refresh": "Обновить страницу"
+  },
+  "errors": {
+    "something's wrong": "Ой, что-то не так!",
+    "page not found": "Страница не найдена"
   },
   "homePage": {
     "sectionIntro": {
