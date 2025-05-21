@@ -1,0 +1,23 @@
+.card {
+	position: relative;
+	width: 350px;
+	margin-right: 12px;
+	padding: 24px;
+	border-radius: var(--radius-24);
+	background: var(--gradient-gray);
+	border: 2px solid rgba(255, 255, 255, .02);
+
+	&__text {
+		width: 100%;
+		max-width: 200px;
+	}
+
+	&__img {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		width: 100%;
+		max-width: 120px;
+		height: auto;
+	}
+}

@@ -1,9 +1,10 @@
 import type { CSSProperties } from 'react';
 import { classNames, type Additional } from '@shared/lib/classNames';
 import { FlexV, type FlexGap } from '@shared/ui/Stack';
-import { getColorClass, TextColorProps } from '../lib/getColorClass';
-import { getSizeClass, TextSizeProps } from '../lib/getSizeClass';
-import { getAlignClass, TextAlignProps } from '../lib/getAlignClass';
+import { getColorClass, type TextColorProps } from '../lib/getColorClass';
+import { getSizeClass, type TextSizeProps } from '../lib/getSizeClass';
+import { getAlignClass, type TextAlignProps } from '../lib/getAlignClass';
+import { getFontFamilyClass, type TextFontFamilyProps } from '../lib/getFontFamilyClass';
 import type { TextTitleTag } from '../model/types/Text.types';
 import styles from './Text.module.scss';
 
@@ -18,7 +19,7 @@ type TextProps = {
 	size?: TextSizeProps;
 	align?: TextAlignProps;
 	titleTag?: TextTitleTag;
-	fontFamily?: 'montserrat' | 'unbounded';
+	fontFamily?: TextFontFamilyProps;
 	gap?: FlexGap;
 };
 
@@ -34,19 +35,21 @@ const Text = (props: TextProps) => {
 		size,
 		align,
 		titleTag,
-		fontFamily = 'montserrat',
+		fontFamily,
 		gap = '6',
 	} = props;
 	const titleAdditional: Additional = [
 		styles[getColorClass('title', color)],
 		styles[getSizeClass('title', size)],
 		styles[getAlignClass('title', align)],
+		styles[getFontFamilyClass('title', fontFamily)],
 		titleClassName,
 	];
 	const textAdditional: Additional = [
 		styles[getColorClass('text', color)],
 		styles[getSizeClass('text', size)],
 		styles[getAlignClass('text', align)],
+		styles[getFontFamilyClass('text', fontFamily)],
 		textClassName,
 	];
 	const TitleTag = titleTag ?? 'h2';
@@ -54,7 +57,7 @@ const Text = (props: TextProps) => {
 	if (!title && !text) return null;
 
 	return (
-		<FlexV gap={gap} className={classNames('', {}, [className, styles[fontFamily]])} style={style}>
+		<FlexV gap={gap} className={className} style={style}>
 			{title && <TitleTag className={classNames('', {}, titleAdditional)}>{title}</TitleTag>}
 			{text && <p className={classNames('', {}, textAdditional)}>{text}</p>}
 		</FlexV>
