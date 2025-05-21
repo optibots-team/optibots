@@ -1,0 +1,25 @@
+.nav {
+
+	&__list {
+		gap: 50px;
+	}
+
+	&__item {
+		position: relative;
+
+		&:not(:last-child) {
+			&:after {
+				content: '/';
+				position: absolute;
+				top: 50%;
+				left: calc(100% + 25px);
+				translate: 0 -50%;
+			}
+		}
+	}
+
+	&__link {
+		display: block;
+		font-weight: 500;
+	}
+}

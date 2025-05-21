@@ -19,8 +19,14 @@
 
 // text align
 
+.align-left {
+  text-align: left;
+}
 .align-center {
   text-align: center;
+}
+.align-right {
+  text-align: right;
 }
 
 // font weight
@@ -69,8 +75,8 @@
   }
 }
 
-// animation
+// border radius
 
-.spline-watermark {
-  display: none !important;
+.section-radius {
+  border-radius: 0 0 var(--radius-32) var(--radius-32);
 }

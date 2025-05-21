@@ -4,9 +4,18 @@
 
   // colors
 
-  --color-white: #ffffff;
-  --color-black: #000000;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-dark: #141414;
+  --color-dark-secondary: #434343;
   --color-overlay: rgba(0, 0, 0, .6);
+
+  --bg-primary: #F4F4F6;
+  --bg-secondary: #141414;
+
+  // gradients
+
+  --gradient-green: linear-gradient(90deg, #D4F76C 0, #389BD8 100%);
 
   // shadows
 
@@ -14,8 +23,9 @@
 
   // border radius
 
-  --primary-border-radius: 24px;
-  --secondary-border-radius: 12px;
+  --radius-12: 12px;
+  --radius-24: 24px;
+  --radius-32: 32px;
 
   // transitions
 
@@ -23,14 +33,17 @@
 
   // fonts
 
-  --font-size-xs: 12px;
+  --font-size-xs: 10px;
   --font-line-xs: 16px;
 
-  --font-size-s: 14px;
+  --font-size-s: 12px;
   --font-line-s: 18px;
 
-  --font-size-m: 16px;
+  --font-size-m: 14px;
   --font-line-m: 20px;
+
+  --font-size-ml: 16px;
+  --font-line-ml: 22px;
 
   --font-size-l: 24px;
   --font-line-l: 30px;
@@ -39,11 +52,11 @@
   --font-line-xl: 34px;
 
   --font-size-xxl: 40px;
-  --font-line-xxl: 46px;
+  --font-line-xxl: 50px;
 
   // container
 
-  --container-width: 1280px;
+  --container-width: 1140px;
   --container-gap: 20px;
 
   // header
