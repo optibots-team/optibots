@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { classNames } from '@shared/lib/classNames';
+import { Link } from '@shared/config/i18n/navigation';
 import { Routes } from '@shared/config/navigation/routes';
 import styles from './Logo.module.scss';
 import LogoIcon from '@shared/assets/icons/logo.svg';
