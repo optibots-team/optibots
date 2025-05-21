@@ -1,19 +1,20 @@
 export type TextElement = 'title' | 'text';
 
 export enum TextColor {
-	PRIMARY = 'color-primary',
-	SECONDARY = 'color-secondary',
-	PRIMARY_INVERTED = 'color-primary-inverted',
-	SECONDARY_INVERTED = 'color-secondary-inverted',
-	RED_LIGHT = 'color-red-light',
-	RED_DARK = 'color-red-dark',
+	WHITE = 'color-white',
+	BLACK = 'color-black',
+	DARK = 'color-dark',
+	DARK_SECONDARY = 'color-dark-secondary',
 }
 
 export enum TextSize {
+	XS = 'size-xs',
 	S = 'size-s',
 	M = 'size-m',
+	ML = 'size-ml',
 	L = 'size-l',
 	XL = 'size-xl',
+	XXL = 'size-xxl',
 }
 
 export enum TextAlign {

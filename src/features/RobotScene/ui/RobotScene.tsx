@@ -1,4 +1,6 @@
-import Spline from '@splinetool/react-spline/next';
+'use client';
+
+import Spline from '@splinetool/react-spline';
 import { classNames } from '@shared/lib/classNames';
 import { externalLinks } from '@shared/const/externalLinks';
 import styles from './RobotScene.module.scss';

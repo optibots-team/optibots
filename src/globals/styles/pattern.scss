@@ -19,8 +19,14 @@
 
 // text align
 
+.align-left {
+  text-align: left;
+}
 .align-center {
   text-align: center;
+}
+.align-right {
+  text-align: right;
 }
 
 // font weight
@@ -67,4 +73,10 @@
     line-height: var(--font-line-xxl);
     text-align: center;
   }
+}
+
+// border radius
+
+.section-radius {
+  border-radius: 0 0 var(--radius-32) var(--radius-32);
 }

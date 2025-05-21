@@ -4,11 +4,32 @@
 
 	&__inner {
 		width: 100%;
-		max-width: 500px;
+		max-width: 540px;
 	}
 
 	&__btn {
 		position: relative;
 		z-index: 1;
+	}
+
+	&__h1 {
+		font-size: var(--font-size-xxl);
+		line-height: var(--font-line-xxl);
+		font-weight: 700;
+		text-transform: uppercase;
+
+		.colored {
+			background: var(--gradient-green);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+
+			background-clip: text;
+			color: transparent;
+		}
+
+		.right {
+			display: block;
+			text-align: right;
+		}
 	}
 }
