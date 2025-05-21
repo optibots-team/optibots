@@ -1,22 +1,25 @@
-import { useTranslations } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
+import { Logo } from '@shared/ui/Logo';
+import { Nav } from '@features/Nav';
+import { FlexH } from '@shared/ui/Stack';
+import { LocaleSwitcher } from '@features/LocaleSwitcher';
 import styles from './Footer.module.scss';
 
 type FooterProps = {
 	className?: string;
 };
 
-const Footer = ({ className }: FooterProps) => {
-	const t = useTranslations('footer');
-
-	return (
-		<footer className={classNames(styles.footer, {}, [className])}>
-			<Container>
-				<h1>{t('caption')}</h1>
-			</Container>
-		</footer>
-	);
-};
+const Footer = ({ className }: FooterProps) => (
+	<footer className={classNames(styles.footer, {}, [className])}>
+		<Container className={styles.footer__container}>
+			<Logo theme={'light'} />
+			<FlexH align={'center'} gap={'32'} className={'ml-a'}>
+				<Nav theme={'light'} />
+				<LocaleSwitcher theme={'light'} />
+			</FlexH>
+		</Container>
+	</footer>
+);
 
 export default Footer;

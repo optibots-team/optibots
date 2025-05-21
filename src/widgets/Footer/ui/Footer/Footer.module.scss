@@ -1,7 +1,14 @@
-@use '@globals/styles/breakpoints';
-
 .footer {
 	margin-top: auto;
-	padding-top: 10px;
-	border-top: 1px solid gray;
+	padding-bottom: 50px;
+	background-color: var(--bg-secondary);
+
+	&__container {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		gap: 32px;
+		padding-top: 24px;
+		border-top: 1px solid rgb(255, 255, 255, .06);
+	}
 }

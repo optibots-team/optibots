@@ -1,5 +1,6 @@
 {
   "navigation": {
+    "home": "Home page",
     "about": "About us",
     "tariffs": "Tariffs",
     "cases": "Cases",
@@ -7,15 +8,17 @@
   },
   "buttons": {
     "order bot": "Order chat bot",
-    "learn more": "Learn more"
+    "learn more": "Learn more",
+    "refresh": "Refresh the page"
+  },
+  "errors": {
+    "something's wrong": "Oops, something's wrong!",
+    "page not found": "Page not found"
   },
   "homePage": {
     "sectionIntro": {
       "title": "Chatbots that make your business <colored>faster</colored> and <colored>smarter</colored>",
       "desc": "Our AI-powered chatbots help businesses streamline customer interactions and automate lead generation — saving time, cutting costs, and boosting productivity."
     }
-  },
-  "footer": {
-    "caption": "Footer"
   }
 }
