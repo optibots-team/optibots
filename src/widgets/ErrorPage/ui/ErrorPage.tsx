@@ -9,7 +9,9 @@ const ErrorPage = () => {
 	return (
 		<section className={'not-found-page'}>
 			<h1>Oops, something&#39;s wrong!</h1>
-			<Button onClick={reloadPage} text={'Refresh'} />
+			<Button onClick={reloadPage}>
+				Refresh
+			</Button>
 		</section>
 	);
 };
