@@ -19,6 +19,16 @@
     "sectionIntro": {
       "title": "Chatbots that make your business <colored>faster</colored> and <colored>smarter</colored>",
       "desc": "Our AI-powered chatbots help businesses streamline customer interactions and automate lead generation — saving time, cutting costs, and boosting productivity."
+    },
+    "sectionMarquee": {
+      "up to 80": "Up to 80%",
+      "5 years": "Over 5 years",
+      "automate": "automation of routine tasks",
+      "expertise": "of expertise in digital marketing and IT",
+      "satisfied": "satisfied customers worldwide",
+      "projects": "projects delivered with measurable results",
+      "300+": "300+",
+      "500+": "500+"
     }
   }
 }
