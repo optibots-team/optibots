@@ -5,12 +5,14 @@ import { useLocale } from 'use-intl';
 import { Select } from '@shared/ui/Select';
 import { usePathname, useRouter } from '@shared/config/i18n/navigation';
 import { switcherOptions } from '../model/data/localeSwitcher.data';
+import type { ColorTheme } from '@shared/types/Themes.types';
 
 type LocaleSwitcherProps = {
 	className?: string;
+	theme?: ColorTheme;
 };
 
-const LocaleSwitcher = ({ className }: LocaleSwitcherProps) => {
+const LocaleSwitcher = ({ className, theme = 'dark' }: LocaleSwitcherProps) => {
 	const pathname = usePathname();
 	const router = useRouter();
 	const currentLocale = useLocale();
@@ -30,6 +32,7 @@ const LocaleSwitcher = ({ className }: LocaleSwitcherProps) => {
 			options={switcherOptions}
 			defaultValue={currentLocale}
 			onChange={handleChangeLocale}
+			theme={theme}
 		/>
 	);
 };
