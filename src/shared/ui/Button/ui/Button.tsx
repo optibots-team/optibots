@@ -1,5 +1,6 @@
 import type { ButtonHTMLAttributes, ComponentPropsWithoutRef, ElementType } from 'react';
 import { classNames, type Additional, type Mods } from '@shared/lib/classNames';
+import type { FontFamily } from '@shared/types/FontFamily.types';
 import { ButtonSize, ButtonTheme } from '../model/types/Button.types';
 import styles from './Button.module.scss';
 
@@ -10,7 +11,7 @@ type ButtonProps<T extends ElementType = 'button'> = {
 	size?: ButtonSize;
 	circle?: boolean;
 	uppercase?: boolean;
-	fontFamily?: 'montserrat' | 'unbounded';
+	fontFamily?: FontFamily;
 } & ButtonHTMLAttributes<HTMLButtonElement> & ComponentPropsWithoutRef<T>;
 
 const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) => {
