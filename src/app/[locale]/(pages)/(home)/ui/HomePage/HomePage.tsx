@@ -3,6 +3,7 @@ import { Header } from '@widgets/Header';
 import { SectionIntro } from '../SectionIntro/SectionIntro';
 import { SectionMarquee } from '../SectionMarquee/SectionMarquee';
 import { SectionAbout } from '../SectionAbout/SectionAbout';
+import { SectionAdvantages } from '../SectionAdvantages/SectionAdvantages/SectionAdvantages';
 
 const HomePage = () => (
 	<>
@@ -12,6 +13,7 @@ const HomePage = () => (
 		</RobotLayer>
 		<SectionMarquee />
 		<SectionAbout />
+		<SectionAdvantages />
 	</>
 );
 

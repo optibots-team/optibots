@@ -34,6 +34,37 @@
       "badge": "Who we are?",
       "sectionTitle": "GROW<br></br>SCALING<br></br>AUTOMATING",
       "sectionDesc": "We create intelligent solutions that speed up client workflows, bring order to customer requests, and boost sales through automated funnels — tailored to any business niche."
+    },
+    "sectionAdvantages": {
+      "badge": "Why us?",
+      "sectionTitle": "How Chatbots Help Business Grow",
+      "sectionDesc": "<semiBold>Chatbots take on routine tasks</semiBold>: communicating with clients, collecting data, answering frequently asked questions, and accepting applications. <semiBold>This saves the team time, reduces the workload, and helps focus on business development.</semiBold>",
+      "advantages": {
+        "support": {
+          "title": "Full support",
+          "subtitle": "From idea to launch and support: design, setup, testing, team training."
+        },
+        "turnkey": {
+          "title": "Turnkey solutions",
+          "subtitle": "Not just a chatbot, but a ready-made automation system for your processes and goals."
+        },
+        "analytics": {
+          "title": "Analytics and Reporting",
+          "subtitle": "You receive clear statistics for each stage of the funnel: applications, conversions, engagement."
+        },
+        "automatic": {
+          "title": "Automatic Data Collection and Organization",
+          "subtitle": "All client data is automatically recorded and categorized."
+        },
+        "integration": {
+          "title": "Flexible Integration",
+          "subtitle": "Connection with CRM systems, payment services, Google Sheets, ad accounts, and other platforms."
+        },
+        "structure": {
+          "title": "Modular Structure",
+          "subtitle": "You can start with basic functionality and gradually expand the bot’s capabilities as your business grows."
+        }
+      }
     }
   }
 }

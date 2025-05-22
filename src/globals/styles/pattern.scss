@@ -49,9 +49,25 @@
 
 // border radius
 
+.section-radius {
+  border-radius: var(--radius-l) var(--radius-l) var(--radius-l) var(--radius-l);
+}
 .section-radius-top {
   border-radius: var(--radius-l) var(--radius-l) 0 0;
 }
 .section-radius-bottom {
   border-radius: 0 0 var(--radius-l) var(--radius-l);
+}
+
+// section paddings
+
+.section-padding {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+.section-padding-top {
+  padding-top: 180px;
+}
+.section-padding-bottom {
+  padding-bottom: 180px;
 }
