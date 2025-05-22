@@ -5,6 +5,7 @@ export enum TextColor {
 	BLACK = 'color-black',
 	DARK = 'color-dark',
 	DARK_SECONDARY = 'color-dark-secondary',
+	LIGHT = 'color-light',
 	GREEN_GRADIENT= 'color-green-gradient',
 }
 
