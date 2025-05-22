@@ -4,7 +4,19 @@
 	margin-right: auto;
 	margin-left: auto;
 
-	&--fluid {
+	&.fluid {
 		max-width: 100%;
+	}
+	&.flex {
+		display: flex;
+	}
+	&.grid {
+		display: grid;
+	}
+	&.horizontal {
+		flex-direction: row;
+	}
+	&.vertical {
+		flex-direction: column;
 	}
 }

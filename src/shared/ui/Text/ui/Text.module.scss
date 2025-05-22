@@ -52,6 +52,13 @@
 .color-dark-secondary {
 	color: var(--color-dark-secondary);
 }
+.color-green-gradient {
+	background: var(--gradient-green);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
+}
 
 // align
 
