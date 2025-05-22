@@ -1,0 +1,11 @@
+.badge {
+	width: max-content;
+	max-width: 100%;
+	padding: 10px 32px;
+	background-color: var(--bg-secondary);
+	border-radius: var(--radius-l);
+
+	&.bordered {
+		border: 1px solid rgba(255, 255, 255, .6);
+	}
+}

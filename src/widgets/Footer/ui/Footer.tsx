@@ -12,7 +12,7 @@ type FooterProps = {
 
 const Footer = ({ className }: FooterProps) => (
 	<footer className={classNames(styles.footer, {}, [className])}>
-		<Container className={styles.footer__container}>
+		<Container display={'flex'} orientation={'horizontal'} className={styles.footer__container}>
 			<Logo theme={'light'} />
 			<FlexH align={'center'} gap={'32'} className={'ml-a'}>
 				<Nav theme={'light'} />

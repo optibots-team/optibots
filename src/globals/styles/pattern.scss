@@ -49,6 +49,9 @@
 
 // border radius
 
-.section-radius {
-  border-radius: 0 0 var(--radius-32) var(--radius-32);
+.section-radius-top {
+  border-radius: var(--radius-l) var(--radius-l) 0 0;
+}
+.section-radius-bottom {
+  border-radius: 0 0 var(--radius-l) var(--radius-l);
 }

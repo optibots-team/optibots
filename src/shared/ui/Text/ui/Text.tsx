@@ -1,4 +1,4 @@
-import type { CSSProperties } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 import { classNames, type Additional } from '@shared/lib/classNames';
 import { FlexV, type FlexGap } from '@shared/ui/Stack';
 import { getColorClass, type TextColorProps } from '../lib/getColorClass';
@@ -13,8 +13,8 @@ type TextProps = {
 	titleClassName?: string;
 	textClassName?: string;
 	style?: CSSProperties;
-	title?: string;
-	text?: string;
+	title?: string | ReactNode;
+	text?: string | ReactNode;
 	color?: TextColorProps;
 	size?: TextSizeProps;
 	align?: TextAlignProps;

@@ -10,7 +10,7 @@ type RobotLayerProps = {
 
 const RobotLayer = ({ className, children }: RobotLayerProps) => (
 	<div className={classNames(styles.layer, {}, [className])}>
-		<div className={classNames(styles.layer__inner, {}, ['section-radius'])}>
+		<div className={classNames(styles.layer__inner, {}, ['section-radius-bottom'])}>
 			<RobotScene className={styles.layer__robot} />
 			{children}
 		</div>

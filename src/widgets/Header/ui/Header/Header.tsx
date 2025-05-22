@@ -12,7 +12,7 @@ type HeaderProps = {
 
 const Header = ({ className }: HeaderProps) => (
 	<header className={classNames(styles.header, {}, [className])}>
-		<Container className={styles.header__container}>
+		<Container display={'flex'} orientation={'horizontal'} className={styles.header__container}>
 			<Logo />
 			<FlexH align={'center'} gap={'32'} className={'ml-a'}>
 				<Nav />
