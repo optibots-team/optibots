@@ -1,0 +1,39 @@
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import { classNames } from '@shared/lib/classNames';
+import { Container } from '@shared/ui/Container';
+import { SectionTitle } from '@features/SectionTitle';
+import { TextColor } from '@shared/ui/Text';
+import styles from './SectionAbout.module.scss';
+import AtomIcon from '@shared/assets/icons/atom_gradient.svg';
+import AboutImg from '@shared/assets/images/home-page/about/img_01.png';
+
+type SectionAboutProps = {
+	className?: string;
+};
+
+const SectionAbout = ({ className }: SectionAboutProps) => {
+	const t = useTranslations('homePage.sectionAbout');
+
+	return (
+		<section className={classNames(styles.about, {}, [className, 'section-radius-bottom'])}>
+			<Container display={'grid'} className={styles.about__container}>
+				<SectionTitle
+					badgeBordered
+					badgeIcon={<AtomIcon />}
+					badgeText={t('badge')}
+					title={t.rich('sectionTitle', { br: () => <br /> })}
+					desc={t('sectionDesc')}
+					textColor={TextColor.WHITE}
+				/>
+				<Image
+					className={styles.about__img}
+					src={AboutImg}
+					alt={'about img'}
+				/>
+			</Container>
+		</section>
+	);
+};
+
+export { SectionAbout };

@@ -1,0 +1,16 @@
+.about {
+	padding-top: 156px;
+	padding-bottom: 210px;
+	background-color: var(--bg-secondary);
+
+	&__container {
+		grid-template-columns: minmax(300px, 1fr) 1fr;
+		align-items: center;
+		gap: 22px;
+	}
+
+	&__img {
+		width: 100%;
+		height: auto;
+	}
+}

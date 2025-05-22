@@ -29,6 +29,11 @@
       "projects": "projects delivered with measurable results",
       "300+": "300+",
       "500+": "500+"
+    },
+    "sectionAbout": {
+      "badge": "Who we are?",
+      "sectionTitle": "GROW<br></br>SCALING<br></br>AUTOMATING",
+      "sectionDesc": "We create intelligent solutions that speed up client workflows, bring order to customer requests, and boost sales through automated funnels — tailored to any business niche."
     }
   }
 }
