@@ -38,6 +38,17 @@
 			}
 		}
 	}
+	&.theme-green-gradient {
+		background: var(--gradient-green);
+		border: none;
+		color: var(--color-dark);
+
+		@media (hover: hover) {
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
 	&.theme-white {
 		background-color: var(--colorwhite);
 		border-color: var(--color-white);

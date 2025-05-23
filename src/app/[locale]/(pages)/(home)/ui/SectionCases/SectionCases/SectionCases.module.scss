@@ -1,0 +1,12 @@
+.cases {
+	background-color: var(--bg-secondary);
+
+	&__container {
+		gap: 90px;
+	}
+
+	&__title {
+		width: 100%;
+		max-width: 510px;
+	}
+}

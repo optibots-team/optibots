@@ -1,11 +1,37 @@
 .badge {
 	width: max-content;
 	max-width: 100%;
-	padding: 10px 32px;
 	background-color: var(--bg-secondary);
 	border-radius: var(--radius-l);
 
 	&.bordered {
 		border: 1px solid rgba(255, 255, 255, .6);
+	}
+
+	// background
+
+	&.dark {
+		background-color: var(--bg-secondary);
+	}
+	&.light {
+		background-color: var(--bg-primary);
+	}
+	&.green-gradient {
+		background: var(--gradient-green);
+	}
+	&.transparent {
+		background-color: transparent;
+	}
+
+	// size
+
+	&.s {
+		padding: 4px 16px;
+	}
+	&.m {
+		padding: 10px 32px;
+	}
+	&.l {
+		padding: 15px 32px;
 	}
 }

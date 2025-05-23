@@ -19,12 +19,16 @@ const SectionAbout = ({ className }: SectionAboutProps) => {
 		<section className={classNames(styles.about, {}, [className, 'section-radius-bottom'])}>
 			<Container display={'grid'} className={styles.about__container}>
 				<SectionTitle
-					badgeBordered
-					badgeIcon={<AtomIcon />}
-					badgeText={t('badge')}
-					title={t.rich('sectionTitle', { br: () => <br /> })}
-					desc={t('sectionDesc')}
-					textColor={TextColor.WHITE}
+					badge={{
+						bordered: true,
+						icon: <AtomIcon />,
+						text: t('badge'),
+					}}
+					text={{
+						title: t.rich('sectionTitle', { br: () => <br /> }),
+						text: t('sectionDesc'),
+						color: TextColor.WHITE,
+					}}
 				/>
 				<Image
 					className={styles.about__img}
