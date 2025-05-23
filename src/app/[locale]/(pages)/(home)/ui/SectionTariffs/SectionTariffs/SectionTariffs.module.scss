@@ -1,0 +1,26 @@
+.tariffs {
+	background-color: var(--bg-secondary);
+
+	&__title {
+		h2 {
+			text-transform: uppercase;
+		}
+
+		+ .tariffs__list {
+			margin-top: 90px;
+		}
+	}
+
+	&__list {
+		+ .tariffs__cta {
+			margin-top: 45px;
+		}
+	}
+
+	&__cta {
+		width: 100%;
+		max-width: 410px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

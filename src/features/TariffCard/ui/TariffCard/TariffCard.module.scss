@@ -1,0 +1,28 @@
+.card {
+	padding: 32px;
+	border-radius: var(--radius-l);
+
+	&.basic, &.standard {
+		background-color: var(--color-white);
+	}
+	&.pro {
+		background: var(--gradient-green);
+	}
+
+	&__row {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+
+		&:not(:first-child) {
+			padding-top: 24px;
+		}
+		&:not(:last-child) {
+			padding-bottom: 24px;
+		}
+
+		+ .card__row {
+			border-top: 1px solid #14141433
+		}
+	}
+}
