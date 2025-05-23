@@ -19,12 +19,16 @@ const SectionAdvantages = ({ className }: SectionAdvantagesProps) => {
 			<Container display={'flex'} orientation={'vertical'} className={styles.advantages__container}>
 				<SectionTitle
 					className={styles.advantages__title}
-					badgeBordered
-					badgeIcon={<AtomIcon />}
-					badgeText={t('badge')}
-					title={t('sectionTitle')}
-					desc={t.rich('sectionDesc', { semiBold: (chunks) => <span className={'fw-600'}>{chunks}</span> })}
-					textColor={TextColor.DARK}
+					badge={{
+						bordered: true,
+						icon: <AtomIcon />,
+						text: t('badge'),
+					}}
+					text={{
+						title: t('sectionTitle'),
+						text: t.rich('sectionDesc', { semiBold: (chunks) => <span className={'fw-600'}>{chunks}</span> }),
+						color: TextColor.DARK,
+					}}
 				/>
 				<AdvantagesList />
 			</Container>

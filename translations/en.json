@@ -15,6 +15,37 @@
     "something's wrong": "Oops, something's wrong!",
     "page not found": "Page not found"
   },
+  "tariffs": {
+    "basic": {
+      "title": "Support only",
+      "description": "Perfect for those who already use a chatbot and only need support",
+      "advantages": [
+        "Monitoring and error fixing",
+        "Consulting on performance improvement",
+        "Regular updates and technical support"
+      ]
+    },
+    "pro": {
+      "title": "Development + Support",
+      "description": "For businesses starting automation: a ready-made solution with support",
+      "advantages": [
+        "Full development of a chatbot tailored to your business",
+        "Configuration of logic, scenarios, and integrations",
+        "Technical maintenance and updates",
+        "Team training on chatbot usage"
+      ]
+    },
+    "standard": {
+      "title": "Support + Editing",
+      "description": "For businesses with a bot, ready for large-scale automation",
+      "advantages": [
+        "Maintenance and support of an existing chatbot",
+        "Implementing changes and enhancing functionality",
+        "Scenario optimization and improving customer interaction",
+        "Integration with new services"
+      ]
+    }
+  },
   "homePage": {
     "sectionIntro": {
       "title": "Chatbots that make your business <colored>faster</colored> and <colored>smarter</colored>",
@@ -65,6 +96,16 @@
           "subtitle": "You can start with basic functionality and gradually expand the bot’s capabilities as your business grows."
         }
       }
+    },
+    "sectionTariffs": {
+      "badge": "Pricing Plans",
+      "sectionTitle": "Flexible conditions<br></br>for any tasks",
+      "cta": "Pick your perfect plan and launch automation today!"
+    },
+    "sectionCases": {
+      "badge": "Case studies",
+      "sectionTitle": "Businesses that already work with us",
+      "sectionDesc": "We're at the forefront of innovation, continuously exploring cutting-edge technologies to deliver <semiBold>smart</semiBold> and <semiBold>efficient solutions</semiBold> for our clients."
     }
   }
 }
