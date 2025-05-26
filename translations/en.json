@@ -46,6 +46,24 @@
       ]
     }
   },
+  "faq": {
+    "implemented": {
+      "title": "How quickly can the product be implemented in your business?",
+      "content": "Ready-made solutions – for standard niches, the bot can be launched in 2–3 days.<br></br>Turnaround time: From 48 hours (standard) to 10 days (custom integrations).<br></br>Custom setup – if business processes are complex, implementation may take slightly longer, but the result will be precise and effective."
+    },
+    "additional": {
+      "title": "Additional functions / Flexible settings",
+      "content": "Ready-made solutions – for typical niches, you can launch a bot in 2–3 days.<br></br>From 2 to 10 days – depending on the complexity and number of integrations.<br></br>Customization – if business processes are complex, implementation will take a little longer, but the result will be accurate and effective."
+    },
+    "manage": {
+      "title": "How easy is it to manage?",
+      "content": "Ready-made solutions – for typical niches, you can launch a bot in 2–3 days.<br></br>From 2 to 10 days – depending on the complexity and number of integrations.<br></br>Customization – if business processes are complex, implementation will take a little longer, but the result will be accurate and effective."
+    },
+    "necessity": {
+      "title": "Do I need a website to use a chatbot?",
+      "content": "Ready-made solutions – for typical niches, you can launch a bot in 2–3 days.<br></br>From 2 to 10 days – depending on the complexity and number of integrations.<br></br>Customization – if business processes are complex, implementation will take a little longer, but the result will be accurate and effective."
+    }
+  },
   "homePage": {
     "sectionIntro": {
       "title": "Chatbots that make your business <colored>faster</colored> and <colored>smarter</colored>",
