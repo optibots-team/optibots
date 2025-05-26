@@ -1,0 +1,12 @@
+.contacts {
+	background-color: var(--bg-secondary);
+
+	&__container {
+		gap: 24px;
+	}
+
+	&__title {
+		width: 100%;
+		max-width: 510px;
+	}
+}
