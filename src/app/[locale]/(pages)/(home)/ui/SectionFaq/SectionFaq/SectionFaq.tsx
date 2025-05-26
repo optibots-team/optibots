@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { SectionTitle } from '@features/SectionTitle';
+import { FaqAccordion } from '../FaqAccordion/FaqAccordion';
 import { TextColor } from '@shared/ui/Text';
 import styles from './SectionFaq.module.scss';
 import QuestionIcon from '@shared/assets/icons/question_gradient.svg';
@@ -15,7 +16,7 @@ const SectionFaq = ({ className }: SectionFaqProps) => {
 
 	return (
 		<section className={classNames(styles.faq, {}, [className, 'section-padding'])}>
-			<Container>
+			<Container display={'flex'} orientation={'vertical'} className={styles.faq__container}>
 				<SectionTitle
 					className={styles.contacts__title}
 					align={'center'}
@@ -29,6 +30,7 @@ const SectionFaq = ({ className }: SectionFaqProps) => {
 						color: TextColor.DARK,
 					}}
 				/>
+				<FaqAccordion />
 			</Container>
 		</section>
 	);
