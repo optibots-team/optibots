@@ -1,0 +1,25 @@
+.socials {
+
+	&__item {
+		width: 35px;
+		aspect-ratio: 1;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background-color: var(--color-white);
+		transition: var(--transition-primary);
+		color: var(--color-dark);
+
+		@media (hover: hover) {
+			&:hover {
+				scale: 1.1;
+			}
+		}
+	}
+}

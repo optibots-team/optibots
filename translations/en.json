@@ -106,6 +106,15 @@
       "badge": "Case studies",
       "sectionTitle": "Businesses that already work with us",
       "sectionDesc": "We're at the forefront of innovation, continuously exploring cutting-edge technologies to deliver <semiBold>smart</semiBold> and <semiBold>efficient solutions</semiBold> for our clients."
+    },
+    "sectionContacts": {
+      "badge": "Contacts",
+      "sectionTitle": "Your first step to smart automation",
+      "sectionDesc": "We will help you implement technologies that really work for your results."
+    },
+    "sectionFaq": {
+      "badge": "faq",
+      "sectionTitle": "Any questions left?"
     }
   }
 }
