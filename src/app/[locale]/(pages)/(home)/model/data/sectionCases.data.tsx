@@ -1,14 +1,8 @@
 import type { TFunction } from '@shared/types/Translations.types';
-import type { ITelegramHeader, ITelegramMessages } from '@features/Messenger';
+import type { ICase } from '../types/SectionCases.types';
 import FlowerIcon from '@shared/assets/icons/flower.svg';
 
-type GenerateCasesOutput = {
-	id: string;
-	header: ITelegramHeader;
-	messages: ITelegramMessages;
-};
-
-export const generateCases = (t: TFunction): GenerateCasesOutput[] => [
+export const generateCases = (t: TFunction): ICase[] => [
 	{
 		id: 'bloom',
 		header: {

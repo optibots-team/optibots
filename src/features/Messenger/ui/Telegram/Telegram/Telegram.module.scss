@@ -6,4 +6,25 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+
+	&__badge {
+		display: block;
+		width: max-content;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 2px 12px;
+		border-radius: var(--radius-l);
+		background-color: #8EC096;
+		font-family: var(--font-montserrat), sans-serif;
+		font-weight: 500;
+		color: var(--color-white);
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__inner {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 }

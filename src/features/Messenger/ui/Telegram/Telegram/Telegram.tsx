@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react';
+import { useTranslations } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
+import { FlexV } from '@shared/ui/Stack';
 import { MessengerBase } from '../../MessengerBase/MessengerBase';
 import { TelegramHeader } from '../TelegramHeader/TelegramHeader';
 import { TelegramContent } from '../TelegramContent/TelegramContent';
@@ -15,12 +17,23 @@ type TelegramProps = {
 
 const Telegram = (props: TelegramProps) => {
 	const { className, children, header, messages } = props;
+	const t = useTranslations('other');
 
 	return (
 		<MessengerBase className={classNames(styles.telegram, {}, [className])}>
 			<TelegramHeader {...header} />
 			<TelegramContent {...messages} />
-			{children}
+			<FlexV
+				align={'stretch'}
+				justify={'stretch'}
+				gap={'16'}
+				className={styles.telegram__inner}
+			>
+				<span className={styles.telegram__badge}>
+					{t('result')}
+				</span>
+				{children}
+			</FlexV>
 		</MessengerBase>
 	);
 };

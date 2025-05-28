@@ -16,7 +16,7 @@ const SectionCases = ({ className }: SectionCasesProps) => {
 
 	return (
 		<section className={classNames(styles.cases, {}, [className, 'section-padding-bottom', 'section-radius-bottom'])}>
-			<Container display={'flex'} orientation={'vertical'} className={styles.cases__container}>
+			<Container>
 				<SectionTitle
 					className={styles.cases__title}
 					badge={{
@@ -30,8 +30,8 @@ const SectionCases = ({ className }: SectionCasesProps) => {
 						color: { title: TextColor.WHITE, text: TextColor.LIGHT },
 					}}
 				/>
-				<CasesSlider />
 			</Container>
+			<CasesSlider />
 		</section>
 	);
 };

@@ -1,0 +1,1 @@
+export { default as SwiperSlider } from './ui/SwiperSlider';

@@ -111,6 +111,9 @@
       "content": "Ready-made solutions – for typical niches, you can launch a bot in 2–3 days.<br></br>From 2 to 10 days – depending on the complexity and number of integrations.<br></br>Customization – if business processes are complex, implementation will take a little longer, but the result will be accurate and effective."
     }
   },
+  "other": {
+    "result": "Result:"
+  },
   "homePage": {
     "sectionIntro": {
       "title": "Chatbots that make your business <colored>faster</colored> and <colored>smarter</colored>",
