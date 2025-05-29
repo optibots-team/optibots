@@ -1,0 +1,1 @@
+export { isStaticImageData } from './isStaticImageData';

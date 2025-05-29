@@ -2,7 +2,6 @@
 
 import { useMemo } from 'react';
 import { Pagination } from 'swiper/modules';
-import { classNames } from '@shared/lib/classNames';
 import { SwiperSlider } from '@features/SwiperSlider';
 import { ResultSlide } from '../ResultSlide/ResultSlide';
 import type { IInternalSlider } from '../../model/types/TelegramSlider.types';
@@ -34,7 +33,7 @@ const ResultSlider = ({ className, sliderData }: ResultSliderProps) => {
 	);
 
 	return (
-		<div className={classNames('', {}, [className])}>
+		<div className={className}>
 			<SwiperSlider
 				slideClassName={styles.slider__slide}
 				slides={slides}

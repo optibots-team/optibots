@@ -27,8 +27,8 @@ const TelegramHeader = (props: TelegramHeaderProps) => {
 					<Icon icon={icon} size={IconSize.SIZE_30} />
 				</span>
 				<Text
-					title={title}
-					text={desc}
+					title={title.toUpperCase()}
+					text={desc.toUpperCase()}
 					fontFamily={'montserrat'}
 					color={{ title: TextColor.DARK, text: TextColor.DARK_SECONDARY }}
 					size={{ title: TextSize.M, text: TextSize.S }}
