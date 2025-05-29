@@ -1,0 +1,75 @@
+.content {
+	padding-left: 20px;
+	padding-right: 40px;
+
+	&__group {
+		&.user {
+			.content {
+				&__message {
+					background-color: var(--color-white);
+
+					&:last-child {
+						&:before {
+							right: -8px;
+							background-image: url('/icons/triangle_message_white.svg');
+						}
+					}
+				}
+			}
+		}
+		&.bot {
+			.content {
+				&__message {
+					background-color: #E3FFCA;
+
+					&:last-child {
+						&:before {
+							left: -8px;
+							background-image: url('/icons/triangle_message_green.svg');
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__message {
+		position: relative;
+		z-index: 1;
+		width: max-content;
+		max-width: 400px;
+		padding: 10px;
+		border-radius: var(--radius-s);
+		box-shadow: 0 3px 6px rgba(0, 0, 0, .08);
+
+		&:last-child {
+			&:before {
+				content: '';
+				position: absolute;
+				z-index: -1;
+				bottom: 0;
+				width: 25px;
+				height: 25px;
+				display: block;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+
+	&__text {
+		font-family: var(--font-montserrat), sans-serif;
+	}
+
+	&__avatar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		width: 44px;
+		aspect-ratio: 1;
+		border-radius: 50%;
+		background-color: var(--color-white);
+	}
+}

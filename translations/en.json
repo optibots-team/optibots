@@ -46,6 +46,80 @@
       ]
     }
   },
+  "cases": {
+    "bloom": {
+      "title": "Bloom Premium",
+      "desc": "Flower Delivery",
+      "messages": {
+        "user": "Optimize the order process, provide customers with a convenient 24/7 service",
+        "bot": "A chatbot with bouquet selection, card addition, delivery cost calculation, and online payment:",
+        "steps": [
+          "\uD83D\uDC90 Pick a bouquet",
+          "❤\uFE0F Add a card",
+          "\uD83D\uDE9A Calculate delivery",
+          "\uD83D\uDCB3 Pay online",
+          "✅ Get confirmation"
+        ]
+      },
+      "progress": {
+        "first": "The workload of managers has been reduced by:",
+        "second": "The number of orders increased by:"
+      },
+      "result": [
+        "Reducing the number of failures",
+        "Convenient service",
+        "Sales growth"
+      ]
+    },
+    "wow": {
+      "title": "Wow Day",
+      "desc": "Balloon delivery",
+      "messages": {
+        "user": "Automate the acceptance of applications, reduce the number of missed calls",
+        "bot": "Chatbot with a full order scenario: choosing balloons, ordering and planning delivery:",
+        "steps": [
+          "\uD83C\uDF88 Selection of balls",
+          "\uD83D\uDED2 Forming a basket",
+          "\uD83D\uDCC5 Select delivery date and time",
+          "\uD83D\uDCB3 Pay online",
+          "✅ Get confirmation"
+        ]
+      },
+      "progress": {
+        "first": "order processing time has been reduced by:",
+        "second": "The number of orders increased by:"
+      },
+      "result": [
+        "Customers receive answers instantly",
+        "More completed orders",
+        "Easier control of orders"
+      ]
+    },
+    "school": {
+      "title": "Alex it School",
+      "desc": "Online school",
+      "messages": {
+        "user": "Automate application submission, simplify the training process and increase sales",
+        "bot": "Chatbot with a full scenario: registration, training, sending tasks, reminders and certificates:",
+        "steps": [
+          "\uD83D\uDCDD Registration for courses",
+          "\uD83D\uDCDA Access to lessons",
+          "\uD83D\uDCE4 Submitting assignments and checking",
+          "⏰ Reminders for classes",
+          "\uD83C\uDF93 Obtaining a certificate"
+        ]
+      },
+      "progress": {
+        "first": "Application processing time has been reduced by:",
+        "second": "The number of applications increased by:"
+      },
+      "result": [
+        "Instant answers and support",
+        "Monitoring academic performance and engagement",
+        "Sales Growth Through Automation"
+      ]
+    }
+  },
   "faq": {
     "implemented": {
       "title": "How quickly can the product be implemented in your business?",
@@ -63,6 +137,9 @@
       "title": "Do I need a website to use a chatbot?",
       "content": "Ready-made solutions – for typical niches, you can launch a bot in 2–3 days.<br></br>From 2 to 10 days – depending on the complexity and number of integrations.<br></br>Customization – if business processes are complex, implementation will take a little longer, but the result will be accurate and effective."
     }
+  },
+  "other": {
+    "result": "Result:"
   },
   "homePage": {
     "sectionIntro": {

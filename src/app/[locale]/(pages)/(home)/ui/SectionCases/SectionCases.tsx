@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { SectionTitle } from '@features/SectionTitle';
-import { CasesSlider } from '../CasesSlider/CasesSlider';
+import { TelegramSlider } from '@widgets/TelegramSlider';
 import { TextColor } from '@shared/ui/Text';
 import styles from './SectionCases.module.scss';
 import RaysIcon from '@shared/assets/icons/rays_gradient.svg';
@@ -16,7 +16,7 @@ const SectionCases = ({ className }: SectionCasesProps) => {
 
 	return (
 		<section className={classNames(styles.cases, {}, [className, 'section-padding-bottom', 'section-radius-bottom'])}>
-			<Container display={'flex'} orientation={'vertical'} className={styles.cases__container}>
+			<Container>
 				<SectionTitle
 					className={styles.cases__title}
 					badge={{
@@ -30,8 +30,8 @@ const SectionCases = ({ className }: SectionCasesProps) => {
 						color: { title: TextColor.WHITE, text: TextColor.LIGHT },
 					}}
 				/>
-				<CasesSlider />
 			</Container>
+			<TelegramSlider />
 		</section>
 	);
 };

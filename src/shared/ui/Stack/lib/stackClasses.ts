@@ -23,6 +23,7 @@ export const directionClasses: Record<FlexDirection, string> = {
 };
 
 export const gapClasses: Record<FlexGap, string> = {
+	0: styles['gap-0'],
 	2: styles['gap-2'],
 	4: styles['gap-4'],
 	6: styles['gap-6'],
