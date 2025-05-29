@@ -5,7 +5,7 @@ import { SectionMarquee } from '../SectionMarquee/SectionMarquee';
 import { SectionAbout } from '../SectionAbout/SectionAbout';
 import { SectionAdvantages } from '../SectionAdvantages/SectionAdvantages/SectionAdvantages';
 import { SectionTariffs } from '../SectionTariffs/SectionTariffs/SectionTariffs';
-import { SectionCases } from '../SectionCases/SectionCases/SectionCases';
+import { SectionCases } from '../SectionCases/SectionCases';
 import { SectionFaq } from '../SectionFaq/SectionFaq/SectionFaq';
 import { SectionContacts } from '../SectionContacts/SectionContacts';
 

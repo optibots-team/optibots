@@ -1,0 +1,16 @@
+.slider {
+
+	&__slide {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: auto;
+	}
+
+	&__pagination {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		margin-top: 16px;
+	}
+}
