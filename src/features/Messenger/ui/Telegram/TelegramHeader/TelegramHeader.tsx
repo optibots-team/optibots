@@ -24,13 +24,14 @@ const TelegramHeader = (props: TelegramHeaderProps) => {
 			<p className={styles.header__time}>{time}</p>
 			<FlexH align={'center'} gap={'12'}>
 				<span className={classNames(styles.header__avatar, {}, [styles[iconBg]])}>
-					<Icon icon={icon} size={IconSize.SIZE_36} />
+					<Icon icon={icon} size={IconSize.SIZE_30} />
 				</span>
 				<Text
 					title={title}
 					text={desc}
-					color={{ title: TextColor.DARK, text: TextColor.LIGHT }}
-					size={{ title: TextSize.S, text: TextSize.XS }}
+					fontFamily={'montserrat'}
+					color={{ title: TextColor.DARK, text: TextColor.DARK_SECONDARY }}
+					size={{ title: TextSize.M, text: TextSize.S }}
 					align={TextAlign.CENTER}
 					gap={'0'}
 				/>

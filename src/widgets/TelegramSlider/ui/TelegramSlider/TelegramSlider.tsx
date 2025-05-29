@@ -2,26 +2,26 @@ import { useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { SwiperSlider } from '@features/SwiperSlider';
-import { CasesSlide } from './CasesSlide';
-import { generateCases } from '../../../model/data/sectionCases.data';
-import styles from './CasesSlider.module.scss';
+import { TelegramSlide } from '../TelegramSlide/TelegramSlide';
+import { generateCases } from '../../model/data/telegramSlider.data';
+import styles from './TelegramSlider.module.scss';
 
-type CasesSliderProps = {
+type TelegramSliderProps = {
 	className?: string;
 };
 
-const CasesSlider = ({ className }: CasesSliderProps) => {
+const TelegramSlider = ({ className }: TelegramSliderProps) => {
 	const t = useTranslations('cases');
 	const cases = useMemo(() => generateCases(t), [t]);
 	const slides = useMemo(
-		() => cases.map((c) => <CasesSlide key={c.id} currentCase={c} /> ),
-		[cases]
+		() => cases.map((c) => <TelegramSlide key={c.id} currentCase={c} />),
+		[cases],
 	);
 
 	return (
 		<div className={classNames(styles.slider, {}, [className])}>
 			<SwiperSlider
-				slideClassName={styles.slide}
+				slideClassName={styles.slider__slide}
 				slides={slides}
 				options={{
 					slidesPerView: 'auto',
@@ -34,4 +34,4 @@ const CasesSlider = ({ className }: CasesSliderProps) => {
 	);
 };
 
-export { CasesSlider };
+export default TelegramSlider;

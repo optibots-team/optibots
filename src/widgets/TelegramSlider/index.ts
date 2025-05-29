@@ -1,0 +1,1 @@
+export { default as TelegramSlider } from './ui/TelegramSlider/TelegramSlider';

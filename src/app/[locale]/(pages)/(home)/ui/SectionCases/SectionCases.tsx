@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { SectionTitle } from '@features/SectionTitle';
-import { CasesSlider } from '../CasesSlider/CasesSlider';
+import { TelegramSlider } from '@widgets/TelegramSlider';
 import { TextColor } from '@shared/ui/Text';
 import styles from './SectionCases.module.scss';
 import RaysIcon from '@shared/assets/icons/rays_gradient.svg';
@@ -31,7 +31,7 @@ const SectionCases = ({ className }: SectionCasesProps) => {
 					}}
 				/>
 			</Container>
-			<CasesSlider />
+			<TelegramSlider />
 		</section>
 	);
 };

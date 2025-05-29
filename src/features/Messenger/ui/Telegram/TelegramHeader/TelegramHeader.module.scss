@@ -3,7 +3,7 @@
 	background-color: var(--color-white);
 
 	&__time {
-		font-family: var('--font-montserrat'), sans-serif;
+		font-family: var(--font-montserrat), sans-serif;
 		font-size: var(--font-size-m);
 		line-height: var(--font-line-m);
 		font-weight: 600;
@@ -17,6 +17,19 @@
 		width: 44px;
 		aspect-ratio: 1;
 		border-radius: 50%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		&.green {
+			background-image: url('/images/home-page/cases/avatar-bg_green.jpg');
+		}
+		&.blue {
+			background-image: url('/images/home-page/cases/avatar-bg_blue.jpg');
+		}
+		&.gray {
+			background-image: url('/images/home-page/cases/avatar-bg_gray.jpg');
+		}
 	}
 
 	&__status {

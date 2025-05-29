@@ -1,0 +1,16 @@
+:root {
+	--swiper-pagination-top: 0;
+	--swiper-pagination-bottom: 0;
+	--swiper-pagination-color: var(--color-white);
+	--swiper-pagination-bullet-inactive-color: var(--color-white);
+	--swiper-pagination-bullet-inactive-opacity: .5;
+}
+
+.swiper-pagination-bullet {
+	transition: var(--transition-primary);
+}
+
+.swiper-pagination-bullet-active {
+	--swiper-pagination-bullet-width: 18px;
+	--swiper-pagination-bullet-border-radius: 4px;
+}

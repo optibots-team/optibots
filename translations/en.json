@@ -60,7 +60,16 @@
           "\uD83D\uDCB3 Pay online",
           "✅ Get confirmation"
         ]
-      }
+      },
+      "progress": {
+        "first": "The workload of managers has been reduced by:",
+        "second": "The number of orders increased by:"
+      },
+      "result": [
+        "Reducing the number of failures",
+        "Convenient service",
+        "Sales growth"
+      ]
     },
     "wow": {
       "title": "Wow Day",
@@ -75,7 +84,16 @@
           "\uD83D\uDCB3 Pay online",
           "✅ Get confirmation"
         ]
-      }
+      },
+      "progress": {
+        "first": "order processing time has been reduced by:",
+        "second": "The number of orders increased by:"
+      },
+      "result": [
+        "Customers receive answers instantly",
+        "More completed orders",
+        "Easier control of orders"
+      ]
     },
     "school": {
       "title": "Alex it School",
@@ -90,7 +108,16 @@
           "⏰ Reminders for classes",
           "\uD83C\uDF93 Obtaining a certificate"
         ]
-      }
+      },
+      "progress": {
+        "first": "Application processing time has been reduced by:",
+        "second": "The number of applications increased by:"
+      },
+      "result": [
+        "Instant answers and support",
+        "Monitoring academic performance and engagement",
+        "Sales Growth Through Automation"
+      ]
     }
   },
   "faq": {

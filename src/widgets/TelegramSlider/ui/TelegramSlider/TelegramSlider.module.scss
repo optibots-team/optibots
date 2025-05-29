@@ -33,8 +33,10 @@
 				rgba(20, 20, 20, 0) 100%,
 		);
 	}
-}
 
-.slide {
-	max-width: 565px;
+	&__slide {
+		max-width: 565px;
+		height: auto;
+		flex-grow: 1;
+	}
 }
