@@ -1,22 +1,23 @@
 import type { ReactNode } from 'react';
 import { classNames, type Mods, type Additional } from '@shared/lib/classNames';
 import { FlexH } from '@shared/ui/Stack';
-import { Icon, IconSize } from '@shared/ui/Icon';
-import { Text, TextColor, TextSize } from '@shared/ui/Text';
-import type { FontFamily } from '@shared/types/FontFamily.types';
-import type { IBadgeBackground, IBadgeSize } from '../model/types/Badge.types';
+import { Icon, type IconSize } from '@shared/ui/Icon';
+import { Text, type TextColorTheme, type TextSizePreset } from '@shared/ui/Text';
+import type { FontFamily } from '@shared/types/fontFamily.types';
+import type { SizePreset } from '@shared/types/sizes.types';
+import type { IBadgeBackground } from '../model/types/badge.types';
 import styles from './Badge.module.scss';
 
 type BadgeProps = {
 	className?: string;
 	bordered?: boolean;
 	background?: IBadgeBackground;
-	size?: IBadgeSize;
+	size?: SizePreset;
 	icon?: ReactNode;
 	iconSize?: IconSize;
 	text?: string;
-	textColor?: TextColor;
-	textSize?: TextSize;
+	textColor?: TextColorTheme;
+	textSize?: TextSizePreset;
 	fontFamily?: FontFamily;
 };
 
@@ -27,10 +28,10 @@ const Badge = (props: BadgeProps) => {
 		background = 'dark',
 		size = 'm',
 		icon,
-		iconSize = IconSize.SIZE_16,
+		iconSize,
 		text,
-		textSize = TextSize.S,
-		textColor = TextColor.GREEN_GRADIENT,
+		textSize = 's',
+		textColor = 'green-gradient',
 		fontFamily,
 	} = props;
 

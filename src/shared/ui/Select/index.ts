@@ -1,3 +1,3 @@
 export { default as Select } from './ui/Select';
 
-export type { ISelectOptions } from './model/types/Select.types';
+export type { SelectOptions } from './model/types/select.types';

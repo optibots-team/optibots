@@ -1,12 +1,11 @@
 import { classNames } from '@shared/lib/classNames';
 import { FlexH, FlexV } from '@shared/ui/Stack';
 import { Avatar } from '@shared/ui/Avatar';
-import { IconSize } from '@shared/ui/Icon';
-import type { ITelegramMessages } from '../../../model/types/Telegram.types';
+import type { TelegramMessages } from '@entities/Telegram';
 import styles from './TelegramContent.module.scss';
 import LogoIcon from '@shared/assets/icons/logo_small.svg';
 
-interface TelegramContentProps extends ITelegramMessages {
+interface TelegramContentProps extends TelegramMessages {
 	className?: string;
 }
 
@@ -33,7 +32,7 @@ const TelegramContent = (props: TelegramContentProps) => {
 					className={styles.content__avatar}
 					avatar={<LogoIcon />}
 					size={44}
-					iconSize={IconSize.SIZE_26}
+					iconSize={'26'}
 				/>
 				<FlexV gap={'8'} className={styles.content__group}>
 					<div className={styles.content__message}>

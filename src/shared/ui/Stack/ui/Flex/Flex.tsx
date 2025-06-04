@@ -1,17 +1,19 @@
 import type { ComponentPropsWithoutRef, ElementType, ReactNode } from 'react';
 import { classNames, type Additional, type Mods } from '@shared/lib/classNames';
 import { alignClasses, directionClasses, gapClasses, justifyClasses } from '../../lib/stackClasses';
-import type { FlexAlign, FlexDirection, FlexGap, FlexJustify } from '../../model/types/Stack.types';
-import styles from './Flex.module.scss';
+import type { SizeToken } from '@shared/types/sizes.types';
+import type { StackAlign, FlexDirection, StackJustify } from '../../model/types/stack.types';
+import stackStyles from '../Stack/Stack.module.scss';
+import flexStyles from './Flex.module.scss';
 
 export type FlexProps<T extends ElementType = 'div'> = {
 	as?: T;
 	className?: string;
 	children: ReactNode;
-	justify?: FlexJustify;
-	align?: FlexAlign;
+	justify?: StackJustify;
+	align?: StackAlign;
 	direction?: FlexDirection;
-	gap?: FlexGap;
+	gap?: SizeToken;
 	fluid?: boolean;
 	grow?: boolean;
 } & Omit<ComponentPropsWithoutRef<T>, 'as'>;
@@ -31,8 +33,8 @@ const Flex = <T extends ElementType = 'div'>(props: FlexProps<T>) => {
 	} = props;
 	const Component = as || 'div';
 	const mods: Mods = {
-		[styles.fluid]: fluid,
-		[styles.grow]: grow,
+		[stackStyles.fluid]: fluid,
+		[flexStyles.grow]: grow,
 	};
 	const additional: Additional = [
 		justifyClasses[justify],
@@ -43,7 +45,7 @@ const Flex = <T extends ElementType = 'div'>(props: FlexProps<T>) => {
 	];
 
 	return (
-		<Component className={classNames(styles.flex, mods, additional)} {...rest}>
+		<Component className={classNames(flexStyles.flex, mods, additional)} {...rest}>
 			{children}
 		</Component>
 	);

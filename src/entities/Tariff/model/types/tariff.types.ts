@@ -1,0 +1,1 @@
+export type Tariff = 'basic' | 'pro' | 'standard';
