@@ -1,7 +1,8 @@
 import { classNames } from '@shared/lib/classNames';
 import { FlexH } from '@shared/ui/Stack';
 import { Text, TextAlign, TextColor, TextSize } from '@shared/ui/Text';
-import { Icon, IconSize } from '@shared/ui/Icon';
+import { Avatar } from '@shared/ui/Avatar';
+import { IconSize } from '@shared/ui/Icon';
 import type { ITelegramHeader } from '../../../model/types/Telegram.types';
 import styles from './TelegramHeader.module.scss';
 import StatusIcon from '@shared/assets/icons/telegram_statusbar.svg';
@@ -23,9 +24,12 @@ const TelegramHeader = (props: TelegramHeaderProps) => {
 		>
 			<p className={styles.header__time}>{time}</p>
 			<FlexH align={'center'} gap={'12'}>
-				<span className={classNames(styles.header__avatar, {}, [styles[iconBg]])}>
-					<Icon icon={icon} size={IconSize.SIZE_30} />
-				</span>
+				<Avatar
+					avatar={icon}
+					size={44}
+					iconSize={IconSize.SIZE_30}
+					className={classNames(styles.header__avatar, {}, [styles[iconBg]])}
+				/>
 				<Text
 					title={title.toUpperCase()}
 					text={desc.toUpperCase()}

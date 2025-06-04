@@ -1,4 +1,4 @@
-import type { ButtonHTMLAttributes, ComponentPropsWithoutRef, ElementType } from 'react';
+import type { ButtonHTMLAttributes, ComponentPropsWithoutRef, ElementType, RefObject } from 'react';
 import { classNames, type Additional, type Mods } from '@shared/lib/classNames';
 import type { FontFamily } from '@shared/types/FontFamily.types';
 import { ButtonSize, ButtonTheme } from '../model/types/Button.types';
@@ -6,6 +6,7 @@ import styles from './Button.module.scss';
 
 type ButtonProps<T extends ElementType = 'button'> = {
 	as?: T;
+	btnRef?: RefObject<HTMLButtonElement | null>;
 	className?: string;
 	theme?: ButtonTheme;
 	size?: ButtonSize;
@@ -17,6 +18,7 @@ type ButtonProps<T extends ElementType = 'button'> = {
 const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) => {
 	const {
 		as,
+		btnRef,
 		className,
 		children,
 		theme = ButtonTheme.BLACK,
@@ -42,7 +44,7 @@ const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) => {
 	};
 
 	return (
-		<Component className={classNames(styles.btn, mods, additional)} {...componentProps}>
+		<Component ref={btnRef} className={classNames(styles.btn, mods, additional)} {...componentProps}>
 			{children}
 		</Component>
 	);
