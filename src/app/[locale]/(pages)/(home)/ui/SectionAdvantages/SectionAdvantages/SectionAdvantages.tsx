@@ -25,7 +25,7 @@ const SectionAdvantages = ({ className }: SectionAdvantagesProps) => {
 						text: t('badge'),
 					}}
 					text={{
-						title: t('sectionTitle'),
+						title: t('sectionTitle').toUpperCase(),
 						text: t.rich('sectionDesc', { semiBold: (chunks) => <span className={'fw-600'}>{chunks}</span> }),
 						color: TextColor.DARK,
 					}}

@@ -1,0 +1,1 @@
+export { default as ReviewsSlider } from './ui/ReviewsSlider/ReviewsSlider';

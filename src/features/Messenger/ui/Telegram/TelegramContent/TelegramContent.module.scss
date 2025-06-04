@@ -63,13 +63,6 @@
 	}
 
 	&__avatar {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-shrink: 0;
-		width: 44px;
-		aspect-ratio: 1;
-		border-radius: 50%;
 		background-color: var(--color-white);
 	}
 }
