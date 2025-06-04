@@ -1,6 +1,7 @@
 import { classNames } from '@shared/lib/classNames';
 import { FlexH, FlexV } from '@shared/ui/Stack';
-import { Icon, IconSize } from '@shared/ui/Icon';
+import { Avatar } from '@shared/ui/Avatar';
+import { IconSize } from '@shared/ui/Icon';
 import type { ITelegramMessages } from '../../../model/types/Telegram.types';
 import styles from './TelegramContent.module.scss';
 import LogoIcon from '@shared/assets/icons/logo_small.svg';
@@ -28,9 +29,12 @@ const TelegramContent = (props: TelegramContentProps) => {
 				</div>
 			</FlexV>
 			<FlexH align={'end'} gap={'14'} className={classNames(styles.content__group, {}, [styles.bot])}>
-				<span className={styles.content__avatar}>
-					<Icon icon={<LogoIcon />} size={IconSize.SIZE_26} />
-				</span>
+				<Avatar
+					className={styles.content__avatar}
+					avatar={<LogoIcon />}
+					size={44}
+					iconSize={IconSize.SIZE_26}
+				/>
 				<FlexV gap={'8'} className={styles.content__group}>
 					<div className={styles.content__message}>
 						<p className={styles.content__text}>{botMessage}</p>

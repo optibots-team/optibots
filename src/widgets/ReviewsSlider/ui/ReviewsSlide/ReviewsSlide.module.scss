@@ -1,0 +1,30 @@
+.slide {
+	height: 100%;
+	padding: 32px;
+	border-radius: var(--radius-l);
+	box-shadow: var(--shadow-primary);
+
+	&__avatar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		width: 46px;
+		aspect-ratio: 1;
+		border-radius: 50%;
+		background: var(--gradient-green);
+		font-size: var(--font-size-l);
+		line-height: var(--font-line-l);
+		font-weight: 600;
+		color: var(--color-white);
+		text-transform: uppercase;
+	}
+
+	&__author {
+		p {
+			&:not(:first-child) {
+				font-weight: 600;
+			}
+		}
+	}
+}
