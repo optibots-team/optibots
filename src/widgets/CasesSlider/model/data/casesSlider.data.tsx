@@ -1,5 +1,5 @@
 import type { TFunction } from '@shared/types/translations.types';
-import type { Case } from '../types/telegramSlider.types';
+import type { Case } from '@entities/Case';
 import FlowerIcon from '@shared/assets/icons/flower.svg';
 import BalloonIcon from '@shared/assets/icons/balloon.svg';
 import SchoolIcon from '@shared/assets/icons/it-school.svg';

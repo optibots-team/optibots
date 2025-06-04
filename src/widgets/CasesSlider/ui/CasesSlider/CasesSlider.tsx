@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { SwiperSlider } from '@features/SwiperSlider';
 import { CasesSlide } from '../CasesSlide/CasesSlide';
-import { generateCases } from '../../model/data/telegramSlider.data';
+import { generateCases } from '../../model/data/casesSlider.data';
 import styles from './CasesSlider.module.scss';
 
 type CasesSliderProps = {
