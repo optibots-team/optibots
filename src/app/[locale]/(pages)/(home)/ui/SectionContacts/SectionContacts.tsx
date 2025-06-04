@@ -2,10 +2,9 @@ import { useTranslations } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { FlexH } from '@shared/ui/Stack';
-import { Button, ButtonTheme } from '@shared/ui/Button';
+import { Button } from '@shared/ui/Button';
 import { SectionTitle } from '@features/SectionTitle';
 import { Socials } from '@features/Socials';
-import { TextColor } from '@shared/ui/Text';
 import styles from './SectionContacts.module.scss';
 import FiguresIcon from '@shared/assets/icons/figures_gradient.svg';
 
@@ -30,11 +29,11 @@ const SectionContacts = ({ className }: SectionContactsProps) => {
 					text={{
 						title: tContacts('sectionTitle').toUpperCase(),
 						text: tContacts('sectionDesc'),
-						color: { title: TextColor.WHITE, text: TextColor.LIGHT },
+						color: { title: 'white', text: 'light' },
 					}}
 				/>
 				<FlexH justify={'between'} align={'end'} gap={'12'}>
-					<Button fontFamily={'unbounded'} theme={ButtonTheme.WHITE} className={'fw-500'}>
+					<Button fontFamily={'unbounded'} theme={'light'} className={'fw-500'}>
 						{tButtons('order bot').toUpperCase()}
 					</Button>
 					<Socials />

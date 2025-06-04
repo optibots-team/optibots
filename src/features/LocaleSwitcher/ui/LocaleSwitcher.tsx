@@ -5,7 +5,7 @@ import { useLocale } from 'use-intl';
 import { Select } from '@shared/ui/Select';
 import { usePathname, useRouter } from '@shared/config/i18n/navigation';
 import { switcherOptions } from '../model/data/localeSwitcher.data';
-import type { ColorTheme } from '@shared/types/Themes.types';
+import type { ColorTheme } from '@shared/types/themes.types';
 
 type LocaleSwitcherProps = {
 	className?: string;

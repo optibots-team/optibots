@@ -1,4 +1,4 @@
-import type { TFunction } from '@shared/types/Translations.types';
+import type { TFunction } from '@shared/types/translations.types';
 import type { IReview } from '../types/ReviewsSlider.types';
 
 export const generateReviews = (t: TFunction): IReview[] => [

@@ -1,7 +1,7 @@
 import type { RefObject } from 'react';
 import { FlexH } from '@shared/ui/Stack';
-import { Button, ButtonSize, ButtonTheme } from '@shared/ui/Button';
-import { Icon, IconSize } from '@shared/ui/Icon';
+import { Button } from '@shared/ui/Button';
+import { Icon } from '@shared/ui/Icon';
 import styles from './SliderNavigation.module.scss';
 import LeftArrowIcon from '@shared/assets/icons/arrow-to-left_2.svg';
 import RightArrowIcon from '@shared/assets/icons/arrow-to-right_2.svg';
@@ -22,18 +22,18 @@ const SliderNavigation = ({ className, prevBtnRef, nextBtnRef }: SliderNavigatio
 		<Button
 			btnRef={prevBtnRef}
 			className={styles.navigation__btn}
-			theme={ButtonTheme.BLACK}
-			size={ButtonSize.CUSTOM}
+			theme={'dark'}
+			size={'custom'}
 		>
-			<Icon icon={<LeftArrowIcon />} size={IconSize.SIZE_24} />
+			<Icon icon={<LeftArrowIcon />} size={'24'} />
 		</Button>
 		<Button
 			btnRef={nextBtnRef}
 			className={styles.navigation__btn}
-			theme={ButtonTheme.BLACK}
-			size={ButtonSize.CUSTOM}
+			theme={'dark'}
+			size={'custom'}
 		>
-			<Icon icon={<RightArrowIcon />} size={IconSize.SIZE_24} />
+			<Icon icon={<RightArrowIcon />} size={'24'} />
 		</Button>
 	</FlexH>
 );

@@ -1,11 +1,11 @@
-import { TextSize, TextElement } from '../model/types/Text.types';
+import { TextSize as TextSizePreset, TextElement } from '../model/types/text.types';
 
-const DEFAULT_TITLE_SIZE = TextSize.L;
-const DEFAULT_TEXT_SIZE = TextSize.M;
+const DEFAULT_TITLE_SIZE = 'l';
+const DEFAULT_TEXT_SIZE = 'm';
 
-export type TextSizeProps = TextSize | { title?: TextSize; text?: TextSize };
+export type TextSize = TextSizePreset | { title?: TextSizePreset; text?: TextSizePreset };
 
-export const getSizeClass = (element: TextElement, size?: TextSizeProps): string => {
+export const getSizeClass = (element: TextElement, size?: TextSize): string => {
 	if (!size) return element === 'title' ? DEFAULT_TITLE_SIZE : DEFAULT_TEXT_SIZE;
 
 	if (typeof size === 'string') return size;

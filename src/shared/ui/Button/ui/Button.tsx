@@ -1,7 +1,7 @@
 import type { ButtonHTMLAttributes, ComponentPropsWithoutRef, ElementType, RefObject } from 'react';
 import { classNames, type Additional, type Mods } from '@shared/lib/classNames';
-import type { FontFamily } from '@shared/types/FontFamily.types';
-import { ButtonSize, ButtonTheme } from '../model/types/Button.types';
+import type { FontFamily } from '@shared/types/fontFamily.types';
+import { ButtonSize, ButtonTheme } from '../model/types/button.types';
 import styles from './Button.module.scss';
 
 type ButtonProps<T extends ElementType = 'button'> = {
@@ -21,8 +21,8 @@ const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) => {
 		btnRef,
 		className,
 		children,
-		theme = ButtonTheme.BLACK,
-		size = ButtonSize.M,
+		theme = 'dark',
+		size = 'm',
 		circle,
 		uppercase = false,
 		type = 'button',

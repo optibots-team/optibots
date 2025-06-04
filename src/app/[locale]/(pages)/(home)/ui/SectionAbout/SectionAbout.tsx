@@ -3,7 +3,6 @@ import { useTranslations } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { SectionTitle } from '@features/SectionTitle';
-import { TextColor } from '@shared/ui/Text';
 import styles from './SectionAbout.module.scss';
 import AtomIcon from '@shared/assets/icons/atom_gradient.svg';
 import AboutImg from '@shared/assets/images/home-page/about/img_01.png';
@@ -27,7 +26,7 @@ const SectionAbout = ({ className }: SectionAboutProps) => {
 					text={{
 						title: t.rich('sectionTitle', { br: () => <br /> }),
 						text: t('sectionDesc'),
-						color: TextColor.WHITE,
+						color: 'white',
 					}}
 				/>
 				<Image

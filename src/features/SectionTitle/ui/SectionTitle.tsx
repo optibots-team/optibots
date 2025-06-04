@@ -1,45 +1,46 @@
 import type { ReactNode } from 'react';
-import { FlexV, type FlexAlign } from '@shared/ui/Stack';
-import { Badge, type IBadgeBackground, type IBadgeSize } from '@shared/ui/Badge';
-import { Text, type TextColorProps, TextAlign, TextColor, TextSize } from '@shared/ui/Text';
-import { IconSize } from '@shared/ui/Icon';
-import type { TitleAlign } from '../model/types/SectionTitle.types';
+import { FlexV, type StackAlign } from '@shared/ui/Stack';
+import { Badge, type IBadgeBackground } from '@shared/ui/Badge';
+import { Text, type TextAlign, type TextSizePreset, type TextColorTheme, type TextColor } from '@shared/ui/Text';
+import type { IconSize } from '@shared/ui/Icon';
+import type { Align } from '@shared/types/layout.types';
+import type { SizePreset } from '@shared/types/sizes.types';
 
 type SectionTitleProps = {
 	className?: string;
 	badge?: {
 		bordered?: boolean;
-		size?: IBadgeSize;
+		size?: SizePreset;
 		background?: IBadgeBackground;
 		icon?: ReactNode;
 		iconSize?: IconSize;
 		text?: string;
-		textSize?: TextSize;
-		textColor?: TextColor;
+		textSize?: TextSizePreset;
+		textColor?: TextColorTheme;
 	}
 	text?: {
 		title?: string | ReactNode;
 		text?: string | ReactNode;
-		color?: TextColorProps;
+		color?: TextColor;
 	}
-	align?: TitleAlign;
+	align?: Align;
 };
 
 const SectionTitle = (props: SectionTitleProps) => {
 	const { className, badge, text, align = 'left' } = props;
 
-	const alignMap: Record<TitleAlign, { flex: FlexAlign, text: TextAlign }> = {
+	const alignMap: Record<Align, { flex: StackAlign, text: TextAlign }> = {
 		left: {
 			flex: 'start',
-			text: TextAlign.LEFT,
+			text: 'left',
 		},
 		center: {
 			flex: 'center',
-			text: TextAlign.CENTER,
+			text: 'center',
 		},
 		right: {
 			flex: 'end',
-			text: TextAlign.RIGHT,
+			text: 'right',
 		},
 	};
 

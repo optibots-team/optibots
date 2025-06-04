@@ -1,11 +1,12 @@
 import type { CSSProperties, ReactNode } from 'react';
 import { classNames, type Additional } from '@shared/lib/classNames';
-import { FlexV, type FlexGap } from '@shared/ui/Stack';
-import { getColorClass, type TextColorProps } from '../lib/getColorClass';
-import { getSizeClass, type TextSizeProps } from '../lib/getSizeClass';
-import { getAlignClass, type TextAlignProps } from '../lib/getAlignClass';
-import { getFontFamilyClass, type TextFontFamilyProps } from '../lib/getFontFamilyClass';
-import type { TextTitleTag } from '../model/types/Text.types';
+import { FlexV } from '@shared/ui/Stack';
+import { getColorClass, type TextColor } from '../lib/getColorClass';
+import { getSizeClass, type TextSize } from '../lib/getSizeClass';
+import { getAlignClass, type TextAlign } from '../lib/getAlignClass';
+import { getFontFamilyClass, type TextFontFamily } from '../lib/getFontFamilyClass';
+import type { SizeToken } from '@shared/types/sizes.types';
+import type { TextTitleTag } from '../model/types/text.types';
 import styles from './Text.module.scss';
 
 type TextProps = {
@@ -15,12 +16,12 @@ type TextProps = {
 	style?: CSSProperties;
 	title?: string | ReactNode;
 	text?: string | ReactNode;
-	color?: TextColorProps;
-	size?: TextSizeProps;
-	align?: TextAlignProps;
+	color?: TextColor;
+	size?: TextSize;
+	align?: TextAlign;
 	titleTag?: TextTitleTag;
-	fontFamily?: TextFontFamilyProps;
-	gap?: FlexGap;
+	fontFamily?: TextFontFamily;
+	gap?: SizeToken;
 };
 
 const Text = (props: TextProps) => {

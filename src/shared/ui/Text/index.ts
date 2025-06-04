@@ -1,6 +1,6 @@
 export { default as Text } from './ui/Text';
 
-export { TextAlign, TextSize, TextColor } from './model/types/Text.types';
-export type { TextColorProps } from './lib/getColorClass';
-export type { TextSizeProps } from './lib/getSizeClass';
-export type { TextAlignProps } from './lib/getAlignClass';
+export type { TextSize as TextSizePreset, TextColorTheme } from './model/types/text.types';
+export type { TextColor } from './lib/getColorClass';
+export type { TextSize } from './lib/getSizeClass';
+export type { TextAlign } from './lib/getAlignClass';

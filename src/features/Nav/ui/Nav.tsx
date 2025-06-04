@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { FlexH } from '@shared/ui/Stack';
 import { homeAnchors } from '@shared/const/anchors';
-import type { ColorTheme } from '@shared/types/Themes.types';
+import type { ColorTheme } from '@shared/types/themes.types';
 import styles from './Nav.module.scss';
 
 type NavProps = {

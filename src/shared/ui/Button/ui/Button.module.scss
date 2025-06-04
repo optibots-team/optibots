@@ -20,47 +20,14 @@
 
 	// theme
 
-	&.theme-clear {
+	&.clear {
 		padding: 0;
 		border: none;
 		background: none;
 		outline: none;
 		color: var(--color-dark);
 	}
-	&.theme-black {
-		background-color: var(--color-dark);
-		border-color: var(--color-dark);
-		color: var(--color-white);
-
-		@media (hover: hover) {
-			&:hover {
-				opacity: .7;
-			}
-		}
-	}
-	&.theme-green-gradient {
-		background: var(--gradient-green);
-		border: none;
-		color: var(--color-dark);
-
-		@media (hover: hover) {
-			&:hover {
-				opacity: .7;
-			}
-		}
-	}
-	&.theme-white {
-		background-color: var(--color-white);
-		border-color: var(--color-white);
-		color: var(--color-dark);
-
-		@media (hover: hover) {
-			&:hover {
-				opacity: .7;
-			}
-		}
-	}
-	&.theme-outline {
+	&.outline {
 		border-color: rgba(20, 20, 20, .1);
 		color: var(--color-dark);
 		background-color: transparent;
@@ -71,18 +38,51 @@
 			}
 		}
 	}
+	&.dark {
+		background-color: var(--color-dark);
+		border-color: var(--color-dark);
+		color: var(--color-white);
+
+		@media (hover: hover) {
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+	&.light {
+		background-color: var(--color-white);
+		border-color: var(--color-white);
+		color: var(--color-dark);
+
+		@media (hover: hover) {
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+	&.green-gradient {
+		background: var(--gradient-green);
+		border: none;
+		color: var(--color-dark);
+
+		@media (hover: hover) {
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
 
 	// size
 
-	&.size-s {
+	&.s {
 		font-size: var(--font-size-s);
 		line-height: var(--font-line-s);
 	}
-	&.size-m {
+	&.m {
 		font-size: var(--font-size-m);
 		line-height: var(--font-line-m);
 	}
-	&.size-l {
+	&.l {
 		font-size: var(--font-size-l);
 		line-height: var(--font-line-l);
 	}

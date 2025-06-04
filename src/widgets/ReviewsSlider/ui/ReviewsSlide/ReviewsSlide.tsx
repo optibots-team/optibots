@@ -1,12 +1,12 @@
 import { classNames } from '@shared/lib/classNames';
 import { FlexH, FlexV } from '@shared/ui/Stack';
-import { Text, TextColor, TextSize } from '@shared/ui/Text';
-import type { IReview } from '../../model/types/ReviewsSlider.types';
+import { Text } from '@shared/ui/Text';
+import type { Review } from '@entities/Review';
 import styles from './ReviewsSlide.module.scss';
 
 type ReviewsSlideProps = {
 	className?: string;
-	review: IReview;
+	review: Review;
 };
 
 const ReviewsSlide = (props: ReviewsSlideProps) => {
@@ -22,12 +22,12 @@ const ReviewsSlide = (props: ReviewsSlideProps) => {
 					title={`${author}, ${job}`}
 					text={company.toUpperCase()}
 					titleTag={'p'}
-					size={TextSize.M}
-					color={{ title: TextColor.DARK_SECONDARY }}
+					size={'m'}
+					color={{ title: 'dark-secondary' }}
 					fontFamily={{ title: 'montserrat', text: 'unbounded' }}
 				/>
 			</FlexH>
-			<Text text={comment} color={TextColor.DARK_SECONDARY} />
+			<Text text={comment} color={'dark-secondary'} />
 		</FlexV>
 	);
 };

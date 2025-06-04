@@ -1,12 +1,13 @@
 import type { CSSProperties, ReactNode } from 'react';
 import { classNames, type Mods } from '@shared/lib/classNames';
+import type { Display, Orientation } from '@shared/types/layout.types';
 import styles from './Container.module.scss';
 
 type ContainerProps = {
 	className?: string;
 	fluid?: boolean;
-	display?: 'flex' | 'grid';
-	orientation?: 'horizontal' | 'vertical';
+	display?: Display;
+	orientation?: Orientation;
 	style?: CSSProperties;
 	children: ReactNode;
 };

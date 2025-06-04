@@ -5,7 +5,7 @@ import { FlexV } from '@shared/ui/Stack';
 import { MessengerBase } from '../../MessengerBase/MessengerBase';
 import { TelegramHeader } from '../TelegramHeader/TelegramHeader';
 import { TelegramContent } from '../TelegramContent/TelegramContent';
-import type { ITelegramHeader, ITelegramMessages } from '../../../model/types/Telegram.types';
+import type { TelegramHeader as ITelegramHeader, TelegramMessages as ITelegramMessages } from '@entities/Telegram';
 import styles from './Telegram.module.scss';
 
 type TelegramProps = {

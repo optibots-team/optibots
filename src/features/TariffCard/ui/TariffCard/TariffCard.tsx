@@ -1,9 +1,9 @@
 import type { ElementType } from 'react';
 import { classNames } from '@shared/lib/classNames';
 import { Badge } from '@shared/ui/Badge';
-import { Text, TextColor, TextSize } from '@shared/ui/Text';
+import { Text } from '@shared/ui/Text';
 import { TariffAdvantages } from '../TariffAdvantages/TariffAdvantages';
-import type { ITariffCard } from '../../model/types/TariffCard.types';
+import type { ITariffCard } from '../../model/types/tariffCard.types';
 import styles from './TariffCard.module.scss';
 
 type TariffCardProps<T extends ElementType = 'div'> = {
@@ -23,22 +23,22 @@ const TariffCard = <T extends ElementType = 'div'>(props: TariffCardProps<T>) =>
 					size={'s'}
 					text={tariff.toUpperCase()}
 					background={tariff === 'pro' ? 'dark' : 'green-gradient'}
-					textColor={tariff === 'pro' ? TextColor.LIGHT : TextColor.DARK}
+					textColor={tariff === 'pro' ? 'light' : 'dark'}
 				/>
 				<Text
 					gap={'12'}
 					title={title.toUpperCase()}
 					titleTag={'h3'}
 					text={description}
-					size={{ title: TextSize.ML, text: TextSize.S }}
-					color={{ title: TextColor.DARK, text: TextColor.DARK_SECONDARY }}
+					size={{ title: 'ml', text: 's' }}
+					color={{ title: 'dark', text: 'dark-secondary' }}
 				/>
 			</div>
 			<div className={styles.card__row}>
 				<Text
 					className={'fw-500'}
 					text={`$${price}`}
-					size={TextSize.L}
+					size={'l'}
 					fontFamily={'unbounded'}
 				/>
 			</div>

@@ -1,6 +1,6 @@
 import { classNames } from '@shared/lib/classNames';
 import { FlexH } from '@shared/ui/Stack';
-import { Icon, IconSize } from '@shared/ui/Icon';
+import { Icon } from '@shared/ui/Icon';
 import { socials } from '../model/data/socials.data';
 import styles from './Socials.module.scss';
 
@@ -13,7 +13,7 @@ const Socials = ({ className }: SocialsProps) => (
 		{socials.map(({ name, icon, url }) => (
 			<li key={name} className={styles.socials__item}>
 				<a href={url} target={'_blank'} className={styles.socials__link}>
-					<Icon icon={icon} size={IconSize.SIZE_24} />
+					<Icon icon={icon} size={'24'} />
 				</a>
 			</li>
 		))}
