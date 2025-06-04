@@ -1,7 +1,7 @@
 import type { TFunction } from '@shared/types/translations.types';
-import type { IReview } from '../types/ReviewsSlider.types';
+import type { Review } from '@entities/Review';
 
-export const generateReviews = (t: TFunction): IReview[] => [
+export const generateReviews = (t: TFunction): Review[] => [
 	{
 		id: 'bloom',
 		author: t('bloom.author'),
