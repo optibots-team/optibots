@@ -14,7 +14,7 @@ const SectionReviews = ({ className }: SectionReviewsProps) => {
 	const t = useTranslations('homePage.sectionReviews');
 
 	return (
-		<section className={classNames(styles.reviews, {}, [className, 'section-padding-top'])}>
+		<section className={classNames(styles.reviews, {}, [className, 'section-padding'])}>
 			<Container display={'flex'} orientation={'vertical'} className={styles.reviews__container}>
 				<SectionTitle
 					className={styles.reviews__title}

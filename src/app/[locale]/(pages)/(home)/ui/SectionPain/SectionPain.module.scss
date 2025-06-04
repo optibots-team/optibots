@@ -1,0 +1,17 @@
+.pain {
+	background-color: var(--bg-secondary);
+
+	&__container {
+		gap: 90px;
+	}
+
+	&__title {
+		width: 100%;
+		max-width: 410px;
+	}
+
+	&__cta {
+		width: 100%;
+		max-width: 600px;
+	}
+}

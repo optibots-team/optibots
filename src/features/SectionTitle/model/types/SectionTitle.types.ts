@@ -1,1 +1,0 @@
-export type TitleAlign = 'left' | 'center' | 'right';

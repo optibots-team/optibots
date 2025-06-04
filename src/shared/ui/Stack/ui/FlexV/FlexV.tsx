@@ -1,5 +1,5 @@
-import Flex, { type FlexProps } from '../Flex/Flex';
 import type { ElementType } from 'react';
+import Flex, { type FlexProps } from '../Flex/Flex';
 
 type FlexVProps<T extends ElementType = 'div'> = FlexProps<T>;
 

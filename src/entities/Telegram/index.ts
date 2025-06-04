@@ -1,0 +1,1 @@
+export type { TelegramHeader, TelegramMessages } from './model/types/telegram.types';

@@ -1,3 +1,3 @@
 export { default as TariffCard } from './ui/TariffCard/TariffCard';
 
-export type { ITariffCard, ITariff } from './model/types/TariffCard.types';
+export type { ITariffCard } from './model/types/tariffCard.types';

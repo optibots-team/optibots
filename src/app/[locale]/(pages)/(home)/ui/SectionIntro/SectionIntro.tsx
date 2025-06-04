@@ -2,9 +2,9 @@ import { useTranslations } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { FlexH, FlexV } from '@shared/ui/Stack';
-import { Text, TextColor } from '@shared/ui/Text';
-import { Icon, IconSize } from '@shared/ui/Icon';
-import { Button, ButtonTheme } from '@shared/ui/Button';
+import { Text } from '@shared/ui/Text';
+import { Icon } from '@shared/ui/Icon';
+import { Button } from '@shared/ui/Button';
 import styles from './SectionIntro.module.scss';
 import ArrowIcon from '@shared/assets/icons/arrow-to-right.svg';
 
@@ -27,14 +27,14 @@ const SectionIntro = ({ className }: SectionIntroProps) => {
 							br: () => <br />,
 						})}
 					</h1>
-					<Text text={tIntro('desc')} fontFamily={'montserrat'} color={TextColor.DARK_SECONDARY} />
+					<Text text={tIntro('desc')} fontFamily={'montserrat'} color={'dark-secondary'} />
 					<FlexH gap={'14'} align={'stretch'}>
 						<Button className={styles.intro__btn} fontFamily={'unbounded'} uppercase>
 							{tButtons('order bot')}
 						</Button>
-						<Button className={styles.intro__btn} theme={ButtonTheme.OUTLINE}>
+						<Button className={styles.intro__btn} theme={'outline'}>
 							{tButtons('learn more')}
-							<Icon icon={<ArrowIcon />} size={IconSize.SIZE_24} />
+							<Icon icon={<ArrowIcon />} size={'24'} />
 						</Button>
 					</FlexH>
 				</FlexV>

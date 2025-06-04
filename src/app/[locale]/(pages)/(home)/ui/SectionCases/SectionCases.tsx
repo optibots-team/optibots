@@ -2,8 +2,7 @@ import { useTranslations } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { SectionTitle } from '@features/SectionTitle';
-import { TelegramSlider } from '@widgets/TelegramSlider';
-import { TextColor } from '@shared/ui/Text';
+import { CasesSlider } from '@widgets/CasesSlider';
 import styles from './SectionCases.module.scss';
 import RaysIcon from '@shared/assets/icons/rays_gradient.svg';
 
@@ -27,11 +26,11 @@ const SectionCases = ({ className }: SectionCasesProps) => {
 					text={{
 						title: t('sectionTitle').toUpperCase(),
 						text: t.rich('sectionDesc', { semiBold: (chunks) => <span className={'fw-600'}>{chunks}</span> }),
-						color: { title: TextColor.WHITE, text: TextColor.LIGHT },
+						color: { title: 'white', text: 'light' },
 					}}
 				/>
 			</Container>
-			<TelegramSlider />
+			<CasesSlider />
 		</section>
 	);
 };

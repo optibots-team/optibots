@@ -1,7 +1,7 @@
 import { locales } from '@shared/const/locales';
-import type { ISelectOptions } from '@shared/ui/Select';
+import type { SelectOptions } from '@shared/ui/Select';
 
-export const switcherOptions: ISelectOptions[] = locales.map(locale => ({
+export const switcherOptions: SelectOptions[] = locales.map(locale => ({
 	label: locale,
 	value: locale,
 }));

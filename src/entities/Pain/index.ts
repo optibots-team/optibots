@@ -1,0 +1,1 @@
+export type { Pain } from './model/types/pain.types';

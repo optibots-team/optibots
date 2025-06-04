@@ -1,13 +1,12 @@
 import { classNames } from '@shared/lib/classNames';
 import { FlexH } from '@shared/ui/Stack';
-import { Text, TextAlign, TextColor, TextSize } from '@shared/ui/Text';
+import { Text } from '@shared/ui/Text';
 import { Avatar } from '@shared/ui/Avatar';
-import { IconSize } from '@shared/ui/Icon';
-import type { ITelegramHeader } from '../../../model/types/Telegram.types';
+import type { TelegramHeader } from '@entities/Telegram';
 import styles from './TelegramHeader.module.scss';
 import StatusIcon from '@shared/assets/icons/telegram_statusbar.svg';
 
-interface TelegramHeaderProps extends ITelegramHeader {
+interface TelegramHeaderProps extends TelegramHeader {
 	className?: string;
 }
 
@@ -27,16 +26,16 @@ const TelegramHeader = (props: TelegramHeaderProps) => {
 				<Avatar
 					avatar={icon}
 					size={44}
-					iconSize={IconSize.SIZE_30}
+					iconSize={'30'}
 					className={classNames(styles.header__avatar, {}, [styles[iconBg]])}
 				/>
 				<Text
 					title={title.toUpperCase()}
 					text={desc.toUpperCase()}
 					fontFamily={'montserrat'}
-					color={{ title: TextColor.DARK, text: TextColor.DARK_SECONDARY }}
-					size={{ title: TextSize.M, text: TextSize.S }}
-					align={TextAlign.CENTER}
+					color={{ title: 'dark', text: 'dark-secondary' }}
+					size={{ title: 'm', text: 's' }}
+					align={'center'}
 					gap={'0'}
 				/>
 			</FlexH>

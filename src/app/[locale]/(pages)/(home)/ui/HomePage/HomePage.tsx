@@ -1,13 +1,14 @@
 import { RobotLayer } from '@widgets/RobotLayer';
 import { Header } from '@widgets/Header';
+import { HomeMarquee } from '@widgets/HomeMarquee';
 import { SectionIntro } from '../SectionIntro/SectionIntro';
-import { SectionMarquee } from '../SectionMarquee/SectionMarquee';
 import { SectionAbout } from '../SectionAbout/SectionAbout';
-import { SectionAdvantages } from '../SectionAdvantages/SectionAdvantages/SectionAdvantages';
-import { SectionTariffs } from '../SectionTariffs/SectionTariffs/SectionTariffs';
+import { SectionAdvantages } from '../SectionAdvantages/SectionAdvantages';
+import { SectionTariffs } from '../SectionTariffs/SectionTariffs';
 import { SectionCases } from '../SectionCases/SectionCases';
 import { SectionReviews } from '../SectionReviews/SectionReviews';
-import { SectionFaq } from '../SectionFaq/SectionFaq/SectionFaq';
+import { SectionPain } from '../SectionPain/SectionPain';
+import { SectionFaq } from '../SectionFaq/SectionFaq';
 import { SectionContacts } from '../SectionContacts/SectionContacts';
 
 const HomePage = () => (
@@ -16,12 +17,13 @@ const HomePage = () => (
 			<Header />
 			<SectionIntro />
 		</RobotLayer>
-		<SectionMarquee />
+		<HomeMarquee />
 		<SectionAbout />
 		<SectionAdvantages />
 		<SectionTariffs />
 		<SectionCases />
 		<SectionReviews />
+		<SectionPain />
 		<SectionFaq />
 		<SectionContacts />
 	</>

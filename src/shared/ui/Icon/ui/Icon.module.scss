@@ -1,0 +1,91 @@
+.icon {
+	display: block;
+	flex-shrink: 0;
+	aspect-ratio: 1;
+
+	&.size-2 {
+		width: 2px;
+	}
+	&.size-4 {
+		width: 4px;
+	}
+	&.size-6 {
+		width: 6px;
+	}
+	&.size-8 {
+		width: 8px;
+	}
+	&.size-10 {
+		width: 10px;
+	}
+	&.size-12 {
+		width: 12px;
+	}
+	&.size-14 {
+		width: 14px;
+	}
+	&.size-16 {
+		width: 16px;
+	}
+	&.size-18 {
+		width: 18px;
+	}
+	&.size-20 {
+		width: 20px;
+	}
+	&.size-22 {
+		width: 22px;
+	}
+	&.size-24 {
+		width: 24px;
+	}
+	&.size-26 {
+		width: 26px;
+	}
+	&.size-28 {
+		width: 28px;
+	}
+	&.size-30 {
+		width: 30px;
+	}
+	&.size-32 {
+		width: 32px;
+	}
+	&.size-34 {
+		width: 34px;
+	}
+	&.size-36 {
+		width: 36px;
+	}
+	&.size-38 {
+		width: 38px;
+	}
+	&.size-40 {
+		width: 40px;
+	}
+	&.size-42 {
+		width: 42px;
+	}
+	&.size-44 {
+		width: 44px;
+	}
+	&.size-46 {
+		width: 46px;
+	}
+	&.size-48 {
+		width: 48px;
+	}
+	&.size-50 {
+		width: 50px;
+	}
+	&.icon-fill {
+		width: 100%;
+		height: 100%;
+	}
+
+	svg {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}

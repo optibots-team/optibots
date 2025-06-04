@@ -1,16 +1,16 @@
 import type { SelectHTMLAttributes } from 'react';
 import { Field, Label, Select as HSelect } from '@headlessui/react'
 import { classNames } from '@shared/lib/classNames';
-import { Icon, IconSize } from '@shared/ui/Icon';
-import type { ColorTheme } from '@shared/types/Themes.types';
-import type { ISelectOptions } from '../model/types/Select.types';
+import { Icon } from '@shared/ui/Icon';
+import type { ColorTheme } from '@shared/types/themes.types';
+import type { SelectOptions } from '../model/types/select.types';
 import styles from './Select.module.scss';
 import ArrowIcon from '@shared/assets/icons/arrow-to-bottom.svg';
 
 interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
 	className?: string;
 	label?: string;
-	options: ISelectOptions[];
+	options: SelectOptions[];
 	theme?: ColorTheme;
 }
 
@@ -26,7 +26,7 @@ const Select = (props: SelectProps) => {
 						<option key={value} value={value}>{label}</option>
 					))}
 				</HSelect>
-				<Icon icon={<ArrowIcon />} size={IconSize.SIZE_16} className={styles.field__arrow} />
+				<Icon icon={<ArrowIcon />} size={'16'} className={styles.field__arrow} />
 			</div>
 		</Field>
 	);

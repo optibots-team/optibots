@@ -15,6 +15,32 @@
     "something's wrong": "Oops, something's wrong!",
     "page not found": "Page not found"
   },
+  "advantages": {
+    "support": {
+      "title": "Full support",
+      "subtitle": "From idea to launch and support: design, setup, testing, team training."
+    },
+    "turnkey": {
+      "title": "Turnkey solutions",
+      "subtitle": "Not just a chatbot, but a ready-made automation system for your processes and goals."
+    },
+    "analytics": {
+      "title": "Analytics and Reporting",
+      "subtitle": "You receive clear statistics for each stage of the funnel: applications, conversions, engagement."
+    },
+    "automatic": {
+      "title": "Automatic Data Collection and Organization",
+      "subtitle": "All client data is automatically recorded and categorized."
+    },
+    "integration": {
+      "title": "Flexible Integration",
+      "subtitle": "Connection with CRM systems, payment services, Google Sheets, ad accounts, and other platforms."
+    },
+    "structure": {
+      "title": "Modular Structure",
+      "subtitle": "You can start with basic functionality and gradually expand the bot’s capabilities as your business grows."
+    }
+  },
   "tariffs": {
     "basic": {
       "title": "Support only",
@@ -170,6 +196,28 @@
       "comment": "Бот помог сократить рутину на поддержке — 80% обращений теперь закрываются автоматически. Люди могут отслеживать заказы, узнавать о возврате и доставке без участия менеджера. Очень экономит ресурсы."
     }
   },
+  "pain": {
+    "routine": {
+      "title": "Routine and Overload",
+      "desc": "Managers waste time on repetitive issues instead of important tasks."
+    },
+    "loss": {
+      "title": "Loss of customers",
+      "desc": "Even loyal customers leave due to slow responses or ignoring messages."
+    },
+    "conversion": {
+      "title": "Low conversion",
+      "desc": "Slow response = missed orders and reduced sales every day."
+    },
+    "errors": {
+      "title": "Errors in data",
+      "desc": "Due to inaccurate transmission of information, orders are mixed up, applications are lost, and customers remain dissatisfied and complain."
+    },
+    "competitors": {
+      "title": "Going to competitors",
+      "desc": "Users choose companies where the communication process is faster, the interface is simpler, and the support is really helpful."
+    }
+  },
   "faq": {
     "implemented": {
       "title": "How quickly can the product be implemented in your business?",
@@ -214,33 +262,7 @@
     "sectionAdvantages": {
       "badge": "Why us?",
       "sectionTitle": "How Chatbots Help Business Grow",
-      "sectionDesc": "<semiBold>Chatbots take on routine tasks</semiBold>: communicating with clients, collecting data, answering frequently asked questions, and accepting applications. <semiBold>This saves the team time, reduces the workload, and helps focus on business development.</semiBold>",
-      "advantages": {
-        "support": {
-          "title": "Full support",
-          "subtitle": "From idea to launch and support: design, setup, testing, team training."
-        },
-        "turnkey": {
-          "title": "Turnkey solutions",
-          "subtitle": "Not just a chatbot, but a ready-made automation system for your processes and goals."
-        },
-        "analytics": {
-          "title": "Analytics and Reporting",
-          "subtitle": "You receive clear statistics for each stage of the funnel: applications, conversions, engagement."
-        },
-        "automatic": {
-          "title": "Automatic Data Collection and Organization",
-          "subtitle": "All client data is automatically recorded and categorized."
-        },
-        "integration": {
-          "title": "Flexible Integration",
-          "subtitle": "Connection with CRM systems, payment services, Google Sheets, ad accounts, and other platforms."
-        },
-        "structure": {
-          "title": "Modular Structure",
-          "subtitle": "You can start with basic functionality and gradually expand the bot’s capabilities as your business grows."
-        }
-      }
+      "sectionDesc": "<semiBold>Chatbots take on routine tasks</semiBold>: communicating with clients, collecting data, answering frequently asked questions, and accepting applications. <semiBold>This saves the team time, reduces the workload, and helps focus on business development.</semiBold>"
     },
     "sectionTariffs": {
       "badge": "Pricing Plans",
@@ -255,6 +277,11 @@
     "sectionReviews": {
       "badge": "Testimonials",
       "sectionTitle": "Success stories that speak for themselves"
+    },
+    "sectionPain": {
+      "badge": "Pain",
+      "sectionTitle": "What problems will you forget about?",
+      "cta": "Automate communication with clients - free managers from routine requests, reduce the number of errors and speed up the processing of requests."
     },
     "sectionFaq": {
       "badge": "faq",

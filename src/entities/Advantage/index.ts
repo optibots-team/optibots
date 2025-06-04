@@ -1,0 +1,1 @@
+export type { Advantage } from './model/types/advantage.types';

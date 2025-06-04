@@ -1,0 +1,1 @@
+export { default as Pains } from './ui/Pains/Pains';

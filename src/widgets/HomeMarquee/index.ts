@@ -1,0 +1,1 @@
+export { default as HomeMarquee } from './ui/HomeMarquee';
