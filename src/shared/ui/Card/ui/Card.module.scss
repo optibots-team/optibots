@@ -1,0 +1,22 @@
+.card {
+
+	&.radius-s {
+		border-radius: var(--radius-s);
+	}
+	&.radius-m {
+		border-radius: var(--radius-m);
+	}
+	&.radius-l {
+		border-radius: var(--radius-l);
+	}
+
+	&.padding-s {
+		padding: var(--padding-s);
+	}
+	&.padding-m {
+		padding: var(--padding-m);
+	}
+	&.padding-l {
+		padding: var(--padding-l);
+	}
+}

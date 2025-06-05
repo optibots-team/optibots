@@ -5,7 +5,6 @@ import type { ReactNode } from 'react';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { ToastContainer } from 'react-toastify';
 import { ErrorBoundary } from '@globals/providers/ErrorBoundary';
-import { FlexV } from '@shared/ui/Stack';
 import { routing } from '@shared/config/i18n/routing';
 import '@globals/styles/index.scss';
 
@@ -30,12 +29,12 @@ export const metadata: Metadata = {
 	// },
 };
 
-interface IRootLayout {
+interface RootLayoutProps {
 	children: ReactNode;
 	params: Promise<{ locale: string }>;
 }
 
-const RootLayout = async ({ children, params }: IRootLayout) => {
+const RootLayout = async ({ children, params }: RootLayoutProps) => {
 	const { locale } = await params;
 
 	if (!hasLocale(routing.locales, locale)) {
@@ -47,9 +46,7 @@ const RootLayout = async ({ children, params }: IRootLayout) => {
 		<body className={`${montserrat.variable} ${unbounded.variable}`}>
 		<NextIntlClientProvider>
 			<ErrorBoundary>
-				<FlexV as={'main'} align={'stretch'} justify={'stretch'} grow>
-					{children}
-				</FlexV>
+				{children}
 			</ErrorBoundary>
 			<ToastContainer theme={'light'} />
 		</NextIntlClientProvider>

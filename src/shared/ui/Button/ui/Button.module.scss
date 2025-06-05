@@ -3,7 +3,6 @@
 	align-items: center;
 	justify-content: center;
 	gap: 5px;
-	padding: 10px 32px;
 	border: 1px solid;
 	border-radius: 100px;
 	transition: var(--transition-primary);
@@ -38,6 +37,28 @@
 			}
 		}
 	}
+	&.black {
+		background-color: var(--color-black);
+		border-color: var(--color-black);
+		color: var(--color-white);
+
+		@media (hover: hover) {
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+	&.white {
+		background-color: var(--color-white);
+		border-color: var(--color-white);
+		color: var(--color-dark);
+
+		@media (hover: hover) {
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
 	&.dark {
 		background-color: var(--color-dark);
 		border-color: var(--color-dark);
@@ -50,8 +71,8 @@
 		}
 	}
 	&.light {
-		background-color: var(--color-white);
-		border-color: var(--color-white);
+		background-color: var(--color-light);
+		border-color: var(--color-light);
 		color: var(--color-dark);
 
 		@media (hover: hover) {
@@ -75,14 +96,17 @@
 	// size
 
 	&.s {
+		padding: 5px 16px;
 		font-size: var(--font-size-s);
 		line-height: var(--font-line-s);
 	}
 	&.m {
+		padding: 10px 32px;
 		font-size: var(--font-size-m);
 		line-height: var(--font-line-m);
 	}
 	&.l {
+		padding: 15px 40px;
 		font-size: var(--font-size-l);
 		line-height: var(--font-line-l);
 	}

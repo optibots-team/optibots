@@ -1,16 +1,36 @@
+@use '@globals/styles/breakpoints';
+
 .about {
 	padding-top: 156px;
-	padding-bottom: 210px;
+	padding-bottom: 140px;
 	background-color: var(--bg-secondary);
+	background-image: url('/images/home-page/about/section_bg.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@media (width < breakpoints.$md) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
 
 	&__container {
-		grid-template-columns: minmax(300px, 1fr) 1fr;
-		align-items: center;
-		gap: 22px;
+		grid-template-columns: minmax(300px, 510px) minmax(400px, 1fr);
+		align-items: flex-start;
+		gap: 10px;
+
+		@media (width < breakpoints.$md) {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&__img {
 		width: 100%;
 		height: auto;
+		margin-top: 60px;
+
+		@media (width < breakpoints.$md) {
+			display: none;
+		}
 	}
 }

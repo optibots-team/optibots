@@ -1,11 +1,13 @@
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { SectionTitle } from '@features/SectionTitle';
 import styles from './SectionAbout.module.scss';
 import AtomIcon from '@shared/assets/icons/atom_gradient.svg';
-import AboutImg from '@shared/assets/images/home-page/about/img_01.png';
+import AboutImg_ru from '@shared/assets/images/home-page/about/img_01_ru.svg?url';
+import AboutImg_uk from '@shared/assets/images/home-page/about/img_01_uk.svg?url';
+import AboutImg_en from '@shared/assets/images/home-page/about/img_01_en.svg?url';
 
 type SectionAboutProps = {
 	className?: string;
@@ -13,6 +15,13 @@ type SectionAboutProps = {
 
 const SectionAbout = ({ className }: SectionAboutProps) => {
 	const t = useTranslations('homePage.sectionAbout');
+	const locale = useLocale();
+
+	const imageMap: Record<string, string> = {
+		en: AboutImg_en,
+		uk: AboutImg_uk,
+		ru: AboutImg_ru,
+	};
 
 	return (
 		<section className={classNames(styles.about, {}, [className, 'section-radius-bottom'])}>
@@ -31,7 +40,7 @@ const SectionAbout = ({ className }: SectionAboutProps) => {
 				/>
 				<Image
 					className={styles.about__img}
-					src={AboutImg}
+					src={imageMap[locale]}
 					alt={'about img'}
 				/>
 			</Container>
