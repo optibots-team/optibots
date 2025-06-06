@@ -1,8 +1,14 @@
+@use '@globals/styles/breakpoints';
+
 .marquee {
 	position: relative;
 	padding-top: 24px;
 	padding-bottom: 24px;
 	background-color: var(--color-dark);
+
+	@media (width < breakpoints.$md) {
+		display: none;
+	}
 
 	&:before, &:after {
 		content: '';

@@ -1,7 +1,8 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
-import { useMedia } from '@shared/hooks/useMedia';
+import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import { classNames, type Mods } from '@shared/lib/classNames';
 import { Flex, FlexV } from '@shared/ui/Stack';
 import { Button } from '@shared/ui/Button';
@@ -19,31 +20,39 @@ type NavProps = {
 };
 
 const Nav = ({ className, theme, location = 'header' }: NavProps) => {
+	const navRef = useRef<HTMLDivElement>(null);
 	const isOpen = useAppStore(selectIsMenuOpen);
 	const toggleMenu = useAppStore(selectToggleMenu);
-	const { isTablet } = useMedia();
 	const t = useTranslations('buttons');
 
 	const mods: Mods = {
 		[styles.open]: isOpen,
-		...(theme ? { [styles[theme]]: theme } : {})
+		...(theme ? { [styles[theme]]: theme } : {}),
 	};
 
+	useEffect(() => {
+		if (isOpen && navRef.current) {
+			disableBodyScroll(navRef.current);
+		} else {
+			clearAllBodyScrollLocks();
+		}
+	}, [isOpen]);
+
 	return (
-		<nav className={classNames(styles.nav, mods, [className, styles[location]])}>
-			<Flex as={'ul'} className={styles.nav__list}>
-				{Object.entries(homeAnchors).map(([key, value]) => (
-					<NavItem key={key} value={value} />
-				))}
-			</Flex>
-			{isTablet && location === 'header' && (
-				<FlexV align={'center'} justify={'center'} gap={'32'}>
+		<nav ref={navRef} className={classNames(styles.nav, mods, [className, styles[location]])}>
+			<FlexV justify={'between'} align={'stretch'} gap={'10'} className={styles.nav__inner}>
+				<Flex as={'ul'} className={styles.nav__list}>
+					{Object.entries(homeAnchors).map(([key, value]) => (
+						<NavItem key={key} value={value} handleClick={toggleMenu} />
+					))}
+				</Flex>
+				<div className={styles.nav__contacts}>
 					<Socials />
-					<Button theme={'white'}>
+					<Button theme={'white'} fluid>
 						{t('order bot').toUpperCase()}
 					</Button>
-				</FlexV>
-			)}
+				</div>
+			</FlexV>
 		</nav>
 	);
 };

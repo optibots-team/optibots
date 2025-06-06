@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { classNames } from '@shared/lib/classNames';
-import { RobotScene } from '@features/RobotScene';
+import { RobotSceneClient } from '../RobotSceneClient/RobotSceneClient';
 import styles from './RobotLayer.module.scss';
 
 type RobotLayerProps = {
@@ -11,7 +11,7 @@ type RobotLayerProps = {
 const RobotLayer = ({ className, children }: RobotLayerProps) => (
 	<div className={classNames(styles.layer, {}, [className])}>
 		<div className={classNames(styles.layer__inner, {}, ['section-radius-bottom'])}>
-			<RobotScene className={styles.layer__robot} />
+			<RobotSceneClient />
 			{children}
 		</div>
 	</div>

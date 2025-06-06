@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { classNames, type Mods, type Additional } from '@shared/lib/classNames';
 import { FlexH } from '@shared/ui/Stack';
 import { Icon, type IconSize } from '@shared/ui/Icon';
-import { Text, type TextColorTheme, type TextSizePreset } from '@shared/ui/Text';
+import { Text, type TextColorTheme, type TextSize } from '@shared/ui/Text';
 import type { FontFamily } from '@shared/types/fontFamily.types';
 import type { SizePreset } from '@shared/types/sizes.types';
 import type { IBadgeBackground } from '../model/types/badge.types';
@@ -17,7 +17,7 @@ type BadgeProps = {
 	iconSize?: IconSize;
 	text?: string;
 	textColor?: TextColorTheme;
-	textSize?: TextSizePreset;
+	textSize?: TextSize;
 	fontFamily?: FontFamily;
 };
 

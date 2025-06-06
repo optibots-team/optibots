@@ -125,6 +125,13 @@
 		text-transform: uppercase;
 	}
 
+	// fluid
+
+	&.fluid {
+		width: 100%;
+		max-width: 100%;
+	}
+
 	// disabled
 
 	&:disabled {

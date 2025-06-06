@@ -54,6 +54,9 @@
   --font-size-ml: 16px;
   --font-line-ml: 22px;
 
+  --font-size-sl: 20px;
+  --font-line-sl: 26px;
+
   --font-size-l: 24px;
   --font-line-l: 30px;
 
@@ -67,17 +70,4 @@
 
   --container-width: 1140px;
   --container-gap: 20px;
-
-  // header
-
-  --header-height: 70px;
-
-  // mobile
-
-  @media (width < breakpoints.$md) {
-
-    // header
-
-    --header-height: 50px;
-  }
 }

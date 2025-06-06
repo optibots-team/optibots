@@ -5,14 +5,15 @@ import styles from './NavItem.module.scss';
 type NavItemProps = {
 	className?: string;
 	value: string;
+	handleClick?: () => void;
 };
 
-const NavItem = ({ className, value }: NavItemProps) => {
+const NavItem = ({ className, value, handleClick }: NavItemProps) => {
 	const t = useTranslations('navigation');
 
 	return (
 		<li className={classNames(styles.item, {}, [className])}>
-			<a href={`#${value}`} className={styles.item__link}>{t(value)}</a>
+			<a onClick={handleClick} href={`#${value}`} className={styles.item__link}>{t(value)}</a>
 		</li>
 	);
 };

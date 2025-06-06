@@ -9,9 +9,13 @@
 	background-position: center;
 	background-size: cover;
 
+	@media (width < breakpoints.$lg) {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
 	@media (width < breakpoints.$md) {
-		padding-top: 80px;
-		padding-bottom: 80px;
+		padding-top: 90px;
+		padding-bottom: 90px;
 	}
 
 	&__container {

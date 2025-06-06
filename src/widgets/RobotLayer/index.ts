@@ -1,1 +1,1 @@
-export { default as RobotLayer } from './ui/RobotLayer';
+export { default as RobotLayer } from './ui/RobotLayer/RobotLayer';
