@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { classNames } from '@shared/lib/classNames';
 import { Text } from '@shared/ui/Text';
+import { Card } from '@shared/ui/Card';
 import type { MarqueeCard } from '../../model/types/marquee.types';
 import styles from './MarqueeCard.module.scss';
 
@@ -13,7 +14,11 @@ const MarqueeCard = (props: MarqueeCardProps) => {
 	const { className, card: { title, description, image } } = props;
 
 	return (
-		<div className={classNames(styles.card, {}, [className])}>
+		<Card
+			className={classNames(styles.card, {}, [className])}
+			padding={'m'}
+			radius={'m'}
+		>
 			<Text
 				className={styles.card__text}
 				title={title}
@@ -29,7 +34,7 @@ const MarqueeCard = (props: MarqueeCardProps) => {
 					alt={title}
 				/>
 			)}
-		</div>
+		</Card>
 	);
 };
 

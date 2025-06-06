@@ -1,7 +1,15 @@
+@use '@globals/styles/breakpoints';
+
 .logo {
+	position: relative;
+	z-index: 110;
 	display: block;
 	width: 100%;
 	max-width: 185px;
+
+	@media (width < breakpoints.$lg) {
+		max-width: 125px;
+	}
 
 	&.dark {
 		color: var(--color-dark);

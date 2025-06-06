@@ -1,5 +1,5 @@
 import type { SizePreset } from '@shared/types/sizes.types';
-import type { ColorTheme } from '@shared/types/themes.types';
+import { ColorTheme, ColorThemeBase } from '@shared/types/themes.types';
 
-export type ButtonTheme = ColorTheme | 'green-gradient' | 'outline' | 'clear';
+export type ButtonTheme = ColorThemeBase | ColorTheme | 'green-gradient' | 'outline' | 'clear';
 export type ButtonSize = SizePreset | 'custom';

@@ -1,3 +1,5 @@
+@use '@globals/styles/breakpoints';
+
 .layer {
 	background-color: var(--color-dark);
 
@@ -7,13 +9,5 @@
 		height: 100%;
 		background-color: var(--color-white);
 		overflow: hidden;
-	}
-
-	&__robot {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
 	}
 }

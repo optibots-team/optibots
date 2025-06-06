@@ -5,6 +5,10 @@ import marqueeImg_02 from '@shared/assets/images/home-page/marquee/marquee_02.pn
 
 export const generateMarqueeCards = (t: TFunction): MarqueeCard[] => [
 	{
+		title: t('up to 40'),
+		description: t('reduce'),
+	},
+	{
 		title: t('up to 80'),
 		description: t('automate'),
 		image: marqueeImg_01,
@@ -21,5 +25,13 @@ export const generateMarqueeCards = (t: TFunction): MarqueeCard[] => [
 	{
 		title: '500+',
 		description: t('projects'),
+	},
+	{
+		title: '50 000+',
+		description: t('attracted'),
+	},
+	{
+		title: '1 000 000+',
+		description: t('processed'),
 	},
 ];

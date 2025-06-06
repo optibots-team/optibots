@@ -64,10 +64,33 @@
 .section-padding {
   padding-top: 180px;
   padding-bottom: 180px;
+
+  @media (width < breakpoints.$lg) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  @media (width < breakpoints.$md) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
 }
 .section-padding-top {
   padding-top: 180px;
+
+  @media (width < breakpoints.$lg) {
+    padding-top: 120px;
+  }
+  @media (width < breakpoints.$md) {
+    padding-top: 90px;
+  }
 }
 .section-padding-bottom {
   padding-bottom: 180px;
+
+  @media (width < breakpoints.$lg) {
+    padding-bottom: 120px;
+  }
+  @media (width < breakpoints.$md) {
+    padding-bottom: 90px;
+  }
 }

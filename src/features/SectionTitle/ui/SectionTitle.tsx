@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { FlexV, type StackAlign } from '@shared/ui/Stack';
 import { Badge, type IBadgeBackground } from '@shared/ui/Badge';
-import { Text, type TextAlign, type TextSizePreset, type TextColorTheme, type TextColor } from '@shared/ui/Text';
+import { Text, type TextAlign, type TextSize, type TextColorTheme, type TextColor } from '@shared/ui/Text';
 import type { IconSize } from '@shared/ui/Icon';
 import type { Align } from '@shared/types/layout.types';
 import type { SizePreset } from '@shared/types/sizes.types';
@@ -15,7 +15,7 @@ type SectionTitleProps = {
 		icon?: ReactNode;
 		iconSize?: IconSize;
 		text?: string;
-		textSize?: TextSizePreset;
+		textSize?: TextSize;
 		textColor?: TextColorTheme;
 	}
 	text?: {
@@ -47,7 +47,15 @@ const SectionTitle = (props: SectionTitleProps) => {
 	return (
 		<FlexV gap={'24'} className={className} align={alignMap[align].flex}>
 			{(badge?.icon || badge?.text) && <Badge {...badge} />}
-			<Text gap={'24'} align={alignMap[align].text} {...text} />
+			<Text
+				align={alignMap[align].text}
+				gap={'24'}
+				size={{
+					desktop: { title: 'xl', text: 'm' },
+					mobile: { title: 'sl', text: 'm' },
+				}}
+				{...text}
+			/>
 		</FlexV>
 	);
 };

@@ -10,8 +10,8 @@ type LogoProps = {
 	theme?: ColorTheme;
 };
 
-const Logo = ({ className, theme = 'dark' }: LogoProps) => (
-	<strong className={classNames(styles.logo, {}, [className, styles[theme]])}>
+const Logo = ({ className, theme }: LogoProps) => (
+	<strong className={classNames(styles.logo, { ...(theme ? { [styles[theme]]: theme } : {}) }, [className])}>
 		<Link href={Routes.HOME} className={styles.logo__link}>
 			<LogoIcon />
 		</Link>

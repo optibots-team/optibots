@@ -246,13 +246,15 @@
     },
     "sectionMarquee": {
       "up to 80": "Up to 80%",
+      "up to 40": "Up to 40%",
       "5 years": "Over 5 years",
       "automate": "automation of routine tasks",
       "expertise": "of expertise in digital marketing and IT",
       "satisfied": "satisfied customers worldwide",
       "projects": "projects delivered with measurable results",
-      "300+": "300+",
-      "500+": "500+"
+      "reduce": "we reduce employees hiring expenses",
+      "attracted": "attracted leads through automated funnels",
+      "processed": "processed messages and applications"
     },
     "sectionAbout": {
       "badge": "Who we are?",

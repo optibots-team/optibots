@@ -13,6 +13,7 @@ type ButtonProps<T extends ElementType = 'button'> = {
 	circle?: boolean;
 	uppercase?: boolean;
 	fontFamily?: FontFamily;
+	fluid?: boolean;
 } & ButtonHTMLAttributes<HTMLButtonElement> & ComponentPropsWithoutRef<T>;
 
 const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) => {
@@ -27,6 +28,7 @@ const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) => {
 		uppercase = false,
 		type = 'button',
 		fontFamily = 'montserrat',
+		fluid,
 		...otherProps
 	} = props;
 	const Component = as || 'button';
@@ -34,6 +36,7 @@ const Button = <T extends ElementType = 'button'>(props: ButtonProps<T>) => {
 	const mods: Mods = {
 		[styles.circle]: circle,
 		[styles.uppercase]: uppercase,
+		[styles.fluid]: fluid,
 	};
 
 	const additional: Additional = [className, styles[size], styles[theme], styles[fontFamily]];

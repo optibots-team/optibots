@@ -1,0 +1,54 @@
+@use '@globals/styles/breakpoints';
+
+.hamburger {
+	position: relative;
+	z-index: 110;
+	display: none;
+	width: 58px;
+	height: 35px;
+	transition: var(--transition-primary);
+
+	@media (width < breakpoints.$lg) {
+		display: block;
+	}
+
+	span {
+		display: block;
+		position: absolute;
+		left: 50%;
+		width: 20px;
+		height: 2px;
+		translate: -50% -50%;
+		background-color: var(--color-dark);
+		border-radius: 3px;
+		transition: inherit;
+		transform-origin: center;
+
+		&:nth-child(1) {
+			top: calc(50% - 6px);
+		}
+		&:nth-child(2) {
+			top: 50%;
+		}
+		&:nth-child(3) {
+			top: calc(50% + 6px);
+		}
+	}
+
+	&.open {
+		span {
+			&:nth-child(1) {
+				top: 50%;
+				transform: rotate(45deg);
+			}
+			&:nth-child(2) {
+				opacity: 0;
+				scale: 0;
+			}
+			&:nth-child(3) {
+				top: 50%;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}

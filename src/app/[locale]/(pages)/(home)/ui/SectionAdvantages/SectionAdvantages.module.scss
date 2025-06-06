@@ -1,3 +1,5 @@
+@use '@globals/styles/breakpoints';
+
 .advantages {
 
 	&__title {
@@ -7,5 +9,12 @@
 
 	&__container {
 		gap: 110px;
+
+		@media (width < breakpoints.$lg) {
+			gap: 90px;
+		}
+		@media (width < breakpoints.$md) {
+			gap: 44px;
+		}
 	}
 }
