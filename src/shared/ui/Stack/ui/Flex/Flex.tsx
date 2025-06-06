@@ -26,9 +26,9 @@ const Flex = <T extends ElementType = 'div'>(props: FlexProps<T>) => {
 		gap,
 		fluid,
 		grow,
-		justify = 'start',
-		align = 'start',
-		direction = 'row',
+		justify,
+		align,
+		direction,
 		...rest
 	} = props;
 	const Component = as || 'div';
@@ -37,9 +37,9 @@ const Flex = <T extends ElementType = 'div'>(props: FlexProps<T>) => {
 		[flexStyles.grow]: grow,
 	};
 	const additional: Additional = [
-		justifyClasses[justify],
-		alignClasses[align],
-		directionClasses[direction],
+		justify && justifyClasses[justify],
+		align && alignClasses[align],
+		direction && directionClasses[direction],
 		gap && gapClasses[gap],
 		className,
 	];

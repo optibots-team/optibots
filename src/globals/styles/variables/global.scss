@@ -8,6 +8,7 @@
   --color-black: #000;
   --color-dark: #141414;
   --color-dark-secondary: #434343;
+  --color-dark-outline: #272727;
   --color-light: #D0D0D0;
   --color-overlay: rgba(0, 0, 0, .6);
 
@@ -29,6 +30,12 @@
   --radius-m: 24px;
   --radius-l: 32px;
 
+  // paddings
+
+  --padding-s: 12px;
+  --padding-m: 24px;
+  --padding-l: 32px;
+
   // transitions
 
   --transition-primary: .2s ease;
@@ -47,6 +54,9 @@
   --font-size-ml: 16px;
   --font-line-ml: 22px;
 
+  --font-size-sl: 20px;
+  --font-line-sl: 26px;
+
   --font-size-l: 24px;
   --font-line-l: 30px;
 
@@ -60,17 +70,4 @@
 
   --container-width: 1140px;
   --container-gap: 20px;
-
-  // header
-
-  --header-height: 70px;
-
-  // mobile
-
-  @media (width < breakpoints.$md) {
-
-    // header
-
-    --header-height: 50px;
-  }
 }

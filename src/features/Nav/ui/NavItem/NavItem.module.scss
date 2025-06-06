@@ -1,0 +1,26 @@
+@use '@globals/styles/breakpoints';
+
+.item {
+	position: relative;
+	color: currentColor;
+
+	&:not(:last-child) {
+		&:after {
+			content: '/';
+			position: absolute;
+			top: 50%;
+			left: calc(100% + 25px);
+			translate: 0 -50%;
+
+			@media (width < breakpoints.$lg) {
+				display: none;
+			}
+		}
+	}
+
+	&__link {
+		display: block;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+}

@@ -1,10 +1,43 @@
+@use '@globals/styles/breakpoints';
+
 .intro {
 	padding-top: 120px;
 	padding-bottom: 120px;
 
+	@media (width < breakpoints.$lg) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	@media (width < breakpoints.$md) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+
 	&__inner {
 		width: 100%;
 		max-width: 540px;
+
+		@media (width < breakpoints.$lg) {
+			max-width: 100%;
+		}
+	}
+
+	&__img {
+		display: none;
+		width: calc(100% + 20px);
+		max-width: calc(100% + 20px);
+		height: auto;
+		align-self: flex-end;
+
+		@media (width < breakpoints.$lg) {
+			display: block;
+		}
+	}
+
+	&__buttons {
+		@media (width < breakpoints.$md) {
+			flex-direction: column;
+		}
 	}
 
 	&__btn {
@@ -17,6 +50,11 @@
 		line-height: var(--font-line-xxl);
 		font-weight: 700;
 		text-transform: uppercase;
+
+		@media (width < breakpoints.$md) {
+			font-size: var(--font-size-l);
+			line-height: var(--font-line-l);
+		}
 
 		.colored {
 			background: var(--gradient-green);

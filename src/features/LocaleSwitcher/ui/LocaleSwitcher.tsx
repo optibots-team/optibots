@@ -30,7 +30,7 @@ const LocaleSwitcher = ({ className, theme = 'dark' }: LocaleSwitcherProps) => {
 		<Select
 			className={className}
 			options={switcherOptions}
-			defaultValue={currentLocale}
+			value={currentLocale}
 			onChange={handleChangeLocale}
 			theme={theme}
 		/>

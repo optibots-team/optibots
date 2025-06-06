@@ -1,3 +1,5 @@
+@use '@globals/styles/breakpoints';
+
 .item {
 	padding: 32px;
 	border-radius: var(--radius-l);
@@ -5,20 +7,15 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	border: 2px solid transparent;
 
 	// bg
 
 	&.light {
-		//background-color: var(--color-white);
-
 		background:
 			linear-gradient(#fff, #fff) padding-box,
 			linear-gradient(268.36deg, rgba(255, 255, 255, 0.5) 33.19%, rgba(255, 255, 255, 0) 130.54%) border-box;
 	}
 	&.green {
-		//background: var(--gradient-green);
-
 		background:
 			var(--gradient-green) padding-box,
 			linear-gradient(268.36deg, rgba(255, 255, 255, 0.5) 33.19%, rgba(255, 255, 255, 0) 130.54%) border-box;
@@ -33,7 +30,11 @@
 		grid-area: 1 / 1 / 3 / 2;
 		padding-bottom: 0;
 		background-image: url('/images/home-page/advantages/bg_01.jpg');
-		border-color: var(--color-light);
+
+		@media (width < breakpoints.$lg) {
+			grid-area: unset;
+			gap: 40px;
+		}
 
 		.item__img-wrapper {
 			max-width: 220px;
@@ -44,9 +45,13 @@
 	}
 	&.turnkey {
 		grid-area: 1 / 2 / 2 / 4;
-		height: 260px;
+		min-height: 260px;
 		background-image: url('/images/home-page/advantages/bg_02.png');
-		border-color: var(--color-white);
+
+		@media (width < breakpoints.$lg) {
+			grid-area: unset;
+			min-height: unset;
+		}
 
 		.item__inner {
 			width: 100%;
@@ -57,14 +62,26 @@
 	}
 	&.analytics {
 		grid-area: 2 / 2 / 3 / 3;
+
+		@media (width < breakpoints.$lg) {
+			grid-area: unset;
+		}
 	}
 	&.automatic {
 		grid-area: 2 / 3 / 3 / 4;
+
+		@media (width < breakpoints.$lg) {
+			grid-area: unset;
+		}
 	}
 	&.integration {
 		display: flex;
 		gap: 60px;
 		grid-area: 3 / 1 / 4 / 3;
+
+		@media (width < breakpoints.$lg) {
+			grid-area: unset;
+		}
 
 		.item__img-wrapper {
 			z-index: 1;
@@ -88,7 +105,10 @@
 	&.structure {
 		grid-area: 3 / 3 / 4 / 4;
 		background-image: url('/images/home-page/advantages/bg_03.jpg');
-		border-color: var(--color-light);
+
+		@media (width < breakpoints.$lg) {
+			grid-area: unset;
+		}
 	}
 
 	&__inner {

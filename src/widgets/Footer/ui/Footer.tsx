@@ -15,7 +15,7 @@ const Footer = ({ className }: FooterProps) => (
 		<Container display={'flex'} orientation={'horizontal'} className={styles.footer__container}>
 			<Logo theme={'light'} />
 			<FlexH align={'center'} gap={'32'} className={'ml-a'}>
-				<Nav theme={'light'} />
+				<Nav theme={'light'} location={'footer'} />
 				<LocaleSwitcher theme={'light'} />
 			</FlexH>
 		</Container>
