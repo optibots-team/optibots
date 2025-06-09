@@ -17,11 +17,7 @@ const SwiperSlider = (props: SwiperSliderProps) => {
 	const { className, slideClassName, options, onBeforeInit, slides } = props;
 
 	return (
-		<Swiper
-			className={className}
-			onBeforeInit={onBeforeInit}
-			{...options}
-		>
+		<Swiper className={className} onBeforeInit={onBeforeInit} {...options}>
 			{slides.map((slide, i) => (
 				<SwiperSlide key={i} className={slideClassName}>{slide}</SwiperSlide>
 			))}

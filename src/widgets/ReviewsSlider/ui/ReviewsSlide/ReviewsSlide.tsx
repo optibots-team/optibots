@@ -17,7 +17,6 @@ const ReviewsSlide = (props: ReviewsSlideProps) => {
 			<FlexH align={'center'} gap={'12'}>
 				<span className={styles.slide__avatar}>{author[0]}</span>
 				<Text
-					className={styles.slide__author}
 					gap={'4'}
 					title={`${author}, ${job}`}
 					text={company.toUpperCase()}
@@ -25,6 +24,7 @@ const ReviewsSlide = (props: ReviewsSlideProps) => {
 					size={'m'}
 					color={{ title: 'dark-secondary' }}
 					fontFamily={{ title: 'montserrat', text: 'unbounded' }}
+					weight={{ title: '400', text: '500' }}
 				/>
 			</FlexH>
 			<Text text={comment} color={'dark-secondary'} />

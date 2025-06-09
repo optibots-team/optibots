@@ -14,7 +14,7 @@ const SectionAdvantages = ({ className }: SectionAdvantagesProps) => {
 	const t = useTranslations('homePage.sectionAdvantages');
 
 	return (
-		<section className={classNames(styles.advantages, {}, [className, 'section-padding'])}>
+		<section className={classNames('section-padding', {}, [className])}>
 			<Container display={'flex'} orientation={'vertical'} className={styles.advantages__container}>
 				<SectionTitle
 					className={styles.advantages__title}

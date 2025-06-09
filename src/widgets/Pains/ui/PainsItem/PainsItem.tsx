@@ -15,9 +15,9 @@ const PainsItem = (props: PainsItemProps) => {
 
 	return (
 		<FlexV
+			as={'li'}
 			align={'stretch'}
 			justify={'stretch'}
-			gap={'20'}
 			className={classNames(styles.item, {}, [className, styles[id]])}
 		>
 			<FlexH align={'center'} gap={'12'} className={styles.item__header}>
@@ -28,12 +28,10 @@ const PainsItem = (props: PainsItemProps) => {
 					titleTag={'h3'}
 					size={'m'}
 					color={'white'}
+					weight={'500'}
 				/>
 			</FlexH>
-			<Text
-				text={desc}
-				color={'light'}
-			/>
+			<Text text={desc} color={'light'} />
 		</FlexV>
 	);
 };

@@ -4,9 +4,17 @@ import { FlexV } from '@shared/ui/Stack';
 import { getColorClass } from '../lib/getColorClass';
 import { getSizeClasses } from '../lib/getSizeClass';
 import { getAlignClass } from '../lib/getAlignClass';
+import { getWeightClass } from '../lib/getWeightClass';
 import { getFontFamilyClass } from '../lib/getFontFamilyClass';
 import type { SizeToken } from '@shared/types/sizes.types';
-import type { TextSizeResponsive, TextAlign, TextColor, TextFontFamily, TextTitleTag } from '../model/types/text.types';
+import type {
+	TextSizeResponsive,
+	TextAlign,
+	TextColor,
+	TextFontFamily,
+	TextTitleTag,
+	TextWeight
+} from '../model/types/text.types';
 import styles from './Text.module.scss';
 
 type TextProps = {
@@ -19,6 +27,7 @@ type TextProps = {
 	color?: TextColor;
 	size?: TextSizeResponsive;
 	align?: TextAlign;
+	weight?: TextWeight;
 	titleTag?: TextTitleTag;
 	fontFamily?: TextFontFamily;
 	gap?: SizeToken;
@@ -35,6 +44,7 @@ const Text = (props: TextProps) => {
 		color,
 		size,
 		align,
+		weight,
 		titleTag,
 		fontFamily,
 		gap = '6',
@@ -44,6 +54,7 @@ const Text = (props: TextProps) => {
 		styles[getColorClass('title', color)],
 		styles[getAlignClass('title', align)],
 		styles[getFontFamilyClass('title', fontFamily)],
+		styles[`w-${getWeightClass('title', weight)}`],
 		titleClassName,
 	];
 	const textAdditional: Additional = [
@@ -51,6 +62,7 @@ const Text = (props: TextProps) => {
 		styles[getColorClass('text', color)],
 		styles[getAlignClass('text', align)],
 		styles[getFontFamilyClass('text', fontFamily)],
+		styles[`w-${getWeightClass('text', weight)}`],
 		textClassName,
 	];
 	const TitleTag = titleTag ?? 'h2';

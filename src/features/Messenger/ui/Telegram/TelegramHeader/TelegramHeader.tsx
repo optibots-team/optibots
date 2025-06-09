@@ -5,6 +5,7 @@ import { Avatar } from '@shared/ui/Avatar';
 import type { TelegramHeader } from '@entities/Telegram';
 import styles from './TelegramHeader.module.scss';
 import StatusIcon from '@shared/assets/icons/telegram_statusbar.svg';
+import StatusMobileIcon from '@shared/assets/icons/telegram_statusbar_mobile.svg';
 
 interface TelegramHeaderProps extends TelegramHeader {
 	className?: string;
@@ -18,15 +19,14 @@ const TelegramHeader = (props: TelegramHeaderProps) => {
 			as={'header'}
 			align={'start'}
 			justify={'between'}
-			gap={'12'}
+			gap={'10'}
 			className={classNames(styles.header, {}, [className])}
 		>
 			<p className={styles.header__time}>{time}</p>
-			<FlexH align={'center'} gap={'12'}>
+			<FlexH align={'center'} className={styles.header__row}>
 				<Avatar
 					avatar={icon}
-					size={44}
-					iconSize={'30'}
+					iconSize={'fill'}
 					className={classNames(styles.header__avatar, {}, [styles[iconBg]])}
 				/>
 				<Text
@@ -34,13 +34,17 @@ const TelegramHeader = (props: TelegramHeaderProps) => {
 					text={desc.toUpperCase()}
 					fontFamily={'montserrat'}
 					color={{ title: 'dark', text: 'dark-secondary' }}
-					size={{ title: 'm', text: 's' }}
+					size={{
+						desktop: { title: 'm', text: 's' },
+						mobile: { title: 's', text: 'xs' },
+					}}
 					align={'center'}
 					gap={'0'}
 				/>
 			</FlexH>
 			<span className={styles.header__status}>
-				<StatusIcon />
+				<StatusIcon className={classNames(styles.icon, {}, [styles.pc])} />
+				<StatusMobileIcon className={classNames(styles.icon, {}, [styles.mobile])} />
 			</span>
 		</FlexH>
 	);

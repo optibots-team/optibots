@@ -17,7 +17,7 @@ const SectionFaq = ({ className }: SectionFaqProps) => {
 		<section className={classNames(styles.faq, {}, [className, 'section-padding'])}>
 			<Container display={'flex'} orientation={'vertical'} className={styles.faq__container}>
 				<SectionTitle
-					className={styles.contacts__title}
+					className={styles.faq__title}
 					align={'center'}
 					badge={{
 						background: 'dark',

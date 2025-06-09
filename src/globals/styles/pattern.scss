@@ -51,12 +51,24 @@
 
 .section-radius {
   border-radius: var(--radius-l) var(--radius-l) var(--radius-l) var(--radius-l);
+
+  @media (width < breakpoints.$md) {
+    border-radius: var(--radius-m) var(--radius-m) var(--radius-m) var(--radius-m);
+  }
 }
 .section-radius-top {
   border-radius: var(--radius-l) var(--radius-l) 0 0;
+
+  @media (width < breakpoints.$md) {
+    border-radius: var(--radius-m) var(--radius-m) 0 0;
+  }
 }
 .section-radius-bottom {
   border-radius: 0 0 var(--radius-l) var(--radius-l);
+
+  @media (width < breakpoints.$md) {
+    border-radius: 0 0 var(--radius-m) var(--radius-m);
+  }
 }
 
 // section paddings

@@ -1,8 +1,14 @@
+@use '@globals/styles/breakpoints';
+
 .accordion {
 	width: 100%;
 	max-width: 950px;
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: var(--radius-m);
+	border-radius: var(--radius-l);
 	background-color: var(--bg-secondary);
+
+	@media (width < breakpoints.$md) {
+		border-radius: var(--radius-m);
+	}
 }

@@ -23,15 +23,8 @@ const Telegram = (props: TelegramProps) => {
 		<MessengerBase className={classNames(styles.telegram, {}, [className])}>
 			<TelegramHeader {...header} />
 			<TelegramContent {...messages} />
-			<FlexV
-				align={'stretch'}
-				justify={'stretch'}
-				gap={'16'}
-				className={styles.telegram__inner}
-			>
-				<span className={styles.telegram__badge}>
-					{t('result')}
-				</span>
+			<FlexV align={'stretch'} justify={'stretch'} className={styles.telegram__inner}>
+				<span className={styles.telegram__badge}>{t('result')}</span>
 				{children}
 			</FlexV>
 		</MessengerBase>

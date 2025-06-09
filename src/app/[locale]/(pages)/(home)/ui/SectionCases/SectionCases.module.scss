@@ -1,8 +1,14 @@
+@use '@globals/styles/breakpoints';
+
 .cases {
 	background-color: var(--bg-secondary);
 
 	&__title {
 		width: 100%;
 		max-width: 510px;
+
+		@media (width < breakpoints.$md) {
+			max-width: 100%;
+		}
 	}
 }

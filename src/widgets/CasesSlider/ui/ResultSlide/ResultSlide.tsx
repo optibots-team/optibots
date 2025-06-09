@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { useMedia } from '@shared/hooks/useMedia';
 import { classNames } from '@shared/lib/classNames';
 import { FlexH, FlexV } from '@shared/ui/Stack';
 import { Icon } from '@shared/ui/Icon';
@@ -15,6 +16,8 @@ type ResultSlideProps = {
 };
 
 const ResultSlide = ({ className, theme, data }: ResultSlideProps) => {
+	const { isMobile } = useMedia();
+
 	const content: Record<InternalSlideTheme, () => ReactNode> = {
 		single: () => (
 			<FlexV as={'ul'} gap={'8'} className={styles.result}>
@@ -34,7 +37,7 @@ const ResultSlide = ({ className, theme, data }: ResultSlideProps) => {
 			</FlexV>
 		),
 		double: () => (
-			<FlexH as={'ul'} align={'stretch'} justify={'stretch'} gap={'16'}>
+			<FlexH as={'ul'} align={'stretch'} justify={'stretch'} gap={isMobile ? '8' : '16'}>
 				{(data as InternalProgress[]).map(({ title, progress }) => (
 					<FlexV as={'li'} gap={'8'} key={title} className={styles.progress__item}>
 						<Text
@@ -43,7 +46,7 @@ const ResultSlide = ({ className, theme, data }: ResultSlideProps) => {
 							size={'s'}
 							color={'dark-secondary'}
 						/>
-						<CircularProgress value={progress} className={'mt-a m-centred'} />
+						<CircularProgress size={ isMobile ? 80 : 100 } value={progress} className={'mt-a m-centred'} />
 					</FlexV>
 				))}
 			</FlexH>
