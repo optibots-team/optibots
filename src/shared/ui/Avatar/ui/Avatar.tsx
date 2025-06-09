@@ -17,7 +17,7 @@ type AvatarProps = {
 const Avatar = (props: AvatarProps) => {
 	const {
 		className,
-		size = 40,
+		size,
 		iconSize,
 		circle = true,
 		avatar,

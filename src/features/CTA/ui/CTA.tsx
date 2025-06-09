@@ -1,9 +1,11 @@
 import { useTranslations } from 'next-intl';
+import { classNames } from '@shared/lib/classNames';
 import { FlexV, type StackAlign } from '@shared/ui/Stack';
 import { Text, type TextColorTheme } from '@shared/ui/Text';
 import { Button } from '@shared/ui/Button';
 import type { Align } from '@shared/types/layout.types';
 import type { SizeToken } from '@shared/types/sizes.types';
+import styles from './CTA.module.scss';
 
 type CTAProps = {
 	className?: string;
@@ -39,7 +41,11 @@ const CTA = (props: CTAProps) => {
 				align={align}
 				color={textColor}
 			/>
-			<Button theme={'green-gradient'} fontFamily={'unbounded'} className={'fw-500'}>
+			<Button
+				theme={'green-gradient'}
+				fontFamily={'unbounded'}
+				className={classNames(styles.cta__btn, {}, ['fw-500'])}
+			>
 				{label}
 			</Button>
 		</FlexV>

@@ -1,5 +1,21 @@
+@use '@globals/styles/breakpoints';
+
 .faq {
+
+	&__title {
+		@media (width < breakpoints.$md) {
+			padding-left: var(--container-gap);
+			padding-right: var(--container-gap);
+		}
+	}
+
 	&__container {
 		gap: 90px;
+
+		@media (width < breakpoints.$md) {
+			gap: 44px;
+			width: 100%;
+			max-width: 100%;
+		}
 	}
 }

@@ -19,12 +19,4 @@
 		color: var(--color-white);
 		text-transform: uppercase;
 	}
-
-	&__author {
-		p {
-			&:not(:first-child) {
-				font-weight: 600;
-			}
-		}
-	}
 }

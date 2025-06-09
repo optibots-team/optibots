@@ -1,11 +1,21 @@
+@use '@globals/styles/breakpoints';
+
 .reviews {
 
 	&__container {
-		gap: 80px;
+		gap: 90px;
+
+		@media (width < breakpoints.$md) {
+			gap: 44px;
+		}
 	}
 
 	&__title {
 		width: 100%;
 		max-width: 510px;
+
+		@media (width < breakpoints.$md) {
+			max-width: 100%;
+		}
 	}
 }

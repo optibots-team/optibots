@@ -37,8 +37,11 @@ const AccordionItem = (props: AccordionItemProps) => {
 							title={title.toUpperCase()}
 							titleTag={'h3'}
 							color={theme === 'light' ? 'white' : 'dark'}
-							size={'ml'}
-							className={'fw-600'}
+							size={{
+								desktop: 'ml',
+								mobile: 'm',
+							}}
+							weight={'500'}
 						/>
 						<span className={classNames(styles.item__arrow, { [styles.open]: open }, [])}>
 							<Icon icon={<ArrowIcon />} size={'24'} />
@@ -47,7 +50,7 @@ const AccordionItem = (props: AccordionItemProps) => {
 					<DisclosurePanel>
 						<Text
 							text={content}
-							color={theme === 'light' ? 'light' : 'dark'}
+							color={theme}
 							className={styles.item__content}
 						/>
 					</DisclosurePanel>

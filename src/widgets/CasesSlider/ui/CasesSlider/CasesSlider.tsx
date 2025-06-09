@@ -26,9 +26,18 @@ const CasesSlider = ({ className }: CasesSliderProps) => {
 				slides={slides}
 				options={{
 					slidesPerView: 'auto',
-					spaceBetween: 24,
+					spaceBetween: 6,
 					centeredSlides: true,
 					grabCursor: true,
+					initialSlide: 1,
+					breakpoints: {
+						374: {
+							spaceBetween: 12,
+						},
+						767: {
+							spaceBetween: 24,
+						},
+					},
 				}}
 			/>
 		</div>

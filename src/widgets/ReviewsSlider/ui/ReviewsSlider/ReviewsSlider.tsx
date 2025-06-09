@@ -4,6 +4,7 @@ import { useCallback, useMemo, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { Navigation, Pagination } from 'swiper/modules';
 import type { Swiper as ISwiper } from 'swiper/types';
+import { useMedia } from '@shared/hooks/useMedia';
 import { classNames } from '@shared/lib/classNames';
 import { FlexH, FlexV } from '@shared/ui/Stack';
 import { SwiperSlider } from '@features/SwiperSlider';
@@ -24,7 +25,10 @@ const ReviewsSlider = ({ className }: ReviewsSliderProps) => {
 	const prevBtnRef = useRef<HTMLButtonElement>(null);
 	const nextBtnRef = useRef<HTMLButtonElement>(null);
 	const paginationRef = useRef<HTMLDivElement>(null);
+	const { isMobile } = useMedia();
+
 	const reviews = useMemo(() => generateReviews(t), [t]);
+
 	const slides = useMemo(() =>
 		reviews.map((review) => <ReviewsSlide key={review.id} review={review} />),
 		[reviews],
@@ -40,12 +44,15 @@ const ReviewsSlider = ({ className }: ReviewsSliderProps) => {
 		if (isNav && prevBtnRef.current && nextBtnRef.current) {
 			nav.prevEl = prevBtnRef.current;
 			nav.nextEl = nextBtnRef.current;
+			swiper.navigation.init();
 			swiper.navigation.update();
+			swiper.update();
 		}
 
 		if (isPag && paginationRef.current) {
 			pag.el = paginationRef.current;
 			swiper.pagination.update();
+			swiper.update();
 		}
 	}, []);
 
@@ -53,7 +60,7 @@ const ReviewsSlider = ({ className }: ReviewsSliderProps) => {
 		<FlexV
 			align={'stretch'}
 			justify={'stretch'}
-			gap={'16'}
+			gap={isMobile? '0' : '16'}
 			className={classNames(styles.slider, {}, [className])}
 		>
 			<FlexH align={'center'} justify={'between'} gap={'12'}>
@@ -68,10 +75,6 @@ const ReviewsSlider = ({ className }: ReviewsSliderProps) => {
 					onBeforeInit={(swiper) => setupSwiperRefs(swiper)}
 					options={{
 						modules: [Navigation, Pagination],
-						slidesPerView: 2,
-						slidesPerGroup: 2,
-						spaceBetween: 24,
-						grabCursor: true,
 						pagination: {
 							enabled: true,
 							type: 'fraction',
@@ -83,6 +86,14 @@ const ReviewsSlider = ({ className }: ReviewsSliderProps) => {
 							enabled: true,
 							prevEl: prevBtnRef.current,
 							nextEl: nextBtnRef.current,
+						},
+						spaceBetween: 24,
+						grabCursor: true,
+						breakpoints: {
+							767: {
+								slidesPerView: 2,
+								slidesPerGroup: 2,
+							},
 						},
 					}}
 				/>

@@ -1,12 +1,16 @@
 @use '@globals/styles/breakpoints';
 
 .item {
-	padding: 32px;
+	padding: var(--padding-l);
 	border-radius: var(--radius-l);
 	box-shadow: var(--shadow-primary);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+
+	@media (width < breakpoints.$md) {
+		padding: var(--padding-m);
+	}
 
 	// bg
 
@@ -35,12 +39,19 @@
 			grid-area: unset;
 			gap: 40px;
 		}
+		@media (width < breakpoints.$md) {
+			gap: 24px;
+		}
 
 		.item__img-wrapper {
 			max-width: 220px;
 			margin-top: auto;
 			margin-left: auto;
 			margin-right: auto;
+
+			@media (width < breakpoints.$md) {
+				max-width: 150px;
+			}
 		}
 	}
 	&.turnkey {
@@ -52,12 +63,14 @@
 			grid-area: unset;
 			min-height: unset;
 		}
+		@media (width < breakpoints.$md) {
+			padding-top: 140px;
+		}
 
 		.item__inner {
 			width: 100%;
 			max-width: 350px;
 			height: 100%;
-			justify-content: space-between;
 		}
 	}
 	&.analytics {
@@ -82,23 +95,45 @@
 		@media (width < breakpoints.$lg) {
 			grid-area: unset;
 		}
+		@media (width < breakpoints.$md) {
+			flex-direction: column-reverse;
+			gap: 24px;
+		}
 
-		.item__img-wrapper {
-			z-index: 1;
-			align-self: center;
-			max-width: 390px;
-			border-radius: var(--radius-m);
+		.item {
 
-			&:before {
-				content: '';
-				position: absolute;
-				z-index: -1;
-				top: 15px;
-				left: -15px;
-				width: 100%;
-				height: 100%;
+			&__inner {
+				flex: 1 1 60%;
+			}
+
+			&__img-wrapper {
+				z-index: 1;
+				flex: 1 1 100%;
+				align-self: center;
+				max-width: 390px;
 				border-radius: var(--radius-m);
-				background: linear-gradient(102deg, #01474C -115%, #9CD08E 106%);
+
+				@media (width < breakpoints.$md) {
+					max-width: 215px;
+					margin-left: auto;
+				}
+
+				&:before {
+					content: '';
+					position: absolute;
+					z-index: -1;
+					top: 10px;
+					left: -10px;
+					width: 100%;
+					height: 100%;
+					border-radius: var(--radius-m);
+					background: linear-gradient(102deg, #01474C -115%, #9CD08E 106%);
+
+					@media (width < breakpoints.$md) {
+						top: 5px;
+						left: -5px;
+					}
+				}
 			}
 		}
 	}
@@ -109,12 +144,6 @@
 		@media (width < breakpoints.$lg) {
 			grid-area: unset;
 		}
-	}
-
-	&__inner {
-		display: flex;
-		flex-direction: column;
-		gap: 24px;
 	}
 
 	&__icon {
@@ -130,6 +159,10 @@
 			linear-gradient(#141414, #141414) padding-box,
 			linear-gradient(226deg, rgba(255, 255, 255, .3) 3%, rgba(255, 255, 255, 0) 100%) border-box;
 		color: var(--color-white);
+
+		@media (width < breakpoints.$md) {
+			display: none;
+		}
 	}
 
 	&__img-wrapper {

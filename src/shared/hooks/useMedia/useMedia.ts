@@ -1,33 +1,46 @@
 'use client';
 
-import { useMediaQuery } from 'react-responsive';
+import { useEffect, useState } from 'react';
 
 type UseMediaProps = {
-  smallMobileBreakpoint?: string;
-  mobileBreakpoint?: string;
-  tabletBreakpoint?: string;
-  PCBreakpoint?: string;
-  largePCBreakpoint?: string;
+  smallMobileBreakpoint?: number;
+  mobileBreakpoint?: number;
+  tabletBreakpoint?: number;
+  pcBreakpoint?: number;
+  largePcBreakpoint?: number;
 };
 
-export const useMedia = ({
-  smallMobileBreakpoint = '374px',
-  mobileBreakpoint = '767px',
-  tabletBreakpoint = '1023px',
-  PCBreakpoint = '1279px',
-  largePCBreakpoint = '1439px',
-}: UseMediaProps = {}) => {
-  const isSmallMobile = useMediaQuery({ query: `(max-width: ${smallMobileBreakpoint})` });
-  const isMobile = useMediaQuery({ query: `(max-width: ${mobileBreakpoint})` });
-  const isTablet = useMediaQuery({ query: `(max-width: ${tabletBreakpoint})` });
-  const isPC = useMediaQuery({ query: `(max-width: ${PCBreakpoint})` });
-  const isLargePC = useMediaQuery({ query: `(max-width: ${largePCBreakpoint})` });
+export const useMedia = (props: UseMediaProps = {}) => {
+  const [width, setWidth] = useState<number | null>(null);
+  const {
+    smallMobileBreakpoint = 374,
+    mobileBreakpoint = 767,
+    tabletBreakpoint = 1023,
+    pcBreakpoint = 1279,
+    largePcBreakpoint = 1439,
+  } = props;
+
+  useEffect(() => {
+    const updateWidth = () => setWidth(window.innerWidth);
+
+    updateWidth();
+    window.addEventListener('resize', updateWidth);
+
+    return () => window.removeEventListener('resize', updateWidth);
+  }, []);
+
+  const isSmallMobile = width !== null && width <= smallMobileBreakpoint;
+  const isMobile = width !== null && width <= mobileBreakpoint;
+  const isTablet = width !== null && width <= tabletBreakpoint;
+  const isPC = width !== null && width <= pcBreakpoint;
+  const isLargePC = width !== null && width <= largePcBreakpoint;
 
   return {
-    isLargePC,
-    isPC,
-    isTablet,
-    isMobile,
     isSmallMobile,
+    isMobile,
+    isTablet,
+    isPC,
+    isLargePC,
+    width,
   };
 };

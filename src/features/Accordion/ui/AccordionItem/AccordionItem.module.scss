@@ -1,5 +1,11 @@
+@use '@globals/styles/breakpoints';
+
 .item {
-	padding: 32px;
+	padding: var(--padding-l);
+
+	@media (width < breakpoints.$md) {
+		padding: 20px;
+	}
 
 	&.light {}
 	&.dark {}
@@ -8,10 +14,18 @@
 		.item {
 			&__trigger {
 				padding-left: 50px;
+
+				@media (width < breakpoints.$md) {
+					padding-left: 38px;
+				}
 			}
 
 			&__content {
 				padding-left: 50px;
+
+				@media (width < breakpoints.$md) {
+					padding-left: 0;
+				}
 			}
 		}
 	}
@@ -20,6 +34,7 @@
 		position: relative;
 		display: flex;
 		align-items: center;
+		//align-items: flex-start;
 		justify-content: space-between;
 		gap: 24px;
 		width: 100%;
@@ -36,7 +51,7 @@
 
 	&__counter {
 		position: absolute;
-		top: 2px;
+		top: 0;
 		left: 0;
 		display: block;
 		background: var(--gradient-green);
@@ -46,13 +61,27 @@
 		color: transparent;
 		font-size: var(--font-size-ml);
 		line-height: var(--font-line-ml);
+		font-weight: 500;
 		text-transform: uppercase;
+
+		@media (width < breakpoints.$md) {
+			background: transparent;
+			font-size: var(--font-size-m);
+			line-height: var(--font-line-m);
+			color: var(--color-white);
+			-webkit-background-clip: unset;
+			-webkit-text-fill-color: unset;
+			background-clip: unset;
+		}
 	}
 
 	&__arrow {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-shrink: 0;
+		width: 35px;
+		aspect-ratio: 1;
 		border: 1px solid #FFFFFF05;
 		border-radius: 50%;
 		background-color: #1E1E1E;

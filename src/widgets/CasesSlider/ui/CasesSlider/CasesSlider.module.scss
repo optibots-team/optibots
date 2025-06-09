@@ -1,6 +1,12 @@
+@use '@globals/styles/breakpoints';
+
 .slider {
 	position: relative;
 	margin-top: 90px;
+
+	@media (width < breakpoints.$md) {
+		margin-top: 44px;
+	}
 
 	&:before, &:after {
 		content: '';
@@ -10,6 +16,13 @@
 		top: 0;
 		width: calc(420 / 1440 * 100vw);
 		height: 100%;
+
+		@media (width < breakpoints.$xl) {
+			width: calc(200 / 1024 * 100vw);
+		}
+		@media (width < breakpoints.$md) {
+			display: none;
+		}
 	}
 	&:before {
 		left: 0;
@@ -38,5 +51,15 @@
 		max-width: 565px;
 		height: auto;
 		flex-grow: 1;
+
+		@media (width < breakpoints.$lg) {
+			max-width: 500px;
+		}
+		@media (width < breakpoints.$sm) {
+			max-width: 320px;
+		}
+		@media (width < breakpoints.$xs) {
+			max-width: 290px;
+		}
 	}
 }

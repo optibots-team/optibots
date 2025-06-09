@@ -1,15 +1,40 @@
+@use '@globals/styles/breakpoints';
+
 .header {
 	padding: 12px 18px;
 	background-color: var(--color-white);
 
+	@media (width < breakpoints.$md) {
+		padding: 10px;
+	}
+
 	&__time {
+		flex-shrink: 0;
 		font-family: var(--font-montserrat), sans-serif;
 		font-size: var(--font-size-m);
 		line-height: var(--font-line-m);
 		font-weight: 600;
 	}
 
+	&__row {
+		gap: 12px;
+
+		@media (width < breakpoints.$md) {
+			gap: 8px;
+		}
+	}
+
 	&__avatar {
+		width: 44px;
+		height: 44px;
+		padding: 7px;
+
+		@media (width < breakpoints.$md) {
+			width: 32px;
+			height: 32px;
+			padding: 5px;
+		}
+
 		&.green {
 			background-image: url('/images/home-page/cases/avatar-bg_green.jpg');
 		}
@@ -26,9 +51,27 @@
 		width: 100%;
 		max-width: 80px;
 
-		svg, path {
+		@media (width < breakpoints.$md) {
+			max-width: 50px;
+		}
+	}
+
+	.icon {
+		width: 100%;
+
+		&.pc {
 			display: block;
-			width: 100%;
+
+			@media (width < breakpoints.$md) {
+				display: none;
+			}
+		}
+		&.mobile {
+			display: none;
+
+			@media (width < breakpoints.$md) {
+				display: block;
+			}
 		}
 	}
 }

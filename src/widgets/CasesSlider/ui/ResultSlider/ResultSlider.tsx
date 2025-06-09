@@ -42,7 +42,12 @@ const ResultSlider = ({ className, sliderData }: ResultSliderProps) => {
 						horizontalClass: styles.slider__pagination,
 					},
 					slidesPerView: 1,
-					spaceBetween: 24,
+					spaceBetween: 12,
+					breakpoints: {
+						767: {
+							spaceBetween: 24,
+						},
+					},
 				}}
 			/>
 		</div>

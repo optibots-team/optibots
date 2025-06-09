@@ -16,7 +16,6 @@ const TelegramContent = (props: TelegramContentProps) => {
 		<FlexV
 			align={'stretch'}
 			justify={'stretch'}
-			gap={'24'}
 			className={classNames(styles.content, {}, [className])}
 		>
 			<FlexV align={'end'} gap={'8'} className={classNames(styles.content__group, {}, [styles.user])}>
@@ -31,8 +30,7 @@ const TelegramContent = (props: TelegramContentProps) => {
 				<Avatar
 					className={styles.content__avatar}
 					avatar={<LogoIcon />}
-					size={44}
-					iconSize={'26'}
+					iconSize={'fill'}
 				/>
 				<FlexV gap={'8'} className={styles.content__group}>
 					<div className={styles.content__message}>

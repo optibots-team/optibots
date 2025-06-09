@@ -32,14 +32,15 @@ const TariffCard = <T extends ElementType = 'div'>(props: TariffCardProps<T>) =>
 					text={description}
 					size={{ title: 'ml', text: 's' }}
 					color={{ title: 'dark', text: 'dark-secondary' }}
+					weight={'500'}
 				/>
 			</div>
 			<div className={styles.card__row}>
 				<Text
-					className={'fw-500'}
 					text={`$${price}`}
 					size={'l'}
 					fontFamily={'unbounded'}
+					weight={'500'}
 				/>
 			</div>
 			<div className={styles.card__row}>
