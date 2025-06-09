@@ -1,5 +1,4 @@
-import type { TextElement } from '../model/types/text.types';
-import type { TextAlign } from '../model/types/text.types';
+import type { TextElement, TextAlign } from '../model/types/text.types';
 
 const DEFAULT_TITLE_ALIGN = 'left';
 const DEFAULT_TEXT_ALIGN = 'left';

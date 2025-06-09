@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { classNames, type Mods } from '@shared/lib/classNames';
+import { FlexV } from '@shared/ui/Stack';
 import { Text, type TextColorTheme } from '@shared/ui/Text';
 import { Icon } from '@shared/ui/Icon';
 import type { Advantage } from '@entities/Advantage';
@@ -24,17 +25,23 @@ const AdvantagesItem = (props: AdvantagesItemProps) => {
 
 	return (
 		<li className={classNames(styles.item, mods, [className, styles[id]])}>
-			<div className={styles.item__inner}>
+			<FlexV
+				align={'stretch'}
+				justify={ id === 'turnkey' ? 'between' : 'stretch' }
+				gap={'24'}
+				className={styles.item__inner}
+			>
 				<span className={styles.item__icon}><Icon icon={icon} size={'24'} /></span>
 				<Text
 					title={title.toUpperCase()}
 					text={subtitle}
+					gap={'12'}
 					titleTag={'h3'}
 					size={'m'}
 					color={{ title: titleColor, text: textColor }}
-					gap={'12'}
+					weight={{ title: '500' }}
 				/>
-			</div>
+			</FlexV>
 			{image && (
 				<div className={styles['item__img-wrapper']}>
 					<Image

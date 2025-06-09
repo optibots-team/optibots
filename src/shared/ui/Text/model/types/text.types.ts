@@ -1,5 +1,5 @@
 import type { ColorTheme, ColorThemeBase } from '@shared/types/themes.types';
-import type { SizePreset } from '@shared/types/sizes.types';
+import type { SizePreset, Weight } from '@shared/types/sizes.types';
 import type { Align } from '@shared/types/layout.types';
 import type { FontFamily } from '@shared/types/fontFamily.types';
 
@@ -12,6 +12,8 @@ export type TextSize = SizePreset | 'xs' | 'ml' | 'sl' | 'xl' | 'xxl';
 export type TextTitleTag = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
 
 export type TextAlign = Align | { title?: Align; text?: Align };
+
+export type TextWeight = Weight | { title?: Weight; text?: Weight };
 
 export type TextFontFamily = FontFamily | { title?: FontFamily; text?: FontFamily };
 

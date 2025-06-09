@@ -1,6 +1,13 @@
+@use '@globals/styles/breakpoints';
+
 .card {
-	padding: 32px;
+	padding: var(--padding-l);
 	border-radius: var(--radius-l);
+
+	@media (width < breakpoints.$md) {
+		padding: var(--padding-m);
+		border-radius: var(--radius-m);
+	}
 
 	&.basic, &.standard {
 		background-color: var(--color-white);
@@ -14,11 +21,23 @@
 		flex-direction: column;
 		gap: 32px;
 
+		@media (width < breakpoints.$md) {
+			gap: 20px;
+		}
+
 		&:not(:first-child) {
-			padding-top: 24px;
+			padding-top: var(--padding-m);
+
+			@media (width < breakpoints.$md) {
+				padding-top: 20px;
+			}
 		}
 		&:not(:last-child) {
-			padding-bottom: 24px;
+			padding-bottom: var(--padding-m);
+
+			@media (width < breakpoints.$md) {
+				padding-bottom: 20px;
+			}
 		}
 
 		+ .card__row {

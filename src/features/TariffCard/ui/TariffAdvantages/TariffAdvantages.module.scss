@@ -1,12 +1,6 @@
 .advantages {
-	display: flex;
-	flex-direction: column;
-	gap: 12px;
 
 	&__item {
-		display: flex;
-		align-items: flex-start;
-		gap: 8px;
 		font-family: var(--font-montserrat), sans-serif;
 	}
 

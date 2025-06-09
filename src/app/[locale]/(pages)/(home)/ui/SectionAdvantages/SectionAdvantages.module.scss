@@ -5,6 +5,10 @@
 	&__title {
 		width: 100%;
 		max-width: 585px;
+
+		@media (width < breakpoints.$md) {
+			max-width: 100%;
+		}
 	}
 
 	&__container {

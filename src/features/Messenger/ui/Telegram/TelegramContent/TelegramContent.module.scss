@@ -1,6 +1,15 @@
+@use '@globals/styles/breakpoints';
+
 .content {
 	padding-left: 20px;
 	padding-right: 40px;
+	gap: 24px;
+
+	@media (width < breakpoints.$md) {
+		padding-left: 10px;
+		padding-right: 20px;
+		gap: 12px;
+	}
 
 	&__group {
 		&.user {
@@ -36,7 +45,7 @@
 	&__message {
 		position: relative;
 		z-index: 1;
-		width: max-content;
+		width: auto;
 		max-width: 400px;
 		padding: 10px;
 		border-radius: var(--radius-s);
@@ -60,9 +69,23 @@
 
 	&__text {
 		font-family: var(--font-montserrat), sans-serif;
+
+		@media (width < breakpoints.$md) {
+			font-size: var(--font-size-s);
+			line-height: var(--font-line-s);
+		}
 	}
 
 	&__avatar {
+		width: 44px;
+		height: 44px;
+		padding: 6px;
 		background-color: var(--color-white);
+
+		@media (width < breakpoints.$md) {
+			width: 32px;
+			height: 32px;
+			padding: 4px;
+		}
 	}
 }

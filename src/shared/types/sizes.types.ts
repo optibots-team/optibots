@@ -27,3 +27,5 @@ export type SizeToken =
 	'46' |
 	'48' |
 	'50';
+
+export type Weight = '400' | '500' | '600' | '700';

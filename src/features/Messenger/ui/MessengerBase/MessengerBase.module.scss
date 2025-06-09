@@ -1,7 +1,14 @@
+@use '@globals/styles/breakpoints';
+
 .messenger {
 	height: 100%;
-	padding-bottom: 24px;
+	padding-bottom: var(--padding-m);
 	border: 4px solid #5d5d5d;
 	border-radius: var(--radius-l);
 	overflow: hidden;
+
+	@media (width < breakpoints.$md) {
+		border-radius: var(--radius-m);
+		border-width: 2px;
+	}
 }
