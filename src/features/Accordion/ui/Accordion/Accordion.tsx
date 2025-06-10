@@ -16,7 +16,7 @@ const Accordion = (props: AccordionProps) => {
 		<ul className={className}>
 			{items.map((item, i) => (
 				<AccordionItem
-					key={item.title}
+					key={item.id}
 					item={item}
 					counter={counter ? i + 1 : null}
 					theme={theme}

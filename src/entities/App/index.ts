@@ -1,3 +1,9 @@
 export { useAppStore } from './model/store/app.store';
 
-export { selectIsMenuOpen, selectToggleMenu, selectSet } from './model/selectors/app.selectors';
+export {
+	selectIsMenuOpen,
+	selectToggleMenu,
+	selectOpenMenu,
+	selectCloseMenu,
+	selectSet,
+} from './model/selectors/app.selectors';

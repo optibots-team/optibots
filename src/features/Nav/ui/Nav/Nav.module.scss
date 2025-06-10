@@ -51,7 +51,14 @@
 			}
 		}
 	}
-	&.footer {}
+	&.footer {
+		.nav {
+			&__list {
+				justify-content: flex-end;
+				flex-wrap: wrap;
+			}
+		}
+	}
 
 	&.dark {
 		color: var(--color-dark);
@@ -66,7 +73,7 @@
 
 	&__list {
 		flex-direction: row;
-		gap: 50px;
+		gap: 12px 50px;
 	}
 
 	&__contacts {

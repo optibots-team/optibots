@@ -154,46 +154,46 @@
       "comment": "All our VIP clients now interact with the bot — fast, convenient, and error-free. It remembers preferences, suggests bouquets, and accepts payments. A truly modern solution that matches our service standards."
     },
     "wow": {
-      "author": "Роман",
-      "job": "предприниматель",
-      "company": "Магазин подарков и шаров “WOW Day”",
-      "comment": "Уже через неделю после внедрения бота мы увидели рост заказов на 27%. Бот сам спрашивает у клиента всё, что нужно — цвет, дата, пожелания. Мы просто берем и отправляем. Очень удобно."
+      "author": "Robert",
+      "job": "entrepreneur",
+      "company": "Gift and balloon shop “WOW Day”",
+      "comment": "Just a week after launching the bot, we saw a 27% increase in orders. The bot asks customers everything we need — color, date, wishes. We simply pack and send. Super convenient."
     },
     "sweet": {
-      "author": "Алина",
-      "job": "владелица",
-      "company": "Кондитерская “Sweet Mood”",
-      "comment": "С помощью чат-бота мы полностью автоматизировали прием заказов на торты. Раньше тратили по 4-5 часов в день на переписку, теперь — 20-30 минут. Заказы не теряются, всё чётко. Клиенты довольны, а мы освободили кучу времени на творчество."
+      "author": "Alina",
+      "job": "owner",
+      "company": "Bakery “Sweet Mood”",
+      "comment": "With the chatbot, we fully automated cake orders. We used to spend 4–5 hours a day messaging clients — now it’s just 20–30 minutes. No missed orders, everything runs smoothly. Clients are happy, and we finally have more time for creativity."
     },
     "english": {
-      "author": "Наталья",
-      "job": "сооснователь",
-      "company": "Онлайн-школа английского языка “Easy English”",
-      "comment": "Ребята помогли выстроить воронку через Telegram. С ботом записываются на пробный урок, получают материалы, а потом оплачивают курс. Автоматизация дала +35% к конверсии. Спасибо за умный подход."
+      "author": "Natalia",
+      "job": "co-founder",
+      "company": "Online english school “Easy English”",
+      "comment": "The team helped us build a Telegram funnel. With the bot, users sign up for a trial lesson, receive materials, and then purchase the course. Automation boosted our conversion rate by 35%. Grateful for the smart approach."
     },
     "relaxTour": {
-      "author": "Виктория",
-      "job": "директор",
-      "company": "Туристическое агентство “RelaxTour”",
-      "comment": "Раньше мы теряли до 40% заявок, пока менеджер успевал ответить. Сейчас бот отвечает моментально, предлагает туры и фиксирует интерес. В первые 2 недели — +63 лидов без увеличения бюджета."
+      "author": "Victoria",
+      "job": "director",
+      "company": "Travel Agency “RelaxTour”",
+      "comment": "We used to lose up to 40% of inquiries while waiting for a manager to respond. Now the bot replies instantly, suggests tours, and captures interest. In just the first 2 weeks — 63 extra leads with no increase in ad spend."
     },
-    "manicure": {
-      "author": "Марина",
-      "job": "мастер",
-      "company": "Мастер по маникюру",
-      "comment": "Сама работаю, времени на переписку нет. Теперь всё делает бот: записывает, напоминает, отвечает на частые вопросы. Даже если я занята — бизнес не стоит."
+    "staffUp": {
+      "author": "Christian",
+      "job": "owner",
+      "company": "HR-agency “STAFFUP”",
+      "comment": "Manual candidate screening used to take weeks — and half the applicants would just disappear. After launching the chatbot, it now handles initial interviews, collects resumes, and even tests skills. No more endless calls or emails. The result: 17 extra vacancies filled in a month, and hiring time cut by 3x. Thanks for the smart solution!"
     },
     "adSpark": {
-      "author": "Илья",
+      "author": "Patrick",
       "job": "CEO",
-      "company": "Digital агентство “AdSpark”",
-      "comment": "Используем чат-боты в связке с автоворонками для клиентов. Команда настроила всё под ключ — от логики до интеграции с CRM. Сервис достойный, подход проактивный."
+      "company": "Digital Agency “AdSpark”",
+      "comment": "We use chatbots together with automated funnels for our clients — plus content generation and autoposting. The team set everything up end-to-end: from logic to full integration with ad platforms. A solid solution with a proactive approach."
     },
     "streetBox": {
-      "author": "Света",
-      "job": "операционный директор",
-      "company": "Магазин одежды онлайн “STREETBOX”",
-      "comment": "Бот помог сократить рутину на поддержке — 80% обращений теперь закрываются автоматически. Люди могут отслеживать заказы, узнавать о возврате и доставке без участия менеджера. Очень экономит ресурсы."
+      "author": "Sveta",
+      "job": "COO",
+      "company": "Online Clothing Store “STREETBOX”",
+      "comment": "The bot helped cut support workload — 80% of inquiries are now handled automatically. Customers can track orders, get info on returns and delivery, all without a manager involved. Huge resource saver."
     }
   },
   "pain": {

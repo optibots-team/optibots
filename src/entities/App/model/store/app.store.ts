@@ -9,6 +9,8 @@ const useAppStore = create<AppState & AppActions>(
 	(set) => ({
 		...initialState,
 		toggleMenu: () => set((state) => ({ isMenuOpen: !state.isMenuOpen })),
+		openMenu: () => set(() => ({ isMenuOpen: true })),
+		closeMenu: () => set(() => ({ isMenuOpen: false })),
 		set: (newState) => set((state) => ({ ...state, ...newState })),
 		reset: () => set(initialState),
 	}),

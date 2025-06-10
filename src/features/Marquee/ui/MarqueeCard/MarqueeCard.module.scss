@@ -1,6 +1,7 @@
 .card {
 	position: relative;
 	width: 350px;
+	min-height: 126px;
 	margin-right: 12px;
 	background: var(--gradient-gray);
 	border: 2px solid rgba(255, 255, 255, .02);

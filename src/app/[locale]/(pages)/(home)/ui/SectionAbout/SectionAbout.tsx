@@ -3,6 +3,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { SectionTitle } from '@features/SectionTitle';
+import { homeAnchors } from '@shared/const/anchors';
 import styles from './SectionAbout.module.scss';
 import AtomIcon from '@shared/assets/icons/atom_gradient.svg';
 import AboutImg_ru from '@shared/assets/images/home-page/about/img_01_ru.svg?url';
@@ -24,7 +25,7 @@ const SectionAbout = ({ className }: SectionAboutProps) => {
 	};
 
 	return (
-		<section className={classNames(styles.about, {}, [className, 'section-radius-bottom'])}>
+		<section id={homeAnchors.ABOUT} className={classNames(styles.about, {}, [className, 'section-radius-bottom'])}>
 			<Container display={'grid'} className={styles.about__container}>
 				<SectionTitle
 					badge={{

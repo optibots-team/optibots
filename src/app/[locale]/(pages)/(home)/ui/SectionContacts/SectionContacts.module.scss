@@ -1,8 +1,26 @@
+@use '@globals/styles/breakpoints';
+
 .contacts {
 	background-color: var(--bg-secondary);
 
 	&__container {
 		gap: 24px;
+	}
+
+	&__row {
+		align-items: flex-end;
+		gap: 24px 12px;
+
+		@media (width < breakpoints.$sm) {
+			flex-direction: column;
+			align-items: stretch;
+		}
+	}
+
+	&__socials {
+		@media (width < breakpoints.$sm) {
+			justify-content: flex-end;
+		}
 	}
 
 	&__title {
