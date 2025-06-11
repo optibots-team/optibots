@@ -4,7 +4,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { classNames } from '@shared/lib/classNames';
 import { Text } from '@shared/ui/Text';
 import { Icon } from '@shared/ui/Icon';
-import { ColorTheme } from '@shared/types/themes.types';
+import type { ColorTheme } from '@shared/types/themes.types';
 import type { AccordionItem } from '../../model/types/accordion.types';
 import styles from './AccordionItem.module.scss';
 import ArrowIcon from '@shared/assets/icons/arrow-to-bottom.svg';
@@ -28,21 +28,14 @@ const AccordionItem = (props: AccordionItemProps) => {
 			{({ open }) => (
 				<>
 					<DisclosureButton as={'div'} className={styles.item__trigger}>
-						{counter && (
-							<span className={styles.item__counter}>
-								{String(counter).padStart(2, '0')}/
-							</span>
-						)}
-						<Text
-							title={title.toUpperCase()}
-							titleTag={'h3'}
-							color={theme === 'light' ? 'white' : 'dark'}
-							size={{
-								desktop: 'ml',
-								mobile: 'm',
-							}}
-							weight={'500'}
-						/>
+						<h3 className={styles.item__title}>
+							{counter && (
+								<span className={styles.item__counter}>
+									{String(counter).padStart(2, '0')}/
+								</span>
+							)}
+							{title.toUpperCase()}
+						</h3>
 						<span className={classNames(styles.item__arrow, { [styles.open]: open }, [])}>
 							<Icon icon={<ArrowIcon />} size={'24'} />
 						</span>

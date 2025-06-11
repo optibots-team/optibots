@@ -3,6 +3,7 @@ import { classNames } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { SectionTitle } from '@features/SectionTitle';
 import { CasesSlider } from '@widgets/CasesSlider';
+import { homeAnchors } from '@shared/const/anchors';
 import styles from './SectionCases.module.scss';
 import RaysIcon from '@shared/assets/icons/rays_gradient.svg';
 
@@ -14,7 +15,10 @@ const SectionCases = ({ className }: SectionCasesProps) => {
 	const t = useTranslations('homePage.sectionCases');
 
 	return (
-		<section className={classNames(styles.cases, {}, [className, 'section-padding-bottom', 'section-radius-bottom'])}>
+		<section
+			id={homeAnchors.CASES}
+			className={classNames(styles.cases, {}, [className, 'section-padding-bottom', 'section-radius-bottom'])}
+		>
 			<Container>
 				<SectionTitle
 					className={styles.cases__title}

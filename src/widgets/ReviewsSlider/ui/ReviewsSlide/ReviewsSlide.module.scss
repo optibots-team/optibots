@@ -1,8 +1,14 @@
+@use '@globals/styles/breakpoints';
+
 .slide {
 	height: 100%;
 	padding: 32px;
 	border-radius: var(--radius-l);
 	box-shadow: var(--shadow-primary);
+
+	@media (width < breakpoints.$md) {
+		border-radius: var(--radius-m);
+	}
 
 	&__avatar {
 		display: flex;

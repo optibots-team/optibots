@@ -4,6 +4,7 @@ import { Container } from '@shared/ui/Container';
 import { SectionTitle } from '@features/SectionTitle';
 import { CTA } from '@features/CTA';
 import { Tariffs } from '@widgets/Tariffs';
+import { homeAnchors } from '@shared/const/anchors';
 import styles from './SectionTariffs.module.scss';
 import PyramidIcon from '@shared/assets/icons/pyramid_gradient.svg';
 
@@ -15,7 +16,10 @@ const SectionTariffs = ({ className }: SectionTariffsProps) => {
 	const t = useTranslations('homePage.sectionTariffs');
 
 	return (
-		<section className={classNames(styles.tariffs, {}, [className, 'section-padding', 'section-radius-top'])}>
+		<section
+			id={homeAnchors.TARIFFS}
+			className={classNames(styles.tariffs, {}, [className, 'section-padding', 'section-radius-top'])}
+		>
 			<Container>
 				<SectionTitle
 					className={styles.tariffs__title}

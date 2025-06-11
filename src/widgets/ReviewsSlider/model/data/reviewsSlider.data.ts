@@ -38,11 +38,11 @@ export const generateReviews = (t: TFunction): Review[] => [
 		comment: t('relaxTour.comment'),
 	},
 	{
-		id: 'manicure',
-		author: t('manicure.author'),
-		job: t('manicure.job'),
-		company: t('manicure.company'),
-		comment: t('manicure.comment'),
+		id: 'staffUp',
+		author: t('staffUp.author'),
+		job: t('staffUp.job'),
+		company: t('staffUp.company'),
+		comment: t('staffUp.comment'),
 	},
 	{
 		id: 'adSpark',

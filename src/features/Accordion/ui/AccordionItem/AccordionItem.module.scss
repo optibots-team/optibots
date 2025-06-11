@@ -7,8 +7,16 @@
 		padding: 20px;
 	}
 
-	&.light {}
-	&.dark {}
+	&.light {
+		.item__title {
+			color: var(--color-white);
+		}
+	}
+	&.dark {
+		.item__title {
+			color: var(--color-dark);
+		}
+	}
 
 	&.offset {
 		.item {
@@ -16,7 +24,7 @@
 				padding-left: 50px;
 
 				@media (width < breakpoints.$md) {
-					padding-left: 38px;
+					padding-left: 40px;
 				}
 			}
 
@@ -34,7 +42,6 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		//align-items: flex-start;
 		justify-content: space-between;
 		gap: 24px;
 		width: 100%;
@@ -52,7 +59,8 @@
 	&__counter {
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: -50px;
+		width: 40px;
 		display: block;
 		background: var(--gradient-green);
 		-webkit-background-clip: text;
@@ -65,6 +73,7 @@
 		text-transform: uppercase;
 
 		@media (width < breakpoints.$md) {
+			left: -40px;
 			background: transparent;
 			font-size: var(--font-size-m);
 			line-height: var(--font-line-m);
@@ -72,6 +81,18 @@
 			-webkit-background-clip: unset;
 			-webkit-text-fill-color: unset;
 			background-clip: unset;
+		}
+	}
+
+	&__title {
+		position: relative;
+		font-size: var(--font-size-ml);
+		line-height: var(--font-line-ml);
+		font-weight: 500;
+
+		@media (width < breakpoints.$md) {
+			font-size: var(--font-size-m);
+			line-height: var(--font-line-m);
 		}
 	}
 
