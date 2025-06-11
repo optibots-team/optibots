@@ -5,5 +5,7 @@ export interface AppState {
 export interface AppActions {
 	set: (newState: Partial<AppState>) => void;
 	toggleMenu: () => void;
+	openMenu: () => void;
+	closeMenu: () => void;
 	reset: () => void;
 }

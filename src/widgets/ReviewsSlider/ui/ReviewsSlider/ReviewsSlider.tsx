@@ -2,7 +2,7 @@
 
 import { useCallback, useMemo, useRef } from 'react';
 import { useTranslations } from 'next-intl';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import type { Swiper as ISwiper } from 'swiper/types';
 import { useMedia } from '@shared/hooks/useMedia';
 import { classNames } from '@shared/lib/classNames';
@@ -74,7 +74,7 @@ const ReviewsSlider = ({ className }: ReviewsSliderProps) => {
 					slides={slides}
 					onBeforeInit={(swiper) => setupSwiperRefs(swiper)}
 					options={{
-						modules: [Navigation, Pagination],
+						modules: [Navigation, Pagination, Autoplay],
 						pagination: {
 							enabled: true,
 							type: 'fraction',
@@ -89,6 +89,9 @@ const ReviewsSlider = ({ className }: ReviewsSliderProps) => {
 						},
 						spaceBetween: 24,
 						grabCursor: true,
+						autoplay: {
+							delay: 5000,
+						},
 						breakpoints: {
 							767: {
 								slidesPerView: 2,

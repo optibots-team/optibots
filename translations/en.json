@@ -88,11 +88,11 @@
         ]
       },
       "progress": {
-        "first": "The workload of managers has been reduced by:",
-        "second": "The number of orders increased by:"
+        "first": "Manager workload decreased by:",
+        "second": "Number of orders increased by:"
       },
       "result": [
-        "Reducing the number of failures",
+        "Reduction in refusals",
         "Convenient service",
         "Sales growth"
       ]
@@ -101,48 +101,48 @@
       "title": "Wow Day",
       "desc": "Balloon delivery",
       "messages": {
-        "user": "Automate the acceptance of applications, reduce the number of missed calls",
-        "bot": "Chatbot with a full order scenario: choosing balloons, ordering and planning delivery:",
+        "user": "Automate order intake, reduce missed calls ",
+        "bot": "Chatbot with a full ordering scenario: balloon selection, checkout, and delivery scheduling:",
         "steps": [
-          "\uD83C\uDF88 Selection of balls",
-          "\uD83D\uDED2 Forming a basket",
-          "\uD83D\uDCC5 Select delivery date and time",
-          "\uD83D\uDCB3 Pay online",
-          "✅ Get confirmation"
+          "\uD83C\uDF88 Balloon selection",
+          "\uD83D\uDED2 Cart formation",
+          "\uD83D\uDCC5 Delivery date and time selection",
+          "\uD83D\uDCB3 Online payment",
+          "✅ Confirmation"
         ]
       },
       "progress": {
-        "first": "order processing time has been reduced by:",
-        "second": "The number of orders increased by:"
+        "first": "Order processing time decreased by:",
+        "second": "Number of orders increased by:"
       },
       "result": [
-        "Customers receive answers instantly",
+        "Customers receive instant responses",
         "More completed orders",
-        "Easier control of orders"
+        "Easier order tracking"
       ]
     },
     "school": {
       "title": "Alex it School",
       "desc": "Online school",
       "messages": {
-        "user": "Automate application submission, simplify the training process and increase sales",
-        "bot": "Chatbot with a full scenario: registration, training, sending tasks, reminders and certificates:",
+        "user": "Automate application processing, simplify the learning process and increase sales",
+        "bot": "Chatbot with a full scenario: registration, training, assignment submission, reminders and certificates:",
         "steps": [
-          "\uD83D\uDCDD Registration for courses",
+          "\uD83D\uDCDD Course registration",
           "\uD83D\uDCDA Access to lessons",
-          "\uD83D\uDCE4 Submitting assignments and checking",
-          "⏰ Reminders for classes",
-          "\uD83C\uDF93 Obtaining a certificate"
+          "\uD83D\uDCE4 Assignment submission and review",
+          "⏰ Class reminders",
+          "\uD83C\uDF93 Certificate issuance"
         ]
       },
       "progress": {
-        "first": "Application processing time has been reduced by:",
-        "second": "The number of applications increased by:"
+        "first": "Application processing time decreased by:",
+        "second": "Number of applications increased by:"
       },
       "result": [
-        "Instant answers and support",
-        "Monitoring academic performance and engagement",
-        "Sales Growth Through Automation"
+        "Instant responses and support",
+        "Performance and engagement monitoring",
+        "Sales growth through automation"
       ]
     }
   },
@@ -154,86 +154,86 @@
       "comment": "All our VIP clients now interact with the bot — fast, convenient, and error-free. It remembers preferences, suggests bouquets, and accepts payments. A truly modern solution that matches our service standards."
     },
     "wow": {
-      "author": "Роман",
-      "job": "предприниматель",
-      "company": "Магазин подарков и шаров “WOW Day”",
-      "comment": "Уже через неделю после внедрения бота мы увидели рост заказов на 27%. Бот сам спрашивает у клиента всё, что нужно — цвет, дата, пожелания. Мы просто берем и отправляем. Очень удобно."
+      "author": "Robert",
+      "job": "entrepreneur",
+      "company": "Gift and balloon shop “WOW Day”",
+      "comment": "Just a week after launching the bot, we saw a 27% increase in orders. The bot asks customers everything we need — color, date, wishes. We simply pack and send. Super convenient."
     },
     "sweet": {
-      "author": "Алина",
-      "job": "владелица",
-      "company": "Кондитерская “Sweet Mood”",
-      "comment": "С помощью чат-бота мы полностью автоматизировали прием заказов на торты. Раньше тратили по 4-5 часов в день на переписку, теперь — 20-30 минут. Заказы не теряются, всё чётко. Клиенты довольны, а мы освободили кучу времени на творчество."
+      "author": "Alina",
+      "job": "owner",
+      "company": "Bakery “Sweet Mood”",
+      "comment": "With the chatbot, we fully automated cake orders. We used to spend 4–5 hours a day messaging clients — now it’s just 20–30 minutes. No missed orders, everything runs smoothly. Clients are happy, and we finally have more time for creativity."
     },
     "english": {
-      "author": "Наталья",
-      "job": "сооснователь",
-      "company": "Онлайн-школа английского языка “Easy English”",
-      "comment": "Ребята помогли выстроить воронку через Telegram. С ботом записываются на пробный урок, получают материалы, а потом оплачивают курс. Автоматизация дала +35% к конверсии. Спасибо за умный подход."
+      "author": "Natalia",
+      "job": "co-founder",
+      "company": "Online english school “Easy English”",
+      "comment": "The team helped us build a Telegram funnel. With the bot, users sign up for a trial lesson, receive materials, and then purchase the course. Automation boosted our conversion rate by 35%. Grateful for the smart approach."
     },
     "relaxTour": {
-      "author": "Виктория",
-      "job": "директор",
-      "company": "Туристическое агентство “RelaxTour”",
-      "comment": "Раньше мы теряли до 40% заявок, пока менеджер успевал ответить. Сейчас бот отвечает моментально, предлагает туры и фиксирует интерес. В первые 2 недели — +63 лидов без увеличения бюджета."
+      "author": "Victoria",
+      "job": "director",
+      "company": "Travel Agency “RelaxTour”",
+      "comment": "We used to lose up to 40% of inquiries while waiting for a manager to respond. Now the bot replies instantly, suggests tours, and captures interest. In just the first 2 weeks — 63 extra leads with no increase in ad spend."
     },
-    "manicure": {
-      "author": "Марина",
-      "job": "мастер",
-      "company": "Мастер по маникюру",
-      "comment": "Сама работаю, времени на переписку нет. Теперь всё делает бот: записывает, напоминает, отвечает на частые вопросы. Даже если я занята — бизнес не стоит."
+    "staffUp": {
+      "author": "Christian",
+      "job": "owner",
+      "company": "HR-agency “STAFFUP”",
+      "comment": "Manual candidate screening used to take weeks — and half the applicants would just disappear. After launching the chatbot, it now handles initial interviews, collects resumes, and even tests skills. No more endless calls or emails. The result: 17 extra vacancies filled in a month, and hiring time cut by 3x. Thanks for the smart solution!"
     },
     "adSpark": {
-      "author": "Илья",
+      "author": "Patrick",
       "job": "CEO",
-      "company": "Digital агентство “AdSpark”",
-      "comment": "Используем чат-боты в связке с автоворонками для клиентов. Команда настроила всё под ключ — от логики до интеграции с CRM. Сервис достойный, подход проактивный."
+      "company": "Digital Agency “AdSpark”",
+      "comment": "We use chatbots together with automated funnels for our clients — plus content generation and autoposting. The team set everything up end-to-end: from logic to full integration with ad platforms. A solid solution with a proactive approach."
     },
     "streetBox": {
-      "author": "Света",
-      "job": "операционный директор",
-      "company": "Магазин одежды онлайн “STREETBOX”",
-      "comment": "Бот помог сократить рутину на поддержке — 80% обращений теперь закрываются автоматически. Люди могут отслеживать заказы, узнавать о возврате и доставке без участия менеджера. Очень экономит ресурсы."
+      "author": "Sveta",
+      "job": "COO",
+      "company": "Online Clothing Store “STREETBOX”",
+      "comment": "The bot helped cut support workload — 80% of inquiries are now handled automatically. Customers can track orders, get info on returns and delivery, all without a manager involved. Huge resource saver."
     }
   },
-  "pain": {
+  "pains": {
     "routine": {
       "title": "Routine and Overload",
-      "desc": "Managers waste time on repetitive issues instead of important tasks."
+      "desc": "Managers waste time on repetitive questions instead of important tasks."
     },
     "loss": {
-      "title": "Loss of customers",
-      "desc": "Even loyal customers leave due to slow responses or ignoring messages."
+      "title": "Loss of clients",
+      "desc": "Due to slow responses or ignored messages, even loyal customers leave."
     },
     "conversion": {
       "title": "Low conversion",
-      "desc": "Slow response = missed orders and reduced sales every day."
+      "desc": "Slow response = missed leads and reduced sales every day."
     },
     "errors": {
-      "title": "Errors in data",
-      "desc": "Due to inaccurate transmission of information, orders are mixed up, applications are lost, and customers remain dissatisfied and complain."
+      "title": "Data errors",
+      "desc": "Due to inaccurate information transfer, orders get mixed up, applications are lost, and customers remain dissatisfied and complain."
     },
     "competitors": {
-      "title": "Going to competitors",
-      "desc": "Users choose companies where the communication process is faster, the interface is simpler, and the support is really helpful."
+      "title": "Switching to competitors",
+      "desc": "Users choose companies where the communication process is faster, the interface is simpler, and support actually helps."
     }
   },
   "faq": {
     "implemented": {
       "title": "How quickly can the product be implemented in your business?",
-      "content": "Ready-made solutions – for standard niches, the bot can be launched in 2–3 days.<br></br>Turnaround time: From 48 hours (standard) to 10 days (custom integrations).<br></br>Custom setup – if business processes are complex, implementation may take slightly longer, but the result will be precise and effective."
+      "content": "Ready-made solutions – for standard niches, the bot can be launched in 2–3 days.<br></br><br></br>Turnaround time: From 48 hours (standard) to 10 days (custom integrations).<br></br><br></br>Custom setup – if business processes are complex, implementation may take slightly longer, but the result will be precise and effective."
     },
     "additional": {
-      "title": "Additional functions / Flexible settings",
-      "content": "Ready-made solutions – for typical niches, you can launch a bot in 2–3 days.<br></br>From 2 to 10 days – depending on the complexity and number of integrations.<br></br>Customization – if business processes are complex, implementation will take a little longer, but the result will be accurate and effective."
+      "title": "Additional features / Flexible configuration",
+      "content": "Our chatbots offer a wide range of additional functions that adapt to the needs of your business.<br></br><br></br>You can integrate the bot with CRM systems (e.g. Bitrix24, Salesforce), messengers (WhatsApp, Telegram, Viber) and social networks.<br></br><br></br>We provide the ability to customize dialogue scenarios taking into account the specifics of your industry, including multi-level dialogues, automatic request processing and personalization of communication.<br></br><br></br>Analytics functions are also available: tracking user activity, collecting preference data and generating reports."
     },
     "manage": {
       "title": "How easy is it to manage?",
-      "content": "Ready-made solutions – for typical niches, you can launch a bot in 2–3 days.<br></br>From 2 to 10 days – depending on the complexity and number of integrations.<br></br>Customization – if business processes are complex, implementation will take a little longer, but the result will be accurate and effective."
+      "content": "Managing our chatbots is intuitive and does not require any special technical knowledge.<br></br><br></br>We provide a convenient control panel with a simple interface where you can set up scenarios, edit responses and track statistics.<br></br><br></br>Basic changes, such as updating information or adding new questions, are just a few clicks away.<br></br><br></br>If more complex settings are needed, our team provides training and support so that you can manage the bot yourself."
     },
     "necessity": {
       "title": "Do I need a website to use a chatbot?",
-      "content": "Ready-made solutions – for typical niches, you can launch a bot in 2–3 days.<br></br>From 2 to 10 days – depending on the complexity and number of integrations.<br></br>Customization – if business processes are complex, implementation will take a little longer, but the result will be accurate and effective."
+      "content": "No, a website isn’t required — the bot works directly in Telegram or other messengers.<br></br><br></br>Ready-made solutions — for typical niches, we can launch in just 2–3 days.<br></br><br></br>2 to 10 days — depending on the complexity and number of integrations.<br></br><br></br>Custom setup — if your workflows are more advanced, implementation takes a bit longer but delivers precise and effective results."
     }
   },
   "other": {
@@ -252,9 +252,9 @@
       "expertise": "of expertise in digital marketing and IT",
       "satisfied": "satisfied customers worldwide",
       "projects": "projects delivered with measurable results",
-      "reduce": "we reduce employees hiring expenses",
-      "attracted": "attracted leads through automated funnels",
-      "processed": "processed messages and applications"
+      "reduce": "reduction in hiring costs",
+      "attracted": "leads generated through automated funnels",
+      "processed": "messages and inquiries processed"
     },
     "sectionAbout": {
       "badge": "Who we are?",
@@ -283,7 +283,7 @@
     "sectionPain": {
       "badge": "Pain",
       "sectionTitle": "What problems will you forget about?",
-      "cta": "Automate communication with clients - free managers from routine requests, reduce the number of errors and speed up the processing of requests."
+      "cta": "Automate customer communication — free managers from routine requests, reduce errors, and speed up request processing."
     },
     "sectionFaq": {
       "badge": "faq",

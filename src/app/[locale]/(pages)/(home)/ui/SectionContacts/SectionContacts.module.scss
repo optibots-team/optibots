@@ -1,12 +1,54 @@
+@use '@globals/styles/breakpoints';
+
 .contacts {
 	background-color: var(--bg-secondary);
 
 	&__container {
-		gap: 24px;
+		gap: 88px;
+
+		@media (width < breakpoints.$xl) {
+			gap: 24px;
+		}
+		@media (width < breakpoints.$md) {
+			flex-direction: column;
+			gap: 44px;
+		}
 	}
 
-	&__title {
+	&__content {
+		align-items: flex-start;
 		width: 100%;
-		max-width: 510px;
+		max-width: 530px;
+
+		@media (width < breakpoints.$sm) {
+			max-width: 100%;
+			align-items: stretch;
+		}
+	}
+
+	&__socials {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		flex-grow: 1;
+
+		@media (width < breakpoints.$md) {
+			align-items: center;
+			justify-content: center;
+			height: 150px;
+		}
+	}
+
+	&__img {
+		z-index: -1;
+		border-radius: var(--radius-l);
+		object-fit: cover;
+		object-position: center;
+
+		@media (width < breakpoints.$md) {
+			border-radius: var(--radius-m);
+		}
 	}
 }

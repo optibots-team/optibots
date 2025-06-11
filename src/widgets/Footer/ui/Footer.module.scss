@@ -1,13 +1,50 @@
+@use '@globals/styles/breakpoints';
+
 .footer {
 	margin-top: auto;
 	padding-bottom: 50px;
 	background-color: var(--bg-secondary);
 
+	@media (width < breakpoints.$md) {
+		padding-bottom: 24px;
+	}
+
 	&__container {
-		align-items: flex-end;
-		justify-content: flex-end;
-		gap: 32px;
+		gap: 12px;
 		padding-top: 24px;
 		border-top: 1px solid rgb(255, 255, 255, .06);
+
+		@media (width < breakpoints.$md) {
+			padding-top: 0;
+			border-top: none;
+		}
+	}
+
+	&__logo {
+		@media (width < breakpoints.$md) {
+			width: 100%;
+		}
+	}
+
+	&__nav {
+		margin-left: auto;
+
+		@media (width < breakpoints.$md) {
+			display: none !important;
+		}
+	}
+
+	&__btn {
+		display: none !important;
+
+		@media (width < breakpoints.$md) {
+			display: block !important;
+		}
+	}
+
+	&__copyright {
+		font-size: var(--font-size-s);
+		line-height: var(--font-line-s);
+		color: var(--color-dark-secondary);
 	}
 }

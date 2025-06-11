@@ -10,6 +10,7 @@
 
 	@media (width < breakpoints.$md) {
 		padding: var(--padding-m);
+		border-radius: var(--radius-m);
 	}
 
 	// bg
