@@ -11,7 +11,7 @@ type PainsProps = {
 };
 
 const Pains = ({ className }: PainsProps) => {
-	const t = useTranslations('pain');
+	const t = useTranslations('pains');
 
 	const painsList = useMemo(() => generatePainList(t), [t]);
 

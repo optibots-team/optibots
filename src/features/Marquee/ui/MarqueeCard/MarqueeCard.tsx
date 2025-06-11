@@ -14,16 +14,15 @@ const MarqueeCard = (props: MarqueeCardProps) => {
 	const { className, card: { title, description, image } } = props;
 
 	return (
-		<Card
-			className={classNames(styles.card, {}, [className])}
-			padding={'m'}
-			radius={'m'}
-		>
+		<Card className={classNames(styles.card, {}, [className])}>
 			<Text
 				className={styles.card__text}
 				title={title}
 				text={description?.toUpperCase()}
-				size={{ title: 'l', text: 's' }}
+				size={{
+					desktop: { title: 'l', text: 's' },
+					mobile: { title: 'sl', text: 'xs' },
+				}}
 				color={'white'}
 				gap={'8'}
 			/>
