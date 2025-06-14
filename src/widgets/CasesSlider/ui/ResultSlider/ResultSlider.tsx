@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import { SwiperSlider } from '@features/SwiperSlider';
 import { ResultSlide } from '../ResultSlide/ResultSlide';
 import type { InternalSlider, InternalSlideTheme } from '@entities/Case';
@@ -37,12 +37,15 @@ const ResultSlider = ({ className, sliderData }: ResultSliderProps) => {
 				slideClassName={styles.slider__slide}
 				slides={slides}
 				options={{
-					modules: [Pagination],
+					modules: [Pagination, Autoplay],
 					pagination: {
 						horizontalClass: styles.slider__pagination,
 					},
 					slidesPerView: 1,
 					spaceBetween: 12,
+					autoplay: {
+						delay: 5000,
+					},
 					breakpoints: {
 						767: {
 							spaceBetween: 24,

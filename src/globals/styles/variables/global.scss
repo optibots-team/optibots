@@ -40,6 +40,17 @@
 
   --transition-primary: .2s ease;
 
+  // z-index
+
+  --index-s: 90;
+  --index-m: 100;
+  --index-l: 110;
+
+  // container
+
+  --container-width: 1140px;
+  --container-gap: 20px;
+
   // fonts
 
   --font-size-xs: 10px;
@@ -65,9 +76,4 @@
 
   --font-size-xxl: 40px;
   --font-line-xxl: 50px;
-
-  // container
-
-  --container-width: 1140px;
-  --container-gap: 20px;
 }

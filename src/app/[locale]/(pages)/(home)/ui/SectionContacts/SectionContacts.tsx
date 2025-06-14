@@ -39,7 +39,7 @@ const SectionContacts = ({ className }: SectionContactsProps) => {
 							color: { title: 'white', text: 'light' },
 						}}
 					/>
-					<Button fontFamily={'unbounded'} theme={'light'} className={'fw-500'}>
+					<Button fontFamily={'unbounded'} theme={'green-gradient'} className={'fw-500'}>
 						{tButtons('order bot').toUpperCase()}
 					</Button>
 				</FlexV>

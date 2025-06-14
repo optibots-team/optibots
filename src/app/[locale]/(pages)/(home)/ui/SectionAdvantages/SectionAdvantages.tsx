@@ -3,6 +3,7 @@ import { classNames } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { SectionTitle } from '@features/SectionTitle';
 import { Advantages } from '@widgets/Advantages';
+import { homeAnchors } from '@shared/const/anchors';
 import styles from './SectionAdvantages.module.scss';
 import AtomIcon from '@shared/assets/icons/atom_gradient.svg';
 
@@ -14,7 +15,7 @@ const SectionAdvantages = ({ className }: SectionAdvantagesProps) => {
 	const t = useTranslations('homePage.sectionAdvantages');
 
 	return (
-		<section className={classNames('section-padding', {}, [className])}>
+		<section id={homeAnchors.ADVANTAGES} className={classNames('section-padding anchor-scroll-m', {}, [className])}>
 			<Container display={'flex'} orientation={'vertical'} className={styles.advantages__container}>
 				<SectionTitle
 					className={styles.advantages__title}

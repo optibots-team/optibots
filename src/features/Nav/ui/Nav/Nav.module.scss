@@ -6,7 +6,7 @@
 
 		@media (width < breakpoints.$lg) {
 			position: fixed;
-			z-index: 100;
+			z-index: var(--index-m);
 			top: -120%;
 			left: 0;
 			width: 100%;
