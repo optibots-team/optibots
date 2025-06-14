@@ -23,10 +23,21 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
 	title: 'Optibots',
 	description: 'Developed by Vlad Poliakov',
-	// icons: {
-	// 	icon: '/favicon.ico',
-	// 	apple: '/apple-touch-icon.png',
-	// },
+	manifest: '/icons/site.webmanifest',
+	icons: {
+		icon: '/icons/favicon.ico',
+		apple: '/icons/apple-touch-icon.png',
+	},
+	openGraph: {
+		title: 'Optibots',
+		description: 'Optibots make your business faster and smarter',
+		images: [
+			{
+				url: '/images/ogp.jpg',
+				alt: 'Optibots Open Graph Image',
+			},
+		],
+	},
 };
 
 interface RootLayoutProps {

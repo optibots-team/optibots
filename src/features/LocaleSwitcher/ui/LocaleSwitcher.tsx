@@ -1,37 +1,39 @@
 'use client';
 
-import { useCallback, type ChangeEvent } from 'react';
+import { useCallback } from 'react';
 import { useLocale } from 'use-intl';
-import { Select } from '@shared/ui/Select';
+import { classNames } from '@shared/lib/classNames';
+import { toRouterLocale, toVisibleLocale } from '../lib/locales';
+import { Listbox } from '@shared/ui/Listbox';
 import { usePathname, useRouter } from '@shared/config/i18n/navigation';
 import { switcherOptions } from '../model/data/localeSwitcher.data';
 import type { ColorTheme } from '@shared/types/themes.types';
+import styles from './LocaleSwitcher.module.scss';
 
 type LocaleSwitcherProps = {
 	className?: string;
 	theme?: ColorTheme;
+	anchor?: 'top' | 'bottom';
 };
 
-const LocaleSwitcher = ({ className, theme = 'dark' }: LocaleSwitcherProps) => {
+const LocaleSwitcher = ({ className, anchor = 'bottom', theme = 'dark' }: LocaleSwitcherProps) => {
 	const pathname = usePathname();
 	const router = useRouter();
 	const currentLocale = useLocale();
+	const listboxLocale = toVisibleLocale(currentLocale);
 
 	const handleChangeLocale = useCallback(
-		(e: ChangeEvent<HTMLSelectElement>) => {
-			const newLocale = e.target.value;
-
-			router.replace({ pathname }, { locale: newLocale });
-		},
+		(newLocale: string) => router.replace({ pathname }, { locale: toRouterLocale(newLocale) }),
 		[pathname, router]
 	);
 
 	return (
-		<Select
-			className={className}
-			options={switcherOptions}
-			value={currentLocale}
+		<Listbox
+			className={classNames(styles.listbox, {}, [className])}
+			options={switcherOptions.filter((option) => option.id !== currentLocale)}
+			value={listboxLocale}
 			onChange={handleChangeLocale}
+			anchor={{ to: anchor, gap: '-40%' }}
 			theme={theme}
 		/>
 	);

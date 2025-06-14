@@ -2,10 +2,9 @@
 
 .logo {
 	position: relative;
-	z-index: 110;
+	z-index: var(--index-l);
 	display: block;
 	width: 100%;
-	max-width: 185px;
 
 	@media (width < breakpoints.$lg) {
 		max-width: 125px;
@@ -16,6 +15,16 @@
 	}
 	&.light {
 		color: var(--color-white);
+	}
+
+	&.s {
+		max-width: 160px;
+	}
+	&.m {
+		max-width: 185px;
+	}
+	&.l {
+		max-width: 200px;
 	}
 
 	&__link {

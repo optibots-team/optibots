@@ -3,14 +3,14 @@ import { Field, Label, Select as HSelect } from '@headlessui/react'
 import { classNames } from '@shared/lib/classNames';
 import { Icon } from '@shared/ui/Icon';
 import type { ColorTheme } from '@shared/types/themes.types';
-import type { SelectOptions } from '../model/types/select.types';
+import type { SelectOption } from '../model/types/select.types';
 import styles from './Select.module.scss';
 import ArrowIcon from '@shared/assets/icons/arrow-to-bottom.svg';
 
 interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
 	className?: string;
 	label?: string;
-	options: SelectOptions[];
+	options: SelectOption[];
 	theme?: ColorTheme;
 }
 

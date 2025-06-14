@@ -52,9 +52,11 @@ const Nav = ({ className, theme, location = 'header' }: NavProps) => {
 		>
 			<FlexV justify={'between'} align={'stretch'} gap={'10'} className={styles.nav__inner}>
 				<Flex as={'ul'} className={styles.nav__list}>
-					{Object.entries(homeAnchors).map(([key, value]) => (
-						<NavItem key={key} value={value} handleClick={closeMenu} />
-					))}
+					{Object.entries(homeAnchors)
+						.filter(([key]) => key !== 'ADVANTAGES')
+						.map(([key, value]) => (
+							<NavItem key={key} value={value} handleClick={closeMenu} />
+						))}
 				</Flex>
 				<div className={styles.nav__contacts}>
 					<Socials />

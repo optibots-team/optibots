@@ -1,0 +1,107 @@
+.listbox {
+	position: relative;
+	width: max-content;
+	max-width: 100%;
+	outline: none;
+
+	&.dark {
+		.listbox__btn {
+			background: var(--bg-secondary);
+			color: var(--color-white);
+
+			@media (hover: hover) {
+				&:hover {
+					background: var(--gradient-green);
+					color: var(--color-dark);
+				}
+			}
+
+			&[data-open] {
+				background: var(--gradient-green);
+				color: var(--color-dark);
+			}
+		}
+	}
+	&.light {
+		.listbox__btn {
+			background: var(--bg-primary);
+			color: var(--color-dark);
+
+			@media (hover: hover) {
+				&:hover {
+					background: var(--gradient-green);
+					color: var(--color-dark);
+				}
+			}
+
+			&[data-open] {
+				background: var(--gradient-green);
+				color: var(--color-dark);
+			}
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1px;
+		padding: 5px 12px;
+		border-radius: 50px;
+		outline: inherit;
+		font-size: var(--font-size-s);
+		line-height: var(--font-line-s);
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	&__options {
+		z-index: var(--index-m);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 16px;
+		width: var(--button-width);
+		padding-left: 10px;
+		padding-right: 10px;
+		outline: inherit;
+
+		&.dark {
+			background-color: var(--bg-secondary);
+
+			.listbox__option {
+				color: var(--color-white);
+			}
+		}
+		&.light {
+			background-color: var(--bg-primary);
+
+			.listbox__option {
+				color: var(--color-dark);
+			}
+		}
+
+		&[data-anchor='bottom center'] {
+			padding-top: 24px;
+			padding-bottom: 16px;
+			border-radius: 0 0 14px 14px;
+		}
+		&[data-anchor='top center'] {
+			padding-top: 16px;
+			padding-bottom: 24px;
+			border-radius: 14px 14px 0 0;
+		}
+	}
+
+	&__option {
+		cursor: pointer;
+		text-transform: uppercase;
+
+		@media (hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
