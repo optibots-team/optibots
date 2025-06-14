@@ -1,7 +1,7 @@
 import type { ButtonHTMLAttributes, ComponentPropsWithoutRef, ElementType, RefObject } from 'react';
 import { classNames, type Additional, type Mods } from '@shared/lib/classNames';
 import type { FontFamily } from '@shared/types/fontFamily.types';
-import { ButtonSize, ButtonTheme } from '../model/types/button.types';
+import type { ButtonSize, ButtonTheme } from '../model/types/button.types';
 import styles from './Button.module.scss';
 
 type ButtonProps<T extends ElementType = 'button'> = {

@@ -16,12 +16,12 @@ const Footer = ({ className }: FooterProps) => (
 		<Container display={'flex'} orientation={'vertical'} className={styles.footer__container}>
 			<FlexH>
 				<FlexH justify={'between'} align={'stretch'} gap={'12'} className={styles.footer__logo}>
-					<Logo theme={'light'} />
+					<Logo theme={'light'} size={'s'} />
 					<ButtonToTop className={styles.footer__btn} />
 				</FlexH>
 				<FlexH align={'center'} gap={'32'} className={styles.footer__nav}>
 					<Nav theme={'light'} location={'footer'} />
-					<LocaleSwitcher theme={'light'} />
+					<LocaleSwitcher theme={'light'} anchor={'top'} />
 				</FlexH>
 			</FlexH>
 			<p className={styles.footer__copyright}>&copy; 2025 OptiBots, All Rights Reserved.</p>

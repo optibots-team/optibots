@@ -106,3 +106,36 @@
     padding-bottom: 90px;
   }
 }
+
+// scroll margin
+
+.anchor-scroll-s {
+  scroll-margin-top: -60px;
+
+  @media (width < breakpoints.$lg) {
+    scroll-margin-top: -40px;
+  }
+  @media (width < breakpoints.$md) {
+    scroll-margin-top: -20px;
+  }
+}
+.anchor-scroll-m {
+  scroll-margin-top: -100px;
+
+  @media (width < breakpoints.$lg) {
+    scroll-margin-top: -80px;
+  }
+  @media (width < breakpoints.$md) {
+    scroll-margin-top: -60px;
+  }
+}
+.anchor-scroll-sl {
+  scroll-margin-top: -140px;
+
+  @media (width < breakpoints.$lg) {
+    scroll-margin-top: -120px;
+  }
+  @media (width < breakpoints.$md) {
+    scroll-margin-top: -100px;
+  }
+}

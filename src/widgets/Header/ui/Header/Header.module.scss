@@ -1,7 +1,7 @@
 @use '@globals/styles/breakpoints';
 
 .header {
-	padding-top: 24px;
+	padding-top: var(--padding-m);
 
 	@media (width < breakpoints.$lg) {
 		padding-top: 16px;
@@ -21,6 +21,15 @@
 
 		@media (width < breakpoints.$lg) {
 			color: var(--color-white);
+		}
+	}
+
+	&__row {
+		margin-left: auto;
+		gap: 32px;
+
+		@media (width < breakpoints.$lg) {
+			gap: 16px;
 		}
 	}
 }

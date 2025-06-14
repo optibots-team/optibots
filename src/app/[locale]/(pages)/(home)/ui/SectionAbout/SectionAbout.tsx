@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
-import { classNames } from '@shared/lib/classNames';
+import { classNames, type Additional } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { SectionTitle } from '@features/SectionTitle';
 import { homeAnchors } from '@shared/const/anchors';
@@ -18,6 +18,12 @@ const SectionAbout = ({ className }: SectionAboutProps) => {
 	const t = useTranslations('homePage.sectionAbout');
 	const locale = useLocale();
 
+	const additional: Additional = [
+		className,
+		'section-radius-bottom',
+		'anchor-scroll-m',
+	];
+
 	const imageMap: Record<string, string> = {
 		en: AboutImg_en,
 		uk: AboutImg_uk,
@@ -25,7 +31,7 @@ const SectionAbout = ({ className }: SectionAboutProps) => {
 	};
 
 	return (
-		<section id={homeAnchors.ABOUT} className={classNames(styles.about, {}, [className, 'section-radius-bottom'])}>
+		<section id={homeAnchors.ABOUT} className={classNames(styles.about, {}, additional)}>
 			<Container display={'grid'} className={styles.about__container}>
 				<SectionTitle
 					badge={{

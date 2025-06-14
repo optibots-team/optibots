@@ -1,7 +1,8 @@
+import { toVisibleLocale } from '../../lib/locales';
 import { locales } from '@shared/const/locales';
-import type { SelectOptions } from '@shared/ui/Select';
+import type { ListboxOption } from '@shared/ui/Listbox';
 
-export const switcherOptions: SelectOptions[] = locales.map(locale => ({
-	label: locale === 'uk' ? 'ua' : locale,
-	value: locale,
+export const switcherOptions: ListboxOption[] = locales.map(locale => ({
+	id: locale,
+	value: toVisibleLocale(locale),
 }));

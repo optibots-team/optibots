@@ -2,7 +2,7 @@
 
 .hamburger {
 	position: relative;
-	z-index: 110;
+	z-index: var(--index-l);
 	display: none;
 	width: 58px;
 	height: 35px;

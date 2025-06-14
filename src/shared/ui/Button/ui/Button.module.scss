@@ -3,7 +3,6 @@
 	align-items: center;
 	justify-content: center;
 	gap: 5px;
-	border: 1px solid;
 	border-radius: 100px;
 	transition: var(--transition-primary);
 	color: var(--color-dark);
@@ -27,19 +26,22 @@
 		color: var(--color-dark);
 	}
 	&.outline {
-		border-color: rgba(20, 20, 20, .1);
+		border: 1px solid rgba(20, 20, 20, .1);
 		color: var(--color-dark);
 		background-color: transparent;
 
 		@media (hover: hover) {
 			&:hover {
-				background-color: rgba(20, 20, 20, .1);
+				border-color: var(--color-dark);
 			}
+		}
+
+		&:active {
+			border-color: var(--color-light);
 		}
 	}
 	&.black {
 		background-color: var(--color-black);
-		border-color: var(--color-black);
 		color: var(--color-white);
 
 		@media (hover: hover) {
@@ -50,7 +52,6 @@
 	}
 	&.white {
 		background-color: var(--color-white);
-		border-color: var(--color-white);
 		color: var(--color-dark);
 
 		@media (hover: hover) {
@@ -60,19 +61,23 @@
 		}
 	}
 	&.dark {
-		background-color: var(--color-dark);
-		border-color: var(--color-dark);
+		background: var(--color-dark);
 		color: var(--color-white);
 
 		@media (hover: hover) {
 			&:hover {
-				opacity: .7;
+				background: var(--gradient-green);
+				color: var(--color-dark);
 			}
+		}
+
+		&:active {
+			background: var(--color-dark);
+			color: #A9DE8A;
 		}
 	}
 	&.light {
 		background-color: var(--color-light);
-		border-color: var(--color-light);
 		color: var(--color-dark);
 
 		@media (hover: hover) {
@@ -84,12 +89,17 @@
 	&.green-gradient {
 		background: var(--gradient-green);
 		border: none;
+		transition: none;
 		color: var(--color-dark);
 
 		@media (hover: hover) {
 			&:hover {
-				opacity: .7;
+				background: #DEF4BD;
 			}
+		}
+
+		&:active {
+			background: var(--color-white);
 		}
 	}
 

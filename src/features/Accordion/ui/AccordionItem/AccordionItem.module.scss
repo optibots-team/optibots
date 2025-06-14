@@ -62,11 +62,7 @@
 		left: -50px;
 		width: 40px;
 		display: block;
-		background: var(--gradient-green);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-		color: transparent;
+		color: currentColor;
 		font-size: var(--font-size-ml);
 		line-height: var(--font-line-ml);
 		font-weight: 500;
@@ -74,13 +70,8 @@
 
 		@media (width < breakpoints.$md) {
 			left: -40px;
-			background: transparent;
 			font-size: var(--font-size-m);
 			line-height: var(--font-line-m);
-			color: var(--color-white);
-			-webkit-background-clip: unset;
-			-webkit-text-fill-color: unset;
-			background-clip: unset;
 		}
 	}
 

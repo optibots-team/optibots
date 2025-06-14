@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import { classNames } from '@shared/lib/classNames';
+import { classNames, type Additional } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { SectionTitle } from '@features/SectionTitle';
 import { CasesSlider } from '@widgets/CasesSlider';
@@ -13,11 +13,17 @@ type SectionCasesProps = {
 
 const SectionCases = ({ className }: SectionCasesProps) => {
 	const t = useTranslations('homePage.sectionCases');
+	const additional: Additional = [
+		className,
+		'section-padding',
+		'section-radius-bottom',
+		'anchor-scroll-m',
+	];
 
 	return (
 		<section
 			id={homeAnchors.CASES}
-			className={classNames(styles.cases, {}, [className, 'section-padding-bottom', 'section-radius-bottom'])}
+			className={classNames(styles.cases, {}, additional)}
 		>
 			<Container>
 				<SectionTitle

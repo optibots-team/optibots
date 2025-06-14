@@ -5,6 +5,8 @@
 	padding-bottom: 120px;
 
 	@media (width < breakpoints.$lg) {
+		position: relative;
+		z-index: 2;
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}
@@ -18,31 +20,56 @@
 		max-width: 540px;
 
 		@media (width < breakpoints.$lg) {
+			max-width: 465px;
+		}
+		@media (width < breakpoints.$md) {
 			max-width: 100%;
 		}
 	}
 
 	&__img {
 		display: none;
-		width: calc(100% + 20px);
-		max-width: calc(100% + 20px);
 		height: auto;
-		align-self: flex-end;
 
-		@media (width < breakpoints.$lg) {
-			display: block;
+		&.mobile {
+			@media (width < breakpoints.$md) {
+				display: block;
+				align-self: flex-end;
+				width: calc(100% + 20px);
+				max-width: calc(100% + 20px);
+			}
+		}
+		&.tablet {
+			@media ((width >= breakpoints.$md) and (width < breakpoints.$lg)) {
+				position: absolute;
+				z-index: -1;
+				left: 400px;
+				bottom: 0;
+				width: 500px;
+				display: block;
+			}
 		}
 	}
 
 	&__buttons {
-		@media (width < breakpoints.$md) {
+		@media (width < breakpoints.$lg) {
+			width: 100%;
+			max-width: 355px;
 			flex-direction: column;
+		}
+		@media (width < breakpoints.$md) {
+			max-width: 100%;
 		}
 	}
 
 	&__btn {
 		position: relative;
 		z-index: 1;
+
+		@media (width < breakpoints.$md) {
+			width: 100%;
+			max-width: 100%;
+		}
 	}
 
 	&__h1 {
@@ -51,7 +78,13 @@
 		font-weight: 700;
 		text-transform: uppercase;
 
+		@media (width < breakpoints.$lg) {
+			font-size: 34px;
+			line-height: 42px;
+		}
 		@media (width < breakpoints.$md) {
+			width: 100%;
+			max-width: 400px;
 			font-size: var(--font-size-l);
 			line-height: var(--font-line-l);
 		}
@@ -67,6 +100,16 @@
 		.right {
 			display: block;
 			text-align: right;
+		}
+	}
+
+	&__text {
+		@media (width < breakpoints.$lg) {
+			width: 100%;
+			max-width: 355px;
+		}
+		@media (width < breakpoints.$md) {
+			max-width: 100%;
 		}
 	}
 }

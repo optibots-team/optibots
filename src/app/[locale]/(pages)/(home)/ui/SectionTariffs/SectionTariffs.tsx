@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import { classNames } from '@shared/lib/classNames';
+import { classNames, type Additional } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { SectionTitle } from '@features/SectionTitle';
 import { CTA } from '@features/CTA';
@@ -14,11 +14,17 @@ type SectionTariffsProps = {
 
 const SectionTariffs = ({ className }: SectionTariffsProps) => {
 	const t = useTranslations('homePage.sectionTariffs');
+	const additional: Additional = [
+		className,
+		'section-padding-top',
+		'section-radius-top',
+		'anchor-scroll-m',
+	];
 
 	return (
 		<section
 			id={homeAnchors.TARIFFS}
-			className={classNames(styles.tariffs, {}, [className, 'section-padding', 'section-radius-top'])}
+			className={classNames(styles.tariffs, {}, additional)}
 		>
 			<Container>
 				<SectionTitle
