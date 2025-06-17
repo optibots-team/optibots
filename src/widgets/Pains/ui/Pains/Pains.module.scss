@@ -3,7 +3,16 @@
 .pains {
 	grid-template-columns: repeat(6, 1fr);
 	grid-auto-rows: auto;
+	gap: 24px;
 
+	@media (width < breakpoints.$lg) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+
+		> *:nth-last-child(1):nth-child(odd) {
+			grid-column: 1 / -1;
+		}
+	}
 	@media (width < breakpoints.$md) {
 		grid-template-columns: 1fr;
 	}

@@ -16,35 +16,35 @@
 	&.routine {
 		grid-area: 1 / 1 / 2 / 3;
 
-		@media (width < breakpoints.$md) {
+		@media (width < breakpoints.$lg) {
 			grid-area: unset;
 		}
 	}
 	&.loss {
 		grid-area: 1 / 3 / 2 / 5;
 
-		@media (width < breakpoints.$md) {
+		@media (width < breakpoints.$lg) {
 			grid-area: unset;
 		}
 	}
 	&.conversion {
 		grid-area: 1 / 5 / 2 / 7;
 
-		@media (width < breakpoints.$md) {
+		@media (width < breakpoints.$lg) {
 			grid-area: unset;
 		}
 	}
 	&.errors {
 		grid-area: 2 / 1 / 3 / 4;
 
-		@media (width < breakpoints.$md) {
+		@media (width < breakpoints.$lg) {
 			grid-area: unset;
 		}
 	}
 	&.competitors {
 		grid-area: 2 / 4 / 3 / 7;
 
-		@media (width < breakpoints.$md) {
+		@media (width < breakpoints.$lg) {
 			grid-area: unset;
 		}
 	}

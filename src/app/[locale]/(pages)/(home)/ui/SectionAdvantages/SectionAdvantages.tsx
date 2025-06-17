@@ -20,14 +20,13 @@ const SectionAdvantages = ({ className }: SectionAdvantagesProps) => {
 				<SectionTitle
 					className={styles.advantages__title}
 					badge={{
-						bordered: true,
 						icon: <AtomIcon />,
 						text: t('badge'),
 					}}
 					text={{
 						title: t('sectionTitle').toUpperCase(),
-						text: t.rich('sectionDesc', { semiBold: (chunks) => <span className={'fw-600'}>{chunks}</span> }),
-						color: 'dark',
+						text: t('sectionDesc'),
+						color: { text: 'dark-secondary' },
 					}}
 				/>
 				<Advantages />

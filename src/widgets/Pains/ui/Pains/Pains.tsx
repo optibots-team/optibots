@@ -16,7 +16,7 @@ const Pains = ({ className }: PainsProps) => {
 	const painsList = useMemo(() => generatePainList(t), [t]);
 
 	return (
-		<Grid as={'ul'} gap={'24'} className={classNames(styles.pains, {}, [className])}>
+		<Grid as={'ul'} className={classNames(styles.pains, {}, [className])}>
 			{painsList.map((pain) => (
 				<PainsItem key={pain.id} pain={pain} />
 			))}

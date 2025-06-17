@@ -60,7 +60,7 @@ const Nav = ({ className, theme, location = 'header' }: NavProps) => {
 				</Flex>
 				<div className={styles.nav__contacts}>
 					<Socials />
-					<Button theme={'white'} fluid>
+					<Button theme={'green-gradient'} fontFamily={'unbounded'} className={'fw-500'} fluid>
 						{t('order bot').toUpperCase()}
 					</Button>
 				</div>
