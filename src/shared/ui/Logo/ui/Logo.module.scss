@@ -6,10 +6,6 @@
 	display: block;
 	width: 100%;
 
-	@media (width < breakpoints.$lg) {
-		max-width: 125px;
-	}
-
 	&.dark {
 		color: var(--color-dark);
 	}
@@ -19,9 +15,17 @@
 
 	&.s {
 		max-width: 160px;
+
+		@media (width < breakpoints.$lg) {
+			max-width: 125px;
+		}
 	}
 	&.m {
 		max-width: 185px;
+
+		@media (width < breakpoints.$lg) {
+			max-width: 125px;
+		}
 	}
 	&.l {
 		max-width: 200px;

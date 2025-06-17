@@ -10,7 +10,7 @@ type MarqueeProps = {
 const Marquee = ({ className, cards }: MarqueeProps) => (
 	<FastMarquee className={className} autoFill>
 		{cards.map((card) => (
-			<MarqueeCard key={card.title} card={card} />
+			<MarqueeCard key={card.id} card={card} />
 		))}
 	</FastMarquee>
 );

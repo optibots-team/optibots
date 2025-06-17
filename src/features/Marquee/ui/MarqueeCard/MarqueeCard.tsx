@@ -11,10 +11,10 @@ type MarqueeCardProps = {
 };
 
 const MarqueeCard = (props: MarqueeCardProps) => {
-	const { className, card: { title, description, image } } = props;
+	const { className, card: { id, title, description, image } } = props;
 
 	return (
-		<Card className={classNames(styles.card, {}, [className])}>
+		<Card className={classNames(styles.card, {}, [className, styles[id]])}>
 			<Text
 				className={styles.card__text}
 				title={title}

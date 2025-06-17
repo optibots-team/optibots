@@ -4,6 +4,9 @@
 	position: relative;
 	margin-top: 90px;
 
+	@media (width < breakpoints.$lg) {
+		margin-top: 60px;
+	}
 	@media (width < breakpoints.$md) {
 		margin-top: 44px;
 	}

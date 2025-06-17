@@ -6,6 +6,9 @@
 	&__container {
 		gap: 90px;
 
+		@media (width < breakpoints.$lg) {
+			gap: 60px;
+		}
 		@media (width < breakpoints.$md) {
 			gap: 44px;
 		}
@@ -15,7 +18,7 @@
 		width: 100%;
 		max-width: 410px;
 
-		@media (width < breakpoints.$md) {
+		@media (width < breakpoints.$lg) {
 			max-width: 100%;
 		}
 	}
@@ -23,5 +26,9 @@
 	&__cta {
 		width: 100%;
 		max-width: 600px;
+
+		@media (width < breakpoints.$lg) {
+			max-width: 100%;
+		}
 	}
 }

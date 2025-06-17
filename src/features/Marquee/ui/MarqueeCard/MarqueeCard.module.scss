@@ -24,6 +24,18 @@
 		background: transparent;
 	}
 
+	&.reduce {}
+	&.automate {}
+	&.expertise {}
+	&.satisfied {}
+	&.projects {}
+	&.attracted {
+		.card__img {
+			max-width: 76px;
+		}
+	}
+	&.processed {}
+
 	&__text {
 		width: 100%;
 		max-width: 200px;
