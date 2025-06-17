@@ -77,8 +77,8 @@
 
 	&__title {
 		position: relative;
-		font-size: var(--font-size-ml);
-		line-height: var(--font-line-ml);
+		font-size: var(--font-size-m);
+		line-height: var(--font-line-m);
 		font-weight: 500;
 
 		@media (width < breakpoints.$md) {

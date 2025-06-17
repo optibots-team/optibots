@@ -12,6 +12,9 @@
 	&__container {
 		gap: 90px;
 
+		@media (width < breakpoints.$lg) {
+			gap: 60px;
+		}
 		@media (width < breakpoints.$md) {
 			gap: 44px;
 			width: 100%;

@@ -29,7 +29,7 @@ const TariffCard = <T extends ElementType = 'div'>(props: TariffCardProps<T>) =>
 					gap={'12'}
 					title={title.toUpperCase()}
 					titleTag={'h3'}
-					text={description}
+					text={description.toUpperCase()}
 					size={{ title: 'ml', text: 's' }}
 					color={{ title: 'dark', text: 'dark-secondary' }}
 					weight={'500'}
