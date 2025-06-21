@@ -23,7 +23,7 @@ const Logo = ({ className, theme, size = 'm' }: LogoProps) => {
 
 	return (
 		<strong className={classNames(styles.logo, mods, additional)}>
-			<Link href={Routes.HOME} className={styles.logo__link}>
+			<Link href={Routes.HOME} className={styles.logo__link} aria-label={'logo link'}>
 				<LogoIcon />
 			</Link>
 		</strong>
