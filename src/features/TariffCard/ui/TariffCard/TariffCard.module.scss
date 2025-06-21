@@ -1,6 +1,7 @@
 @use '@globals/styles/breakpoints';
 
 .card {
+	height: 100%;
 	padding: var(--padding-l);
 	border-radius: var(--radius-l);
 

@@ -1,12 +1,11 @@
 import { useTranslations } from 'next-intl';
 import { classNames, type Additional } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
-import { SectionTitle } from '@features/SectionTitle';
 import { CTA } from '@features/CTA';
 import { Tariffs } from '@widgets/Tariffs';
+import { TariffsTitle } from './TariffsTitle';
 import { homeAnchors } from '@shared/const/anchors';
 import styles from './SectionTariffs.module.scss';
-import PyramidIcon from '@shared/assets/icons/pyramid_gradient.svg';
 
 type SectionTariffsProps = {
 	className?: string;
@@ -27,20 +26,7 @@ const SectionTariffs = ({ className }: SectionTariffsProps) => {
 			className={classNames(styles.tariffs, {}, additional)}
 		>
 			<Container>
-				<SectionTitle
-					className={styles.tariffs__title}
-					badge={{
-						bordered: true,
-						background: 'transparent',
-						icon: <PyramidIcon />,
-						text: t('badge'),
-					}}
-					text={{
-						title: t.rich('sectionTitle', { br: () => <br />}),
-						color: 'white',
-					}}
-					align={'center'}
-				/>
+				<TariffsTitle />
 				<Tariffs className={styles.tariffs__list} />
 				<CTA
 					className={styles.tariffs__cta}
