@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
+import { motion } from 'motion/react';
 import { classNames, type Additional } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
 import { SectionTitle } from '@features/SectionTitle';
@@ -17,6 +20,7 @@ type SectionAboutProps = {
 const SectionAbout = ({ className }: SectionAboutProps) => {
 	const t = useTranslations('homePage.sectionAbout');
 	const locale = useLocale();
+
 
 	const additional: Additional = [
 		className,
@@ -36,20 +40,28 @@ const SectionAbout = ({ className }: SectionAboutProps) => {
 				<SectionTitle
 					badge={{
 						bordered: true,
-						icon: <AtomIcon />,
+						icon: <AtomIcon/>,
 						text: t('badge'),
 					}}
 					text={{
-						title: t.rich('sectionTitle', { br: () => <br /> }),
+						title: t.rich('sectionTitle', { br: () => <br/> }),
 						text: t('sectionDesc'),
 						color: 'white',
 					}}
 				/>
-				<Image
+				<motion.div
 					className={styles.about__img}
-					src={imageMap[locale]}
-					alt={'about img'}
-				/>
+					initial={{ opacity: 0, x: 50 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{ duration: 0.8, ease: 'easeOut' }}
+					viewport={{ once: true, amount: 0.3 }}
+				>
+					<Image
+						className={styles.img}
+						src={imageMap[locale]}
+						alt={'about img'}
+					/>
+				</motion.div>
 			</Container>
 		</section>
 	);

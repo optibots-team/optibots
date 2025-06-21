@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'motion/react';
 import { classNames, type Mods } from '@shared/lib/classNames';
 import { FlexV } from '@shared/ui/Stack';
 import { Text, type TextColorTheme } from '@shared/ui/Text';
@@ -24,7 +27,13 @@ const AdvantagesItem = (props: AdvantagesItemProps) => {
 		: 'dark-secondary';
 
 	return (
-		<li className={classNames(styles.item, mods, [className, styles[id]])}>
+		<motion.li
+			className={classNames(styles.item, mods, [className, styles[id]])}
+			initial={{ opacity: 0, y: 50 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.8, ease: 'easeOut' }}
+			viewport={{ once: true, amount: 0.3 }}
+		>
 			<FlexV
 				align={'stretch'}
 				justify={ id === 'turnkey' ? 'between' : 'stretch' }
@@ -51,7 +60,7 @@ const AdvantagesItem = (props: AdvantagesItemProps) => {
 					/>
 				</div>
 			)}
-		</li>
+		</motion.li>
 	);
 };
 
