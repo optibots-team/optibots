@@ -24,6 +24,7 @@ const SliderNavigation = ({ className, prevBtnRef, nextBtnRef }: SliderNavigatio
 			className={styles.navigation__btn}
 			theme={'dark'}
 			size={'custom'}
+			aria-label={'prev slide button'}
 		>
 			<Icon icon={<LeftArrowIcon />} size={'24'} />
 		</Button>
@@ -32,6 +33,7 @@ const SliderNavigation = ({ className, prevBtnRef, nextBtnRef }: SliderNavigatio
 			className={styles.navigation__btn}
 			theme={'dark'}
 			size={'custom'}
+			aria-label={'next slide button'}
 		>
 			<Icon icon={<RightArrowIcon />} size={'24'} />
 		</Button>
