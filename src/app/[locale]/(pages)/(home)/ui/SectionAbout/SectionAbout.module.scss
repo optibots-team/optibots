@@ -29,12 +29,15 @@
 	}
 
 	&__img {
-		width: 100%;
-		height: auto;
 		margin-top: 60px;
 
 		@media (width < breakpoints.$md) {
 			display: none;
+		}
+
+		.img {
+			width: 100%;
+			height: auto;
 		}
 	}
 }
