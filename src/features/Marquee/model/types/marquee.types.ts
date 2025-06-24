@@ -5,4 +5,5 @@ export interface MarqueeCard {
 	title: string;
 	description?: string;
 	image?: StaticImageData | string;
+	imageSize?: number | string;
 }
