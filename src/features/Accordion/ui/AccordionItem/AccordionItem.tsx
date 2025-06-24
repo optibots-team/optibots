@@ -27,7 +27,7 @@ const AccordionItem = (props: AccordionItemProps) => {
 		>
 			{({ open }) => (
 				<>
-					<DisclosureButton as={'div'} className={styles.item__trigger}>
+					<DisclosureButton as={'div'} className={styles.item__trigger} aria-label={'Accordion header'}>
 						<h3 className={styles.item__title}>
 							{counter && (
 								<span className={styles.item__counter}>
