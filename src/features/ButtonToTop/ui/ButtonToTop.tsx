@@ -24,6 +24,7 @@ const ButtonToTop = ({ className }: ButtonToTopProps) => {
 			theme={'white'}
 			size={'s'}
 			onClick={handleClick}
+			aria-label={'To top button'}
 		>
 			<Icon icon={<ArrowIcon />} size={'24'} />
 		</Button>
