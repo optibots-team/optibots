@@ -19,6 +19,7 @@ const Hamburger = ({ className }: HamburgerProps) => {
 			theme={'white'}
 			size={'custom'}
 			onClick={toggleMenu}
+			aria-label={'Hamburger button'}
 		>
 			<span />
 			<span />

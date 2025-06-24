@@ -10,8 +10,8 @@ import { homeAnchors } from '@shared/const/anchors';
 import { externalLinks } from '@shared/const/externalLinks';
 import styles from './SectionIntro.module.scss';
 import ArrowIcon from '@shared/assets/icons/arrow-to-right.svg';
-import RobotImageMobile from '@shared/assets/images/home-page/intro/img_01_mobile.png';
-import RobotImageTablet from '@shared/assets/images/home-page/intro/img_01_tablet.png';
+import robotImageMobile from '@shared/assets/images/home-page/intro/img_01_mobile.png';
+import robotImageTablet from '@shared/assets/images/home-page/intro/img_01_tablet.png';
 
 type SectionIntroProps = {
 	className?: string;
@@ -40,13 +40,13 @@ const SectionIntro = ({ className }: SectionIntroProps) => {
 					/>
 					<Image
 						className={classNames(styles.intro__img, {}, [styles.mobile])}
-						src={RobotImageMobile}
+						src={robotImageMobile}
 						alt={'robot'}
 						priority
 					/>
 					<Image
 						className={classNames(styles.intro__img, {}, [styles.tablet])}
-						src={RobotImageTablet}
+						src={robotImageTablet}
 						alt={'robot'}
 						priority
 					/>
