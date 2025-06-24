@@ -5,6 +5,7 @@ import { motion } from 'motion/react';
 import { classNames } from '@shared/lib/classNames';
 import { SectionTitle } from '@features/SectionTitle';
 import { Button } from '@shared/ui/Button';
+import { externalLinks } from '@shared/const/externalLinks';
 import styles from './SectionContacts.module.scss';
 import FiguresIcon from '@shared/assets/icons/figures_gradient.svg';
 
@@ -37,7 +38,14 @@ const ContactsContent = ({ className }: ContactsContentProps) => {
 					color: { title: 'white', text: 'light' },
 				}}
 			/>
-			<Button fontFamily={'unbounded'} theme={'green-gradient'} className={'fw-500'}>
+			<Button
+				as={'a'}
+				href={externalLinks.optibotsTelegram}
+				target={'_blank'}
+				fontFamily={'unbounded'}
+				theme={'green-gradient'}
+				className={'fw-500'}
+			>
 				{tButtons('order bot').toUpperCase()}
 			</Button>
 		</motion.div>

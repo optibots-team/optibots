@@ -3,6 +3,7 @@ import { classNames } from '@shared/lib/classNames';
 import { FlexV, type StackAlign } from '@shared/ui/Stack';
 import { Text, type TextColorTheme } from '@shared/ui/Text';
 import { Button } from '@shared/ui/Button';
+import { externalLinks } from '@shared/const/externalLinks';
 import type { Align } from '@shared/types/layout.types';
 import type { SizeToken } from '@shared/types/sizes.types';
 import styles from './CTA.module.scss';
@@ -42,6 +43,9 @@ const CTA = (props: CTAProps) => {
 				color={textColor}
 			/>
 			<Button
+				as={'a'}
+				href={externalLinks.optibotsTelegram}
+				target={'_blank'}
 				theme={'green-gradient'}
 				fontFamily={'unbounded'}
 				className={classNames(styles.cta__btn, {}, ['fw-500'])}
