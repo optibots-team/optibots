@@ -1,14 +1,13 @@
 'use client';
 
 import Image from 'next/image';
-import { useTranslations, useLocale } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { motion } from 'motion/react';
 import { classNames, type Additional } from '@shared/lib/classNames';
 import { Container } from '@shared/ui/Container';
-import { SectionTitle } from '@features/SectionTitle';
+import { AboutTitle } from './AboutTitle';
 import { homeAnchors } from '@shared/const/anchors';
 import styles from './SectionAbout.module.scss';
-import AtomIcon from '@shared/assets/icons/atom_gradient.svg';
 import AboutImg_ru from '@shared/assets/images/home-page/about/img_01_ru.svg?url';
 import AboutImg_uk from '@shared/assets/images/home-page/about/img_01_uk.svg?url';
 import AboutImg_en from '@shared/assets/images/home-page/about/img_01_en.svg?url';
@@ -18,9 +17,7 @@ type SectionAboutProps = {
 };
 
 const SectionAbout = ({ className }: SectionAboutProps) => {
-	const t = useTranslations('homePage.sectionAbout');
 	const locale = useLocale();
-
 
 	const additional: Additional = [
 		className,
@@ -37,18 +34,7 @@ const SectionAbout = ({ className }: SectionAboutProps) => {
 	return (
 		<section id={homeAnchors.ABOUT} className={classNames(styles.about, {}, additional)}>
 			<Container display={'grid'} className={styles.about__container}>
-				<SectionTitle
-					badge={{
-						bordered: true,
-						icon: <AtomIcon/>,
-						text: t('badge'),
-					}}
-					text={{
-						title: t.rich('sectionTitle', { br: () => <br/> }),
-						text: t('sectionDesc'),
-						color: 'white',
-					}}
-				/>
+				<AboutTitle />
 				<motion.div
 					className={styles.about__img}
 					initial={{ opacity: 0, x: 50 }}

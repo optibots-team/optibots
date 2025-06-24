@@ -11,10 +11,10 @@ type MarqueeCardProps = {
 };
 
 const MarqueeCard = (props: MarqueeCardProps) => {
-	const { className, card: { id, title, description, image } } = props;
+	const { className, card: { title, description, image, imageSize } } = props;
 
 	return (
-		<Card className={classNames(styles.card, {}, [className, styles[id]])}>
+		<Card className={classNames(styles.card, {}, [className])}>
 			<Text
 				className={styles.card__text}
 				title={title}
@@ -29,6 +29,7 @@ const MarqueeCard = (props: MarqueeCardProps) => {
 			{image && (
 				<Image
 					className={styles.card__img}
+					style={{ maxWidth: imageSize }}
 					src={image}
 					alt={title}
 				/>

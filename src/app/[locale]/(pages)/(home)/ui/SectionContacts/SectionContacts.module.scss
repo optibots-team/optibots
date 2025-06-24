@@ -5,6 +5,7 @@
 
 	&__container {
 		gap: 88px;
+		overflow-x: hidden;
 
 		@media (width < breakpoints.$xl) {
 			gap: 24px;
