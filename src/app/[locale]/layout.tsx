@@ -21,16 +21,28 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-	title: 'Optibots',
-	description: 'SMART CHATBOTS FOR YOUR BUSINESS',
+	title: 'Optibots — Chatbots & Sales Funnel Automation',
+	description: 'We build smart chatbots and automate sales funnels, marketing, and online business processes using AI technologies.',
+	keywords: [
+		'chatbots',
+		'business automation',
+		'sales funnel automation',
+		'marketing automation',
+		'AI chatbots',
+		'artificial intelligence',
+		'online business tools',
+		'chatbot development',
+		'sales bots',
+		'process optimization',
+	],
 	manifest: '/icons/site.webmanifest',
 	icons: {
 		icon: '/icons/favicon.ico',
 		apple: '/icons/apple-touch-icon.png',
 	},
 	openGraph: {
-		title: 'Optibots',
-		description: 'SMART CHATBOTS FOR YOUR BUSINESS',
+		title: 'Optibots — Smart chatbots for your business',
+		description: 'Optibots helps businesses grow faster by automating marketing, sales funnels, and online workflows with AI.',
 		images: [
 			{
 				url: '/images/ogp.jpg',
