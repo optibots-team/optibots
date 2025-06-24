@@ -22,7 +22,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
 	title: 'Optibots',
-	description: 'Developed by Vlad Poliakov',
+	description: 'SMART CHATBOTS FOR YOUR BUSINESS',
 	manifest: '/icons/site.webmanifest',
 	icons: {
 		icon: '/icons/favicon.ico',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		title: 'Optibots',
-		description: 'Optibots make your business faster and smarter',
+		description: 'SMART CHATBOTS FOR YOUR BUSINESS',
 		images: [
 			{
 				url: '/images/ogp.jpg',

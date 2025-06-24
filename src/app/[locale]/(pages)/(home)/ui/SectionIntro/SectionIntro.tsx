@@ -7,6 +7,7 @@ import { Text } from '@shared/ui/Text';
 import { Icon } from '@shared/ui/Icon';
 import { Button } from '@shared/ui/Button';
 import { homeAnchors } from '@shared/const/anchors';
+import { externalLinks } from '@shared/const/externalLinks';
 import styles from './SectionIntro.module.scss';
 import ArrowIcon from '@shared/assets/icons/arrow-to-right.svg';
 import RobotImageMobile from '@shared/assets/images/home-page/intro/img_01_mobile.png';
@@ -50,7 +51,13 @@ const SectionIntro = ({ className }: SectionIntroProps) => {
 						priority
 					/>
 					<Flex gap={'14'} align={'stretch'} className={styles.intro__buttons}>
-						<Button className={styles.intro__btn} fontFamily={'unbounded'}>
+						<Button
+							as={'a'}
+							href={externalLinks.optibotsTelegram}
+							target={'_blank'}
+							className={styles.intro__btn}
+							fontFamily={'unbounded'}
+						>
 							{tButtons('order bot').toUpperCase()}
 						</Button>
 						<Button as={'a'} href={`#${homeAnchors.ADVANTAGES}`} className={styles.intro__btn} theme={'outline'}>
