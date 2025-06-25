@@ -63,8 +63,8 @@
 		width: 40px;
 		display: block;
 		color: currentColor;
-		font-size: var(--font-size-ml);
-		line-height: var(--font-line-ml);
+		font-size: inherit;
+		line-height: inherit;
 		font-weight: 500;
 		text-transform: uppercase;
 
