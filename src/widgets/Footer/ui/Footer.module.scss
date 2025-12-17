@@ -21,6 +21,8 @@
 	}
 
 	&__logo {
+		flex-grow: 1;
+
 		@media (width < breakpoints.$md) {
 			width: 100%;
 		}

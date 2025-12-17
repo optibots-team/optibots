@@ -8,9 +8,6 @@ import { Container } from '@shared/ui/Container';
 import { AboutTitle } from './AboutTitle';
 import { homeAnchors } from '@shared/const/anchors';
 import styles from './SectionAbout.module.scss';
-import AboutImg_ru from '@shared/assets/images/home-page/about/img_01_ru.svg?url';
-import AboutImg_uk from '@shared/assets/images/home-page/about/img_01_uk.svg?url';
-import AboutImg_en from '@shared/assets/images/home-page/about/img_01_en.svg?url';
 
 type SectionAboutProps = {
 	className?: string;
@@ -26,9 +23,9 @@ const SectionAbout = ({ className }: SectionAboutProps) => {
 	];
 
 	const imageMap: Record<string, string> = {
-		en: AboutImg_en,
-		uk: AboutImg_uk,
-		ru: AboutImg_ru,
+		en: '/images/home-page/about/img_01_en.svg',
+		uk: '/images/home-page/about/img_01_uk.svg',
+		ru: '/images/home-page/about/img_01_ru.svg',
 	};
 
 	return (
@@ -46,6 +43,8 @@ const SectionAbout = ({ className }: SectionAboutProps) => {
 						className={styles.img}
 						src={imageMap[locale]}
 						alt={'about img'}
+						width={100}
+						height={100}
 					/>
 				</motion.div>
 			</Container>

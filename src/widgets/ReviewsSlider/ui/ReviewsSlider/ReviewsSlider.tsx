@@ -12,8 +12,8 @@ import { SliderNavigation } from '../SliderNavigation/SliderNavigation';
 import { SliderPagination } from '../SliderPagination/SliderPagination';
 import { ReviewsSlide } from '../ReviewsSlide/ReviewsSlide';
 import { generateReviews } from '../../model/data/reviewsSlider.data';
-import 'swiper/scss/navigation';
-import 'swiper/scss/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import styles from './ReviewsSlider.module.scss';
 
 type ReviewsSliderProps = {

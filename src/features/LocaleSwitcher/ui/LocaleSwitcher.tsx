@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback } from 'react';
-import { useLocale } from 'use-intl';
+import { useLocale } from 'next-intl';
 import { classNames } from '@shared/lib/classNames';
 import { toRouterLocale, toVisibleLocale } from '../lib/locales';
 import { Listbox } from '@shared/ui/Listbox';
@@ -33,7 +33,7 @@ const LocaleSwitcher = ({ className, anchor = 'bottom', theme = 'dark' }: Locale
 			options={switcherOptions.filter((option) => option.id !== currentLocale)}
 			value={listboxLocale}
 			onChange={handleChangeLocale}
-			anchor={{ to: anchor, gap: '-40%' }}
+			anchor={{ to: anchor, gap: '-12px' }}
 			theme={theme}
 		/>
 	);

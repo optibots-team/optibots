@@ -3,7 +3,7 @@
 import type { ReactNode } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { SwiperOptions, Swiper as ISwiper } from 'swiper/types';
-import 'swiper/scss';
+import 'swiper/css';
 
 type SwiperSliderProps = {
 	className?: string;
