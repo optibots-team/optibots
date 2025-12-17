@@ -14,6 +14,7 @@
 	}
 
 	&.s {
+		height: 45px;
 		max-width: 160px;
 
 		@media (width < breakpoints.$lg) {
@@ -21,6 +22,7 @@
 		}
 	}
 	&.m {
+		height: 52px;
 		max-width: 185px;
 
 		@media (width < breakpoints.$lg) {
@@ -28,11 +30,14 @@
 		}
 	}
 	&.l {
+		height: 58px;
 		max-width: 200px;
 	}
 
 	&__link {
 		display: block;
+		width: 100%;
+		height: 100%;
 	}
 
 	svg, path {

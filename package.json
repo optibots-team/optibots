@@ -1,6 +1,6 @@
 {
   "name": "optibots",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,19 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^2.2.4",
-    "@splinetool/react-spline": "^4.0.0",
-    "@splinetool/runtime": "^1.9.96",
+    "@headlessui/react": "^2.2.9",
+    "@splinetool/react-spline": "^4.1.0",
+    "@splinetool/runtime": "^1.12.21",
     "body-scroll-lock": "^3.1.5",
     "motion": "^12.18.1",
-    "next": "^15.3.2",
-    "next-intl": "^4.0.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "next": "^16.0.10",
+    "next-intl": "^4.6.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react-fast-marquee": "^1.6.5",
     "react-toastify": "^11.0.5",
-    "swiper": "^11.2.8",
-    "zustand": "^5.0.5"
+    "swiper": "^12.0.3",
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -29,11 +29,11 @@
     "@types/aos": "^3.0.7",
     "@types/body-scroll-lock": "^3.1.2",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
-    "sass": "^1.86.0",
+    "sass": "^1.97.0",
     "typescript": "^5"
   }
 }

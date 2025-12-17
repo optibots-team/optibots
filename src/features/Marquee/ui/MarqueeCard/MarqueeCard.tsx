@@ -32,6 +32,8 @@ const MarqueeCard = (props: MarqueeCardProps) => {
 					style={{ maxWidth: imageSize }}
 					src={image}
 					alt={title}
+					width={100}
+					height={100}
 				/>
 			)}
 		</Card>

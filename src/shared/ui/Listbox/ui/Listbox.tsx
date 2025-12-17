@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef, useState } from 'react';
 import {
 	Listbox as HListbox,
 	ListboxButton,
@@ -23,16 +24,33 @@ type ListboxProps = {
 
 const Listbox = (props: ListboxProps) => {
 	const { className, theme = 'dark', options, anchor = 'bottom', value, onChange } = props;
+	const btnRef = useRef<HTMLButtonElement>(null);
+	const [btnWidth, setBtnWidth] = useState<number | undefined>();
+
+	useLayoutEffect(() => {
+		const btn = btnRef.current;
+		if (!btn) return;
+
+		const updateWidth = () => setBtnWidth(btn.getBoundingClientRect().width);
+
+		updateWidth();
+
+		const resizeObserver = new ResizeObserver(updateWidth);
+		resizeObserver.observe(btn);
+
+		return () => resizeObserver.disconnect();
+	}, []);
 
 	return (
 		<div className={classNames(styles.listbox, {}, [className, styles[theme]])}>
 			<HListbox value={value} onChange={onChange}>
-				<ListboxButton className={styles.listbox__btn}>
+				<ListboxButton ref={btnRef} className={styles.listbox__btn}>
 					{value}
 					<Icon icon={<ArrowIcon />} size={'16'} />
 				</ListboxButton>
 				<ListboxOptions
 					className={classNames(styles.listbox__options, {}, [styles[theme]])}
+					style={{ width: btnWidth }}
 					as={'ul'}
 					anchor={anchor}
 					transition

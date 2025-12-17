@@ -5,7 +5,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import { SwiperSlider } from '@features/SwiperSlider';
 import { ResultSlide } from '../ResultSlide/ResultSlide';
 import type { InternalSlider, InternalSlideTheme } from '@entities/Case';
-import 'swiper/scss/pagination';
+import 'swiper/css/pagination';
 import './ResultSlider.scss';
 import styles from './ResultSlider.module.scss';
 
